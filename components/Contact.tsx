@@ -1,5 +1,5 @@
 import React from 'react';
-import { MapPin, Phone, Mail, Clock, Facebook, Instagram } from 'lucide-react';
+import { MapPin, Phone, Mail, Clock, Facebook, Instagram, Linkedin, Send } from 'lucide-react';
 
 const Contact: React.FC = () => {
   return (
@@ -52,16 +52,22 @@ const Contact: React.FC = () => {
               <div className="pt-6 border-t border-gray-800">
                 <h3 className="font-bold text-xl mb-4">Follow Us</h3>
                 <div className="flex gap-4">
-                  <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="w-12 h-12 rounded-full bg-gray-800 flex items-center justify-center hover:bg-brand-red transition-all transform hover:scale-110">
+                  <a href="https://web.facebook.com/people/Terara-printing-press/61581231574893/" target="_blank" rel="noopener noreferrer" className="w-12 h-12 rounded-full bg-gray-800 flex items-center justify-center hover:bg-brand-red transition-all transform hover:scale-110">
                     <Facebook size={24} />
                   </a>
-                  <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="w-12 h-12 rounded-full bg-gray-800 flex items-center justify-center hover:bg-brand-red transition-all transform hover:scale-110">
+                  <a href="#" title="Instagram - Coming Soon!" className="w-12 h-12 rounded-full bg-gray-800 flex items-center justify-center hover:bg-brand-red/50 transition-all transform hover:scale-110 opacity-50 cursor-not-allowed">
                     <Instagram size={24} />
                   </a>
                   <a href="https://www.tiktok.com/@teraraprinters" target="_blank" rel="noopener noreferrer" className="w-12 h-12 rounded-full bg-gray-800 flex items-center justify-center hover:bg-brand-red transition-all transform hover:scale-110">
                     <svg viewBox="0 0 24 24" fill="currentColor" className="w-6 h-6">
-                      <path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.9-.32-1.89-.23-2.74.24-.81.47-1.38 1.31-1.63 2.21-.16.61-.17 1.25-.09 1.88.27 1.25 1.13 2.35 2.22 2.94.67.35 1.41.54 2.15.54 1.56 0 3.01-.93 3.58-2.38.22-.55.3-1.14.32-1.74.01-3.1-.01-6.2.01-9.3z" />
+                      <path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.10-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.9-.32-1.89-.23-2.74.24-.81.47-1.38 1.31-1.63 2.21-.16.61-.17 1.25-.09 1.88.27 1.25 1.13 2.35 2.22 2.94.67.35 1.41.54 2.15.54 1.56 0 3.01-.93 3.58-2.38.22-.55.3-1.14.32-1.74.01-3.1-.01-6.2.01-9.3z" />
                     </svg>
+                  </a>
+                  <a href="#" title="LinkedIn - Coming Soon!" className="w-12 h-12 rounded-full bg-gray-800 flex items-center justify-center hover:bg-brand-red/50 transition-all transform hover:scale-110 opacity-50 cursor-not-allowed">
+                    <Linkedin size={24} />
+                  </a>
+                  <a href="#" title="Telegram - Coming Soon!" className="w-12 h-12 rounded-full bg-gray-800 flex items-center justify-center hover:bg-brand-red/50 transition-all transform hover:scale-110 opacity-50 cursor-not-allowed">
+                    <Send size={24} />
                   </a>
                 </div>
               </div>
