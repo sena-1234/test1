@@ -77,8 +77,8 @@ const Portfolio: React.FC = () => {
                 key={cat}
                 onClick={() => setActiveFilter(cat)}
                 className={`px-6 py-2 rounded-full text-sm font-bold transition-all duration-300 border ${activeFilter === cat
-                    ? 'bg-brand-red border-brand-red text-white'
-                    : 'bg-transparent border-white/20 text-gray-400 hover:border-white/50 hover:text-white'
+                  ? 'bg-brand-red border-brand-red text-white'
+                  : 'bg-transparent border-white/20 text-gray-400 hover:border-white/50 hover:text-white'
                   }`}
               >
                 {cat}
@@ -93,40 +93,40 @@ const Portfolio: React.FC = () => {
             <div
               key={`${project.title}-${index}`}
               className={`relative group overflow-hidden rounded-2xl cursor-pointer transition-all duration-500 animate-fade-in ${project.size === 'large' ? 'md:col-span-2 md:row-span-2' :
-                  project.size === 'wide' ? 'md:col-span-2' :
-                    project.size === 'portrait' ? 'md:row-span-2' : ''
+                project.size === 'wide' ? 'md:col-span-2' :
+                  project.size === 'portrait' ? 'md:row-span-2' : ''
                 }`}
             >
               {/* Image with Parallax-like scale effect */}
               <img
                 src={project.image}
                 alt={project.title}
-                className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110"
+                className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110 group-active:scale-110"
               />
 
               {/* Glassmorphism Overlay */}
-              <div className="absolute inset-0 bg-brand-dark/40 opacity-0 group-hover:opacity-100 transition-all duration-500 backdrop-blur-[2px] flex flex-col justify-end p-8 border-2 border-transparent group-hover:border-brand-red/30 rounded-2xl m-2">
+              <div className="absolute inset-0 bg-brand-dark/40 opacity-0 group-hover:opacity-100 group-active:opacity-100 transition-all duration-500 backdrop-blur-[2px] flex flex-col justify-end p-8 border-2 border-transparent group-hover:border-brand-red/30 group-active:border-brand-red/30 rounded-2xl m-2">
                 <div className="overflow-hidden mb-2">
-                  <span className="inline-block text-brand-red text-xs font-black uppercase tracking-[0.3em] transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+                  <span className="inline-block text-brand-red text-xs font-black uppercase tracking-[0.3em] transform translate-y-full group-hover:translate-y-0 group-active:translate-y-0 transition-transform duration-300">
                     {project.category}
                   </span>
                 </div>
                 <div className="overflow-hidden mb-6">
-                  <h3 className="text-xl md:text-2xl font-black text-white transform translate-y-full group-hover:translate-y-0 transition-transform duration-500 delay-75 leading-none uppercase">
+                  <h3 className="text-xl md:text-2xl font-black text-white transform translate-y-full group-hover:translate-y-0 group-active:translate-y-0 transition-transform duration-500 delay-75 leading-none uppercase">
                     {project.title.split(' ').length > 3 ? project.title.substring(0, 30) + '...' : project.title}
                   </h3>
                 </div>
 
                 <div className="flex items-center gap-2 text-white/60 group/view">
-                  <span className="text-xs font-bold uppercase tracking-widest group-hover:text-white transition-colors">Details</span>
-                  <div className="w-8 h-8 rounded-full border border-white/20 flex items-center justify-center group-hover:bg-brand-red group-hover:border-brand-red transition-all duration-300">
-                    <ExternalLink size={14} className="group-hover:text-white" />
+                  <span className="text-xs font-bold uppercase tracking-widest group-hover:text-white group-active:text-white transition-colors">Details</span>
+                  <div className="w-8 h-8 rounded-full border border-white/20 flex items-center justify-center group-hover:bg-brand-red group-active:bg-brand-red group-hover:border-brand-red group-active:border-brand-red transition-all duration-300">
+                    <ExternalLink size={14} className="group-hover:text-white group-active:text-white" />
                   </div>
                 </div>
               </div>
 
               {/* Minimal Tag (visible when not hovered) */}
-              <div className="absolute top-4 left-4 bg-black/50 backdrop-blur-sm px-3 py-1 rounded-sm text-[10px] font-bold uppercase tracking-widest opacity-100 group-hover:opacity-0 transition-opacity">
+              <div className="absolute top-4 left-4 bg-black/50 backdrop-blur-sm px-3 py-1 rounded-sm text-[10px] font-bold uppercase tracking-widest opacity-100 group-hover:opacity-0 group-active:opacity-0 transition-opacity">
                 {project.category}
               </div>
             </div>

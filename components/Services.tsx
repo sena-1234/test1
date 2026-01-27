@@ -43,14 +43,14 @@ const services: ServiceItem[] = [
     items: ["Invitations and RSVP Cards", "Programs and Menus", "Table Tents", "Name Badges"],
     icon: Calendar,
     description: "Complete stationery collections for a successful event.",
-    image: "https://i.ibb.co/tpxC7qrJ/Event-Materials.png"
+    image: "/images/business_stationery.png"
   },
   {
     category: "Digital Printing",
     items: ["Booklets and Manuals", "Short-run Printing", "Variable Data Printing"],
     icon: Printer,
     description: "High-quality booklet and manual production with fast turnaround.",
-    image: "https://i.ibb.co/HT2BdntR/Digital-Printing.png"
+    image: "/images/marketing_materials.png"
   }
 ];
 
@@ -75,13 +75,13 @@ const Services: React.FC = () => {
                 <img
                   src={service.image}
                   alt={service.category}
-                  className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700"
+                  className="w-full h-full object-cover transform group-hover:scale-110 group-active:scale-110 transition-transform duration-700"
                 />
-                <div className="absolute inset-0 bg-brand-dark/20 group-hover:bg-brand-red/20 transition-colors"></div>
+                <div className="absolute inset-0 bg-brand-dark/20 group-hover:bg-brand-red/20 group-active:bg-brand-red/20 transition-colors"></div>
               </div>
 
               {/* Icon Straddling the Border */}
-              <div className="absolute top-48 right-6 -translate-y-1/2 bg-brand-red p-4 rounded-full shadow-xl z-30 border-4 border-white transform transition-transform duration-500 group-hover:scale-110 group-hover:rotate-12">
+              <div className="absolute top-48 right-6 -translate-y-1/2 bg-brand-red p-4 rounded-full shadow-xl z-30 border-4 border-white transform transition-transform duration-500 group-hover:scale-110 group-hover:rotate-12 group-active:scale-110 group-active:rotate-12">
                 <service.icon className="text-white" size={28} />
               </div>
 

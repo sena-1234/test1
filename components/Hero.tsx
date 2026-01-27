@@ -63,17 +63,17 @@ const Hero: React.FC = () => {
             {featuredServices.map((service, index) => (
               <div
                 key={index}
-                className="group relative bg-white/5 backdrop-blur-xl border border-white/10 p-6 rounded-3xl hover:border-brand-red/50 transition-all duration-500 hover:-translate-y-2 cursor-pointer overflow-hidden"
+                className="group relative bg-white/5 backdrop-blur-xl border border-white/10 p-6 rounded-3xl hover:border-brand-red/50 active:border-brand-red/50 transition-all duration-500 hover:-translate-y-2 active:-translate-y-2 cursor-pointer overflow-hidden"
               >
-                <div className={`absolute top-0 right-0 w-24 h-24 bg-gradient-to-br ${service.color} opacity-0 group-hover:opacity-20 blur-2xl transition-opacity duration-500`}></div>
-                <div className="relative z-10">
-                  <div className={`w-12 h-12 rounded-2xl bg-gradient-to-br ${service.color} p-2.5 mb-4 shadow-lg transform group-hover:rotate-12 transition-transform duration-500`}>
-                    <service.icon className="text-white w-full h-full" />
+                <div className={`absolute top-0 right-0 w-24 h-24 bg-gradient-to-br ${service.color} opacity-0 group-hover:opacity-20 group-active:opacity-20 blur-2xl transition-opacity duration-500`}></div>
+                <div className="flex flex-col items-center text-center relative">
+                  <div className={`w-12 h-12 rounded-2xl bg-gradient-to-br ${service.color} p-2.5 mb-4 shadow-lg transform group-hover:rotate-12 group-active:rotate-12 transition-transform duration-500`}>
+                    <service.icon className="w-full h-full text-white" strokeWidth={2} />
                   </div>
-                  <h3 className="text-white font-bold text-sm md:text-base leading-tight">
+                  <h4 className="text-white font-black text-sm uppercase tracking-wider leading-tight">
                     {service.title}
-                  </h3>
-                  <div className="w-0 group-hover:w-8 h-1 bg-brand-red mt-2 transition-all duration-500"></div>
+                  </h4>
+                  <div className="w-0 group-hover:w-8 group-active:w-8 h-1 bg-brand-red mt-2 transition-all duration-500"></div>
                 </div>
               </div>
             ))}
