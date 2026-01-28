@@ -16,9 +16,9 @@ const Hero: React.FC = () => {
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0 flex items-center justify-end">
         <img
-          src="/hero-print.png"
+          src="/hero-print-v2.png"
           alt="Terara Printing Press Premium Materials"
-          className="w-full h-full object-contain opacity-60 lg:opacity-80 translate-x-1/4 lg:translate-x-1/3 scale-110 lg:scale-125 pointer-events-none"
+          className="w-full h-full object-cover opacity-60 lg:opacity-80 pointer-events-none"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-brand-dark via-brand-dark/80 to-transparent"></div>
       </div>
