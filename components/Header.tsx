@@ -30,7 +30,7 @@ const Header: React.FC = () => {
         <img
           src="/logo-hq.png"
           alt="Terara Printing Press"
-          className={`h-16 md:h-32 w-auto object-contain transition-all duration-500 group-hover:scale-110 ${isScrolled ? 'md:h-20 scale-90' : 'scale-100'} ${!isScrolled ? 'brightness-0 invert' : ''}`}
+          className={`h-12 md:h-20 w-auto object-contain transition-all duration-500 group-hover:scale-110 ${isScrolled ? 'md:h-14 scale-90' : 'scale-100'} ${!isScrolled ? 'brightness-0 invert' : ''}`}
           onError={() => setLogoError(true)}
         />
       ) : (

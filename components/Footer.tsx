@@ -18,7 +18,7 @@ const Footer: React.FC = () => {
                 <img
                   src="/logo-hq.png"
                   alt="Terara Printing Press"
-                  className="h-32 md:h-48 w-auto object-contain brightness-0 invert"
+                  className="h-20 md:h-28 w-auto object-contain brightness-0 invert"
                   onError={() => setLogoError(true)}
                 />
               ) : (

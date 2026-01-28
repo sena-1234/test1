@@ -39,10 +39,9 @@ function App() {
             <span className="text-white font-black text-xl mx-8 uppercase tracking-widest">Branding</span>
           </div>
         </div>
-        <Services />
         <About />
+        <Services />
         <WhyChooseUs />
-        <TrustStrip />
         <Portfolio />
         <Clients />
         <Contact />
