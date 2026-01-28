@@ -14,13 +14,13 @@ const Hero: React.FC = () => {
   return (
     <section id="home" className="relative min-h-screen lg:h-screen flex items-center overflow-hidden bg-brand-dark">
       {/* Background Image with Overlay */}
-      <div className="absolute inset-0 z-0">
+      <div className="absolute inset-0 z-0 flex items-center justify-end">
         <img
-          src="https://images.unsplash.com/photo-1562654501-a0ccc0fc3fb1?q=80&w=2832&auto=format&fit=crop"
-          alt="Premium Printed Materials"
-          className="w-full h-full object-cover opacity-40 lg:opacity-50"
+          src="/hero-print.png"
+          alt="Terara Printing Press Premium Materials"
+          className="w-full h-full object-contain opacity-60 lg:opacity-80 translate-x-1/4 lg:translate-x-1/3 scale-110 lg:scale-125 pointer-events-none"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-brand-dark via-brand-dark/95 to-transparent"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-brand-dark via-brand-dark/80 to-transparent"></div>
       </div>
 
       <div className="container mx-auto px-4 md:px-6 relative z-10 pt-40 pb-20 md:pt-56 md:pb-24 lg:pt-48 lg:pb-32">
@@ -31,7 +31,7 @@ const Hero: React.FC = () => {
             <div className="inline-block bg-brand-red text-white px-3 py-1 text-xs font-bold uppercase tracking-widest mb-4 rounded-sm">
               Est. 2017 GC
             </div>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-black text-white leading-none mb-6">
+            <h1 className="text-4xl md:text-5xl lg:text-7xl font-black text-white leading-none mb-6">
               BEYOND YOUR <br />
               <span className="text-brand-red">
                 EXPECTATIONS

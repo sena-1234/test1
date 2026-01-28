@@ -46,19 +46,22 @@ const About: React.FC = () => {
             <div className="grid grid-cols-2 gap-4">
               <img
                 src="https://i.ibb.co/RTQT2jW9/555.png"
-                alt="High-quality offset printing Ethiopia"
+                alt="Terara Printing Machinery - Offset Specialists in Ethiopia"
                 className="w-full h-80 object-cover rounded-2xl shadow-xl translate-y-12"
+                loading="lazy"
               />
               <div className="space-y-4">
                 <img
                   src="https://i.ibb.co/zhZ1dWrx/AD-P-Satin-AQ-01-1024x1007.png"
-                  alt="High-quality offset printing Ethiopia"
+                  alt="Premium Printing Samples Addis Ababa"
                   className="w-full h-48 object-cover rounded-2xl shadow-lg"
+                  loading="lazy"
                 />
                 <img
                   src="https://i.ibb.co/gMWf2QWn/11.png"
-                  alt="High-quality offset printing Ethiopia"
+                  alt="Professional Paper Converting and Branding"
                   className="w-full h-48 object-cover rounded-2xl shadow-lg"
+                  loading="lazy"
                 />
               </div>
             </div>

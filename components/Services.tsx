@@ -74,8 +74,9 @@ const Services: React.FC = () => {
               <div className="h-48 overflow-hidden relative">
                 <img
                   src={service.image}
-                  alt={service.category}
+                  alt={`${service.category} Services - Terara Printing Press Ethiopia`}
                   className="w-full h-full object-cover transform group-hover:scale-110 group-active:scale-110 transition-transform duration-700"
+                  loading="lazy"
                 />
                 <div className="absolute inset-0 bg-brand-dark/20 group-hover:bg-brand-red/20 group-active:bg-brand-red/20 transition-colors"></div>
               </div>
