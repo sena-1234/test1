@@ -21,9 +21,8 @@ const Contact: React.FC = () => {
                   <MapPin size={24} />
                 </div>
                 <div>
-                  <h3 className="font-bold text-xl mb-2">Our Locations</h3>
-                  <p className="text-gray-300 mb-1"><span className="text-brand-red font-bold">1:</span> 4Killo Dink Sira Tower 1st Floor</p>
-                  <p className="text-gray-300"><span className="text-brand-red font-bold">2:</span> Piazza down from Etio-Ceramic, the building with Wagagen Bank</p>
+                  <h3 className="font-bold text-xl mb-2">Our Location</h3>
+                  <p className="text-gray-300 mb-1">4 Killo, Dink Sira Tower, 1st Floor, Addis Ababa, Ethiopia</p>
                 </div>
               </div>
 
@@ -33,8 +32,12 @@ const Contact: React.FC = () => {
                 </div>
                 <div>
                   <h3 className="font-bold text-xl mb-2">Phone Numbers</h3>
-                  <p className="text-gray-300 text-lg">0913-89 19 60</p>
-                  <p className="text-gray-300 text-lg">0972-95 80 02</p>
+                  <p className="text-gray-300 text-lg hover:text-brand-red transition-colors">
+                    <a href="tel:0988559355">0988-55 93 55</a>
+                  </p>
+                  <p className="text-gray-300 text-lg hover:text-brand-red transition-colors">
+                    <a href="tel:0913891960">0913-89 19 60</a>
+                  </p>
                 </div>
               </div>
 

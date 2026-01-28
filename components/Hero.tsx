@@ -31,29 +31,31 @@ const Hero: React.FC = () => {
             <div className="inline-block bg-brand-red text-white px-3 py-1 text-xs font-bold uppercase tracking-widest mb-4 rounded-sm">
               Est. 2017 GC
             </div>
-            <h1 className="text-5xl md:text-7xl lg:text-8xl font-black text-white leading-none mb-6">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-black text-white leading-none mb-6">
               BEYOND YOUR <br />
               <span className="text-brand-red">
                 EXPECTATIONS
               </span>
             </h1>
             <p className="text-gray-300 text-lg md:text-xl mb-10 max-w-xl leading-relaxed">
-              Transforming your ideas into tangible products that stand out and make an impact. We deliver high-quality printing solutions for businesses in Addis Ababa.
+              Transforming your ideas into tangible products that stand out and make an impact. We deliver high-quality printing solutions for businesses across Ethiopia.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">
               <a
-                href="#services"
-                className="bg-brand-red text-white px-8 py-4 rounded-full font-bold uppercase tracking-wide hover:bg-red-700 transition-all flex items-center justify-center gap-2 group"
+                href="https://wa.me/251988559355"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-brand-red text-white px-8 py-4 rounded-full font-bold uppercase tracking-wide hover:bg-red-700 transition-all flex items-center justify-center gap-2 group shadow-xl"
               >
-                Our Services
+                Get a Quote
                 <ArrowRight className="group-hover:translate-x-1 transition-transform" />
               </a>
               <a
-                href="#contact"
+                href="#services"
                 className="border-2 border-white text-white px-8 py-4 rounded-full font-bold uppercase tracking-wide hover:bg-white hover:text-brand-dark transition-all flex items-center justify-center"
               >
-                Contact Us
+                Our Services
               </a>
             </div>
           </div>

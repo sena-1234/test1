@@ -28,20 +28,20 @@ const Header: React.FC = () => {
     <div className="flex items-center gap-3">
       {(!logoError) ? (
         <img
-          src="https://i.ibb.co/y2BzZWm/logo.png"
+          src="/logo-hq.png"
           alt="Terara Printing Press"
-          className={`h-12 md:h-24 w-auto object-contain transition-all duration-500 group-hover:scale-110 ${isScrolled ? 'md:h-16 scale-90' : 'scale-100'} ${!isScrolled ? 'brightness-0 invert' : ''}`}
+          className={`h-16 md:h-32 w-auto object-contain transition-all duration-500 group-hover:scale-110 ${isScrolled ? 'md:h-20 scale-90' : 'scale-100'} ${!isScrolled ? 'brightness-0 invert' : ''}`}
           onError={() => setLogoError(true)}
         />
       ) : (
         <div className={`flex items-center gap-2 transition-all duration-500 ${isScrolled ? 'scale-90' : 'scale-100'}`}>
-          <svg viewBox="0 0 100 80" className={`h-12 md:h-20 w-auto ${isScrolled ? 'text-brand-red' : 'text-white'}`} fill="currentColor">
+          <svg viewBox="0 0 100 80" className={`h-16 md:h-28 w-auto ${isScrolled ? 'text-brand-red' : 'text-white'}`} fill="currentColor">
             <path d="M20,60 Q35,20 50,45 T80,30 L80,70 L20,70 Z" />
             <rect x="45" y="10" width="10" height="60" rx="2" />
           </svg>
           <div className="flex flex-col">
-            <span className={`text-[10px] md:text-sm font-bold tracking-widest leading-none ${isScrolled ? 'text-brand-red' : 'text-white/80'}`}>ተራራ ማተሚያ ቤት</span>
-            <span className={`text-xl md:text-4xl font-black tracking-tighter leading-none mt-1 ${isScrolled ? 'text-brand-dark' : 'text-white'}`}>TERARA</span>
+            <span className={`text-[12px] md:text-base font-bold tracking-widest leading-none ${isScrolled ? 'text-brand-red' : 'text-white/80'}`}>ተራራ ማተሚያ ቤት</span>
+            <span className={`text-2xl md:text-5xl font-black tracking-tighter leading-none mt-1 ${isScrolled ? 'text-brand-dark' : 'text-white'}`}>TERARA</span>
           </div>
         </div>
       )}
@@ -58,33 +58,40 @@ const Header: React.FC = () => {
           <Logo />
         </a>
 
-        {/* Desktop Nav */}
-        <nav className="hidden lg:flex items-center gap-8">
-          {navLinks.map((link) => (
-            <a
-              key={link.name}
-              href={link.href}
-              className={`text-sm font-bold uppercase tracking-wide hover:text-brand-red transition-colors ${isScrolled ? 'text-brand-dark' : 'text-white'
-                }`}
-            >
-              {link.name}
-            </a>
-          ))}
-          <a
-            href="#contact"
-            className="bg-brand-red text-white px-5 py-2 rounded-full text-sm font-bold uppercase tracking-wide hover:bg-red-700 transition-all hover:shadow-lg flex items-center gap-2"
-          >
-            <Phone size={16} /> Get a Quote
-          </a>
-        </nav>
+        {/* Nav & CTA */}
+        <div className="flex items-center gap-4">
+          {/* Desktop Nav */}
+          <nav className="hidden lg:flex items-center gap-8 mr-8">
+            {navLinks.map((link) => (
+              <a
+                key={link.name}
+                href={link.href}
+                className={`text-sm font-bold uppercase tracking-wide hover:text-brand-red transition-colors ${isScrolled ? 'text-brand-dark' : 'text-white'
+                  }`}
+              >
+                {link.name}
+              </a>
+            ))}
+          </nav>
 
-        {/* Mobile Toggle */}
-        <button
-          className={`lg:hidden p-2 rounded-md transition-colors ${isScrolled ? 'text-brand-dark' : 'text-white bg-white/10'}`}
-          onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-        >
-          {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
-        </button>
+          {/* CTA - Visible on all screens */}
+          <a
+            href="https://wa.me/251988559355"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-brand-red text-white px-4 md:px-5 py-2 rounded-full text-[10px] md:text-sm font-bold uppercase tracking-wide hover:bg-red-700 transition-all hover:shadow-lg flex items-center gap-2"
+          >
+            <Phone size={14} className="md:w-4 md:h-4" /> <span className="hidden xs:inline">Get a Quote</span><span className="xs:hidden">Quote</span>
+          </a>
+
+          {/* Mobile Toggle */}
+          <button
+            className={`lg:hidden p-2 rounded-md transition-colors ${isScrolled ? 'text-brand-dark' : 'text-white bg-white/10'}`}
+            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+          >
+            {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
+          </button>
+        </div>
       </div>
 
       {/* Mobile Menu */}

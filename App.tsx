@@ -9,6 +9,8 @@ import Clients from './components/Clients';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 
+import TrustStrip from './components/TrustStrip';
+
 function App() {
   return (
     <div className="font-sans text-brand-dark antialiased overflow-x-hidden selection:bg-brand-red selection:text-white">
@@ -37,9 +39,10 @@ function App() {
             <span className="text-white font-black text-xl mx-8 uppercase tracking-widest">Branding</span>
           </div>
         </div>
+        <Services />
         <About />
         <WhyChooseUs />
-        <Services />
+        <TrustStrip />
         <Portfolio />
         <Clients />
         <Contact />

@@ -16,7 +16,7 @@ const Footer: React.FC = () => {
             <div className="mb-8">
               {(!logoError) ? (
                 <img
-                  src="https://i.ibb.co/y2BzZWm/logo.png"
+                  src="/logo-hq.png"
                   alt="Terara Printing Press"
                   className="h-32 md:h-48 w-auto object-contain brightness-0 invert"
                   onError={() => setLogoError(true)}
@@ -35,7 +35,7 @@ const Footer: React.FC = () => {
               )}
             </div>
             <p className="text-gray-400 text-sm leading-relaxed mb-6">
-              Leading the way in high-quality digital, offset, and large format printing solutions in Ethiopia since 2017.
+              Leading the way in high-quality offset (paper converting) solutions in Ethiopia since 2017 G.C.
             </p>
             <div className="flex gap-4">
               <a href="https://web.facebook.com/people/Terara-printing-press/61581231574893/" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-brand-red transition-colors">

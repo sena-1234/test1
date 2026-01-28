@@ -17,14 +17,14 @@ const About: React.FC = () => {
               Quality Printing <br /><span className="text-brand-red">Simplified.</span>
             </h2>
             <p className="text-gray-600 mb-6 text-lg leading-relaxed">
-              Established in 2017 GC, Terara Printing Press has quickly emerged as a trusted name in the Ethiopian printing industry. Based in Addis Ababa, we specialize in delivering high-impact visual solutions that help our clients communicate effectively.
+              Established in 2017 GC, Terara Printing Press has quickly emerged as a trusted name in the Ethiopian printing industry. Based in Addis Ababa, we specialize in delivering high-impact visual solutions that help our clients communicate effectively. <strong>Specializing in high-precision offset printing and professional documentation solutions.</strong>
             </p>
             <p className="text-gray-600 mb-8 text-lg leading-relaxed">
               Our name "Terara" (Mountain) reflects our ambition to reach the peaks of quality and service. We blend traditional craftsmanship with modern technology to ensure every project is delivered "Beyond Your Expectations."
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
-              {['Trusted Industry Name', 'Full Digital & Offset', 'Large Format Specialist', 'Fast Delivery'].map((item) => (
+              {['Full Digital & Offset', 'Trusted Industry Name', 'Large Format Specialist', 'Fast Delivery'].map((item) => (
                 <div key={item} className="flex items-center gap-3">
                   <div className="bg-brand-red/10 p-1 rounded-full">
                     <CheckCircle2 className="text-brand-red" size={18} />
@@ -45,19 +45,19 @@ const About: React.FC = () => {
           <div className="lg:w-1/2 relative">
             <div className="grid grid-cols-2 gap-4">
               <img
-                src="/images/large_format_printing.png"
-                alt="Modern Heidelberg Machine"
+                src="https://i.ibb.co/RTQT2jW9/555.png"
+                alt="High-quality offset printing Ethiopia"
                 className="w-full h-80 object-cover rounded-2xl shadow-xl translate-y-12"
               />
               <div className="space-y-4">
                 <img
-                  src="/images/custom_packaging.png"
-                  alt="Digital Print Workflow"
+                  src="https://i.ibb.co/zhZ1dWrx/AD-P-Satin-AQ-01-1024x1007.png"
+                  alt="High-quality offset printing Ethiopia"
                   className="w-full h-48 object-cover rounded-2xl shadow-lg"
                 />
                 <img
-                  src="/images/marketing_materials.png"
-                  alt="Quality Inspection"
+                  src="https://i.ibb.co/gMWf2QWn/11.png"
+                  alt="High-quality offset printing Ethiopia"
                   className="w-full h-48 object-cover rounded-2xl shadow-lg"
                 />
               </div>
@@ -65,7 +65,7 @@ const About: React.FC = () => {
             {/* Experience Badge */}
             <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-brand-red text-white p-8 rounded-full shadow-2xl border-8 border-white text-center w-40 h-40 flex flex-col justify-center items-center z-10">
               <span className="text-5xl font-black">7+</span>
-              <span className="text-xs font-bold uppercase leading-tight mt-1">Years of<br />Excellence</span>
+              <span className="text-xs font-bold uppercase leading-tight mt-1">Years of<br />Expertise</span>
             </div>
           </div>
 

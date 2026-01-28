@@ -4,39 +4,11 @@ import { PenTool, Layers, Image, Package, Shirt, Calendar, Printer } from 'lucid
 
 const services: ServiceItem[] = [
   {
-    category: "Business Stationery",
-    items: ["Business Cards", "Letterheads", "Envelopes", "Notepads"],
-    icon: PenTool,
-    description: "Professional essentials that represent your brand.",
-    image: "/images/business_stationery.png"
-  },
-  {
-    category: "Marketing Materials",
+    category: "Marketing & Brand Collateral",
     items: ["Brochures (Tri-fold, Bi-fold)", "Flyers (Single & Double)", "Postcards", "Catalogs"],
     icon: Layers,
     description: "Tools to effectively communicate your message.",
     image: "/images/marketing_materials.png"
-  },
-  {
-    category: "Large Format Printing",
-    items: ["Banners (Vinyl, Fabric)", "Posters", "Yard Signs", "Wall Graphics"],
-    icon: Image,
-    description: "Big impact visual solutions for any space.",
-    image: "/images/large_format_printing.png"
-  },
-  {
-    category: "Custom Packaging",
-    items: ["Product Boxes", "Labels and Stickers", "Bags (Paper/Plastic)", "Gift Wrap"],
-    icon: Package,
-    description: "Packaging that elevates your product presentation.",
-    image: "/images/custom_packaging.png"
-  },
-  {
-    category: "Promotional Products",
-    items: ["Branded T-shirts", "Custom Mugs", "Trade Show Displays", "Giveaways"],
-    icon: Shirt,
-    description: "Catchy merchandise collections to keep your brand top of mind.",
-    image: "https://i.ibb.co/whP2Hhyd/Promotional-Products.png"
   },
   {
     category: "Event Materials",
@@ -51,6 +23,34 @@ const services: ServiceItem[] = [
     icon: Printer,
     description: "High-quality booklet and manual production with fast turnaround.",
     image: "/images/marketing_materials.png"
+  },
+  {
+    category: "Large Format & Specialty Printing",
+    items: ["Banners (Vinyl, Fabric)", "Posters", "Yard Signs", "Wall Graphics"],
+    icon: Image,
+    description: "Big impact visual solutions for any space.",
+    image: "/images/large_format_printing.png"
+  },
+  {
+    category: "Business Stationery",
+    items: ["Business Cards", "Letterheads", "Envelopes", "Notepads"],
+    icon: PenTool,
+    description: "Professional essentials that represent your brand.",
+    image: "/images/business_stationery.png"
+  },
+  {
+    category: "Custom Packaging",
+    items: ["Product Boxes", "Labels and Stickers", "Bags (Paper/Plastic)", "Gift Wrap"],
+    icon: Package,
+    description: "Packaging that elevates your product presentation.",
+    image: "/images/custom_packaging.png"
+  },
+  {
+    category: "Promotional Products",
+    items: ["Branded T-shirts", "Custom Mugs", "Trade Show Displays", "Giveaways"],
+    icon: Shirt,
+    description: "Catchy merchandise collections to keep your brand top of mind.",
+    image: "https://i.ibb.co/whP2Hhyd/Promotional-Products.png"
   }
 ];
 
