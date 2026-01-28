@@ -33,7 +33,7 @@ const Hero: React.FC = () => {
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-7xl font-black text-white leading-none mb-6">
               BEYOND YOUR <br />
-              <span className="text-brand-red">
+              <span className="text-black">
                 EXPECTATIONS
               </span>
             </h1>
