@@ -1,55 +1,7 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { MapPin, Phone, Mail, Clock, Facebook, Instagram, Linkedin, Send } from 'lucide-react';
 
 const Contact: React.FC = () => {
-  const [formData, setFormData] = useState({
-    name: '',
-    phone: '',
-    email: '',
-    service: 'General Inquiry',
-    message: ''
-  });
-  const [loading, setLoading] = useState(false);
-  const [submitted, setSubmitted] = useState(false);
-  const [error, setError] = useState<string | null>(null);
-
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value
-    });
-  };
-
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    setLoading(true);
-    setError(null);
-
-    try {
-      const response = await fetch('/api/contact', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(formData),
-      });
-
-      if (!response.ok) {
-        throw new Error('Failed to send message. Please try again later.');
-      }
-
-      setSubmitted(true);
-      setFormData({
-        name: '',
-        phone: '',
-        email: '',
-        service: 'General Inquiry',
-        message: ''
-      });
-    } catch (err: any) {
-      setError(err.message || 'Something went wrong.');
-    } finally {
-      setLoading(false);
-    }
-  };
   return (
     <section id="contact" className="py-20 bg-gray-900 text-white relative">
       <div className="container mx-auto px-4 md:px-6">
@@ -126,116 +78,56 @@ const Contact: React.FC = () => {
           </div>
 
           {/* Contact Form */}
-          <div className="lg:w-1/2" id="contact-form">
+          <div className="lg:w-1/2">
             <div className="bg-white text-brand-dark p-8 md:p-10 rounded-2xl shadow-2xl">
               <h3 className="text-2xl font-black mb-6">Send us a message</h3>
-              {submitted ? (
-                <div className="bg-green-50 border border-green-200 text-green-700 p-6 rounded-xl text-center animate-fade-in">
-                  <div className="w-16 h-16 bg-green-100 text-green-600 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <Send size={32} />
+              <form className="space-y-4">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  <div>
+                    <label className="block text-sm font-bold text-gray-700 mb-1">Name</label>
+                    <input type="text" className="w-full bg-gray-100 border-none rounded-lg px-4 py-3 focus:ring-2 focus:ring-brand-red outline-none" placeholder="Your Name" />
                   </div>
-                  <h4 className="text-xl font-bold mb-2">Message Sent Successfully!</h4>
-                  <p>Thank you for reaching out. Our team will get back to you shortly.</p>
-                  <button
-                    onClick={() => setSubmitted(false)}
-                    className="mt-6 text-brand-red font-bold hover:underline"
-                  >
-                    Send another message
-                  </button>
+                  <div>
+                    <label className="block text-sm font-bold text-gray-700 mb-1">Phone</label>
+                    <input type="tel" className="w-full bg-gray-100 border-none rounded-lg px-4 py-3 focus:ring-2 focus:ring-brand-red outline-none" placeholder="Your Phone" />
+                  </div>
                 </div>
-              ) : (
-                <form className="space-y-4" onSubmit={handleSubmit}>
-                  {error && (
-                    <div className="bg-red-50 border border-red-200 text-red-600 p-4 rounded-lg text-sm font-bold">
-                      {error}
-                    </div>
-                  )}
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                    <div>
-                      <label className="block text-sm font-bold text-gray-700 mb-1">Name</label>
-                      <input
-                        type="text"
-                        required
-                        name="name"
-                        value={formData.name}
-                        onChange={handleChange}
-                        className="w-full bg-gray-100 border-none rounded-lg px-4 py-3 focus:ring-2 focus:ring-brand-red outline-none"
-                        placeholder="Your Name"
-                      />
-                    </div>
-                    <div>
-                      <label className="block text-sm font-bold text-gray-700 mb-1">Phone</label>
-                      <input
-                        type="tel"
-                        required
-                        name="phone"
-                        value={formData.phone}
-                        onChange={handleChange}
-                        className="w-full bg-gray-100 border-none rounded-lg px-4 py-3 focus:ring-2 focus:ring-brand-red outline-none"
-                        placeholder="Your Phone"
-                      />
-                    </div>
-                  </div>
-                  <div>
-                    <label className="block text-sm font-bold text-gray-700 mb-1">Email</label>
-                    <input
-                      type="email"
-                      name="email"
-                      value={formData.email}
-                      onChange={handleChange}
-                      className="w-full bg-gray-100 border-none rounded-lg px-4 py-3 focus:ring-2 focus:ring-brand-red outline-none"
-                      placeholder="Your Email"
-                    />
-                  </div>
-                  <div>
-                    <label className="block text-sm font-bold text-gray-700 mb-1">Service Interest</label>
-                    <select
-                      name="service"
-                      value={formData.service}
-                      onChange={handleChange}
-                      className="w-full bg-gray-100 border-none rounded-lg px-4 py-3 focus:ring-2 focus:ring-brand-red outline-none"
-                    >
-                      <option>General Inquiry</option>
-                      <option>Business Stationery</option>
-                      <option>Marketing Materials</option>
-                      <option>Large Format</option>
-                      <option>Other</option>
-                    </select>
-                  </div>
-                  <div>
-                    <label className="block text-sm font-bold text-gray-700 mb-1">Message</label>
-                    <textarea
-                      rows={4}
-                      required
-                      name="message"
-                      value={formData.message}
-                      onChange={handleChange}
-                      className="w-full bg-gray-100 border-none rounded-lg px-4 py-3 focus:ring-2 focus:ring-brand-red outline-none"
-                      placeholder="Tell us about your project..."
-                    ></textarea>
-                  </div>
-                  <button
-                    type="submit"
-                    disabled={loading}
-                    className={`w-full bg-brand-red text-white font-bold uppercase py-4 rounded-lg transition-all shadow-lg flex items-center justify-center gap-2 ${loading ? 'opacity-70 cursor-not-allowed' : 'hover:bg-red-700'}`}
-                  >
-                    {loading ? (
-                      <>
-                        <div className="w-5 h-5 border-2 border-white/30 border-t-white rounded-full animate-spin"></div>
-                        Sending...
-                      </>
-                    ) : (
-                      'Send Message'
-                    )}
-                  </button>
-                </form>
-              )}
+                <div>
+                  <label className="block text-sm font-bold text-gray-700 mb-1">Email</label>
+                  <input type="email" className="w-full bg-gray-100 border-none rounded-lg px-4 py-3 focus:ring-2 focus:ring-brand-red outline-none" placeholder="Your Email" />
+                </div>
+                <div>
+                  <label className="block text-sm font-bold text-gray-700 mb-1">Service Interest</label>
+                  <select className="w-full bg-gray-100 border-none rounded-lg px-4 py-3 focus:ring-2 focus:ring-brand-red outline-none">
+                    <option>General Inquiry</option>
+                    <option>Business Stationery</option>
+                    <option>Marketing Materials</option>
+                    <option>Large Format</option>
+                    <option>Other</option>
+                  </select>
+                </div>
+                <div>
+                  <label className="block text-sm font-bold text-gray-700 mb-1">Message</label>
+                  <textarea rows={4} className="w-full bg-gray-100 border-none rounded-lg px-4 py-3 focus:ring-2 focus:ring-brand-red outline-none" placeholder="Tell us about your project..."></textarea>
+                </div>
+                <button type="submit" className="w-full bg-brand-red text-white font-bold uppercase py-4 rounded-lg hover:bg-red-700 transition-colors shadow-lg">
+                  Send Message
+                </button>
+              </form>
             </div>
           </div>
 
         </div>
       </div>
     </section>
+  );
+};
+
+export default Contact;
+
+        </div >
+      </div >
+    </section >
   );
 };
 
