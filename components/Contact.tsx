@@ -124,11 +124,3 @@ const Contact: React.FC = () => {
 };
 
 export default Contact;
-
-        </div >
-      </div >
-    </section >
-  );
-};
-
-export default Contact;
