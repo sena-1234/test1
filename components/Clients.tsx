@@ -72,7 +72,7 @@ const ClientLogo: React.FC<{ client: Client }> = ({ client }) => {
   const fallbackUrl = `https://placehold.co/400x150/ffffff/374151?text=${encodeURIComponent(client.name)}`;
 
   return (
-    <div className="group relative flex items-center justify-center h-40 bg-white rounded-2xl shadow-sm hover:shadow-xl transition-all duration-500 overflow-hidden cursor-default border border-gray-100 hover:border-brand-red/30 transform hover:-translate-y-1">
+    <div className="group relative flex items-center justify-center h-24 md:h-40 bg-white rounded-2xl shadow-sm hover:shadow-xl transition-all duration-500 overflow-hidden cursor-default border border-gray-100 hover:border-brand-red/30 transform hover:-translate-y-1">
 
       {/* Default State: Organization Logo shown clearly */}
       <div className="absolute inset-0 flex items-center justify-center p-6 transition-all duration-500 group-hover:opacity-0 group-hover:scale-50">
