@@ -80,8 +80,18 @@
       animation: marquee 30s linear infinite;
     }
 
-    .animate-marquee:hover {
-      animation-play-state: paused;
+    /* Only pause on hover if the device supports hover (desktop) */
+    @media (hover: hover) {
+      .animate-marquee:hover {
+        animation-play-state: paused;
+      }
+    }
+
+    /* Faster mobile animation */
+    @media (max-width: 768px) {
+      .animate-marquee {
+        animation-duration: 15s;
+      }
     }
 
     @keyframes fade-in {
