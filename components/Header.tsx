@@ -51,76 +51,78 @@ const Header: React.FC = () => {
   );
 
   return (
-    <header
-      className={`fixed top-0 left-0 w-full z-50 transition-all duration-500 ${isScrolled
-        ? 'bg-white/90 backdrop-blur-md shadow-lg py-2 border-b border-gray-100'
-        : 'bg-black/20 backdrop-blur-md border-b border-white/10 py-4 md:py-6'
-        }`}
-    >
-      <div className="container mx-auto px-4 md:px-6 flex justify-between items-center">
-        <a href="#" className="group">
-          <Logo />
-        </a>
+    <>
+      <header
+        className={`fixed top-0 left-0 w-full z-50 transition-all duration-500 ${isScrolled
+          ? 'bg-white/90 backdrop-blur-md shadow-lg py-2 border-b border-gray-100'
+          : 'bg-black/20 backdrop-blur-md border-b border-white/10 py-4 md:py-6'
+          }`}
+      >
+        <div className="container mx-auto px-4 md:px-6 flex justify-between items-center">
+          <a href="#" className="group">
+            <Logo />
+          </a>
 
-        {/* Nav & CTA */}
-        <div className="flex items-center gap-4">
-          {/* Desktop Nav */}
-          <nav className="hidden lg:flex items-center gap-8 mr-8">
+          {/* Nav & CTA */}
+          <div className="flex items-center gap-4">
+            {/* Desktop Nav */}
+            <nav className="hidden lg:flex items-center gap-8 mr-8">
+              {navLinks.map((link) => (
+                <a
+                  key={link.name}
+                  href={link.href}
+                  className={`text-sm font-bold uppercase tracking-wide transition-all duration-300 relative group ${isScrolled ? 'text-brand-dark' : 'text-white'
+                    }`}
+                >
+                  {link.name}
+                  <span className={`absolute -bottom-1 left-0 w-0 h-0.5 bg-brand-red transition-all duration-300 group-hover:w-full`}></span>
+                </a>
+              ))}
+            </nav>
+
+            {/* CTA - Visible on all screens */}
+            <button
+              onClick={() => setIsQuoteOpen(true)}
+              className="bg-brand-red text-white px-4 md:px-5 py-2 rounded-full text-[10px] md:text-sm font-bold uppercase tracking-wide hover:bg-red-700 transition-all hover:shadow-lg flex items-center gap-2"
+            >
+              <Phone size={14} className="md:w-4 md:h-4" /> <span className="hidden sm:inline">Get a Quote</span><span className="sm:hidden">Quote</span>
+            </button>
+
+            {/* Mobile Toggle */}
+            <button
+              className={`lg:hidden p-2 rounded-md transition-colors ${isScrolled ? 'text-brand-dark' : 'text-white bg-white/10'}`}
+              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+            >
+              {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
+            </button>
+          </div>
+        </div>
+
+        {/* Mobile Menu */}
+        {mobileMenuOpen && (
+          <div className="lg:hidden absolute top-full left-0 w-full bg-white shadow-2xl border-t border-gray-100 py-6 px-4 flex flex-col gap-4">
             {navLinks.map((link) => (
               <a
                 key={link.name}
                 href={link.href}
-                className={`text-sm font-bold uppercase tracking-wide transition-all duration-300 relative group ${isScrolled ? 'text-brand-dark' : 'text-white'
-                  }`}
+                className="text-lg font-bold text-brand-dark border-b border-gray-100 pb-2"
+                onClick={() => setMobileMenuOpen(false)}
               >
                 {link.name}
-                <span className={`absolute -bottom-1 left-0 w-0 h-0.5 bg-brand-red transition-all duration-300 group-hover:w-full`}></span>
               </a>
             ))}
-          </nav>
-
-          {/* CTA - Visible on all screens */}
-          <button
-            onClick={() => setIsQuoteOpen(true)}
-            className="bg-brand-red text-white px-4 md:px-5 py-2 rounded-full text-[10px] md:text-sm font-bold uppercase tracking-wide hover:bg-red-700 transition-all hover:shadow-lg flex items-center gap-2"
-          >
-            <Phone size={14} className="md:w-4 md:h-4" /> <span className="hidden xs:inline">Get a Quote</span><span className="xs:hidden">Quote</span>
-          </button>
-
-          {/* Mobile Toggle */}
-          <button
-            className={`lg:hidden p-2 rounded-md transition-colors ${isScrolled ? 'text-brand-dark' : 'text-white bg-white/10'}`}
-            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-          >
-            {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
-          </button>
-        </div>
-      </div>
-
-      {/* Mobile Menu */}
-      {mobileMenuOpen && (
-        <div className="lg:hidden absolute top-full left-0 w-full bg-white shadow-2xl border-t border-gray-100 py-6 px-4 flex flex-col gap-4">
-          {navLinks.map((link) => (
             <a
-              key={link.name}
-              href={link.href}
-              className="text-lg font-bold text-brand-dark border-b border-gray-100 pb-2"
+              href="#contact"
+              className="bg-brand-red text-white text-center py-4 rounded-md font-bold uppercase mt-2"
               onClick={() => setMobileMenuOpen(false)}
             >
-              {link.name}
+              Contact Us Now
             </a>
-          ))}
-          <a
-            href="#contact"
-            className="bg-brand-red text-white text-center py-4 rounded-md font-bold uppercase mt-2"
-            onClick={() => setMobileMenuOpen(false)}
-          >
-            Contact Us Now
-          </a>
-        </div>
-      )}
+          </div>
+        )}
+      </header>
       <QuoteModal isOpen={isQuoteOpen} onClose={() => setIsQuoteOpen(false)} />
-    </header>
+    </>
   );
 };
 
