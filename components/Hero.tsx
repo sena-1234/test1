@@ -28,13 +28,13 @@ const Hero: React.FC = () => {
 
         <div className="container mx-auto px-4 md:px-6 lg:px-2 xl:px-0 relative z-10 pt-40 pb-20 md:pt-56 md:pb-24 lg:pt-48 lg:pb-32">
           <div className="grid lg:grid-cols-2 gap-16 lg:gap-40 xl:gap-52 2xl:gap-64 items-center">
-            <div className="max-w-xl xl:max-w-2xl">
+            <div className="max-w-xl xl:max-w-2xl lg:-ml-10 xl:-ml-16">
               <div className="inline-block bg-brand-red text-white px-3 py-1 text-xs font-bold uppercase tracking-widest mb-4 rounded-sm">
                 Est. 2017 GC
               </div>
               <h1 className="text-4xl md:text-5xl lg:text-7xl font-black text-white leading-none mb-6">
                 <span className="whitespace-nowrap">Ethiopia&apos;s Best</span> <br />
-                <span className="text-black">Printing</span>
+                <span className="text-black whitespace-nowrap">Printing Service</span>
               </h1>
               <p className="text-gray-300 text-base md:text-lg mb-6 max-w-xl leading-relaxed">
                 We provide professional printing services in Addis Ababa, Ethiopia, including offset printing,
