@@ -10,7 +10,7 @@ const Footer: React.FC = () => {
   return (
     <footer className="bg-brand-dark border-t border-gray-800 text-white pt-16 pb-8">
       <div className="container mx-auto px-4 md:px-6">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-16 mb-12">
 
           <div className="md:col-span-1">
             <div className="mb-8">
@@ -80,18 +80,6 @@ const Footer: React.FC = () => {
             </ul>
           </div>
 
-          <div>
-            <h4 className="font-bold text-lg mb-6 border-b border-brand-red pb-2 inline-block">Newsletter</h4>
-            <p className="text-gray-400 text-sm mb-4">Stay updated with our latest print solutions and offers.</p>
-            <div className="flex">
-              <input
-                type="email"
-                placeholder="Email Address"
-                className="bg-gray-800 border-none outline-none px-4 py-3 rounded-l-md w-full text-sm focus:ring-1 focus:ring-brand-red"
-              />
-              <button className="bg-brand-red px-4 py-3 rounded-r-md font-bold text-sm uppercase hover:bg-red-700 transition-colors">Join</button>
-            </div>
-          </div>
         </div>
 
         <div className="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
