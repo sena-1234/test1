@@ -9,8 +9,6 @@ import Clients from './components/Clients';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 
-import TrustStrip from './components/TrustStrip';
-
 function App() {
   return (
     <div className="font-sans text-brand-dark antialiased overflow-x-hidden selection:bg-brand-red selection:text-white">
