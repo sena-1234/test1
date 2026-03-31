@@ -32,12 +32,12 @@ const Header: React.FC = () => {
         <img
           src="/logo-hq.png"
           alt="Terara Printing Press"
-          className={`h-12 md:h-20 w-auto object-contain transition-all duration-500 group-hover:scale-110 ${isScrolled ? 'md:h-14 scale-90' : 'scale-100'} ${!isScrolled ? 'brightness-0 invert' : ''}`}
+          className={`h-12 md:h-14 w-auto object-contain transition-all duration-500 group-hover:scale-110 scale-90 ${!isScrolled ? 'brightness-0 invert' : ''}`}
           onError={() => setLogoError(true)}
         />
       ) : (
-        <div className={`flex items-center gap-2 transition-all duration-500 ${isScrolled ? 'scale-90' : 'scale-100'}`}>
-          <svg viewBox="0 0 100 80" className={`h-16 md:h-28 w-auto ${isScrolled ? 'text-brand-red' : 'text-white'}`} fill="currentColor">
+        <div className="flex items-center gap-2 transition-all duration-500 scale-90">
+          <svg viewBox="0 0 100 80" className={`h-16 md:h-20 w-auto ${isScrolled ? 'text-brand-red' : 'text-white'}`} fill="currentColor">
             <path d="M20,60 Q35,20 50,45 T80,30 L80,70 L20,70 Z" />
             <rect x="45" y="10" width="10" height="60" rx="2" />
           </svg>
@@ -55,7 +55,7 @@ const Header: React.FC = () => {
       <header
         className={`fixed top-0 left-0 w-full z-50 transition-all duration-500 ${isScrolled
           ? 'bg-white/90 backdrop-blur-md shadow-lg py-2 border-b border-gray-100'
-          : 'bg-black/20 backdrop-blur-md border-b border-white/10 py-4 md:py-6'
+          : 'bg-black/20 backdrop-blur-md border-b border-white/10 py-2'
           }`}
       >
         <div className="container mx-auto px-4 md:px-6 flex justify-between items-center">
