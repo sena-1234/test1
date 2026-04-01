@@ -56,11 +56,14 @@ const services: ServiceItem[] = [
 
 const Services: React.FC = () => {
   return (
-    <section id="services" className="py-20 bg-gray-50">
+    <section id="services" className="py-20 bg-gray-50" aria-labelledby="services-heading">
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center mb-16">
-          <h4 className="text-brand-red font-bold uppercase tracking-widest mb-2">Our Capabilities</h4>
-          <h2 className="text-4xl md:text-5xl font-black text-brand-dark mb-4">Product Offerings</h2>
+          <p className="text-brand-red font-bold uppercase tracking-widest mb-2">Printing Services In Addis Ababa</p>
+          <h2 id="services-heading" className="text-4xl md:text-5xl font-black text-brand-dark mb-4">Offset, Digital, Large Format, and Packaging</h2>
+          <p className="text-gray-600 text-lg max-w-3xl mx-auto mb-4">
+            Full-service commercial printing for businesses and organizations in Addis Ababa and across Ethiopia.
+          </p>
           <div className="w-24 h-1 bg-brand-red mx-auto"></div>
         </div>
 
@@ -77,6 +80,7 @@ const Services: React.FC = () => {
                   alt={`${service.category} Services - Terara Printing Press Ethiopia`}
                   className="w-full h-full object-cover transform group-hover:scale-110 group-active:scale-110 transition-transform duration-700"
                   loading="lazy"
+                  decoding="async"
                 />
                 <div className="absolute inset-0 bg-brand-dark/20 group-hover:bg-brand-red/20 group-active:bg-brand-red/20 transition-colors"></div>
               </div>

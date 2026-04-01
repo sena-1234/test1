@@ -81,6 +81,8 @@ const ClientLogo: React.FC<{ client: Client }> = ({ client }) => {
           alt={`${client.name} Logo`}
           className="max-w-full max-h-full object-contain filter drop-shadow-sm"
           onError={() => setError(true)}
+          loading="lazy"
+          decoding="async"
         />
       </div>
 
@@ -100,11 +102,11 @@ const ClientLogo: React.FC<{ client: Client }> = ({ client }) => {
 
 const Clients: React.FC = () => {
   return (
-    <section id="clients" className="py-24 bg-white border-t border-gray-50">
+    <section id="clients" className="py-24 bg-white border-t border-gray-50" aria-labelledby="clients-heading">
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center mb-20">
-          <h4 className="text-brand-red font-bold uppercase tracking-[0.3em] mb-4 text-sm">Our Network</h4>
-          <h2 className="text-4xl md:text-6xl font-black text-brand-dark mb-6 tracking-tighter">Trusted Partnerships</h2>
+          <p className="text-brand-red font-bold uppercase tracking-[0.3em] mb-4 text-sm">Our Network</p>
+          <h2 id="clients-heading" className="text-4xl md:text-6xl font-black text-brand-dark mb-6 tracking-tighter">Trusted Partnerships</h2>
           <p className="text-gray-500 max-w-3xl mx-auto text-lg md:text-xl font-light leading-relaxed">
             Leading international NGOs, government ministries, and academic institutions rely on <span className="text-brand-red font-bold">Terara Printing Press</span> for precision and quality.
           </p>

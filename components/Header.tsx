@@ -22,6 +22,7 @@ const Header: React.FC = () => {
     { name: 'Services', href: '#services' },
     { name: 'Portfolio', href: '#portfolio' },
     { name: 'Clients', href: '#clients' },
+    { name: 'FAQ', href: '#faq' },
     { name: 'Contact', href: '#contact' },
   ];
 
@@ -59,14 +60,14 @@ const Header: React.FC = () => {
           }`}
       >
         <div className="container mx-auto px-4 md:px-6 flex justify-between items-center">
-          <a href="#" className="group">
+          <a href="#home" className="group" aria-label="Terara Printing Press home">
             <Logo />
           </a>
 
           {/* Nav & CTA */}
           <div className="flex items-center gap-4">
             {/* Desktop Nav */}
-            <nav className="hidden lg:flex items-center gap-8 mr-8">
+            <nav className="hidden lg:flex items-center gap-8 mr-8" aria-label="Primary">
               {navLinks.map((link) => (
                 <a
                   key={link.name}
@@ -92,6 +93,9 @@ const Header: React.FC = () => {
             <button
               className={`lg:hidden p-2 rounded-md transition-colors ${isScrolled ? 'text-brand-dark' : 'text-white bg-white/10'}`}
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+              aria-label={mobileMenuOpen ? 'Close navigation menu' : 'Open navigation menu'}
+              aria-expanded={mobileMenuOpen}
+              aria-controls="mobile-navigation"
             >
               {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
             </button>
@@ -100,7 +104,7 @@ const Header: React.FC = () => {
 
         {/* Mobile Menu */}
         {mobileMenuOpen && (
-          <div className="lg:hidden absolute top-full left-0 w-full bg-white shadow-2xl border-t border-gray-100 py-6 px-4 flex flex-col gap-4">
+          <div id="mobile-navigation" className="lg:hidden absolute top-full left-0 w-full bg-white shadow-2xl border-t border-gray-100 py-6 px-4 flex flex-col gap-4" aria-label="Mobile navigation">
             {navLinks.map((link) => (
               <a
                 key={link.name}

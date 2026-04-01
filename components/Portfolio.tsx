@@ -56,16 +56,16 @@ const Portfolio: React.FC = () => {
     : projects.filter(p => p.category === activeFilter);
 
   return (
-    <section id="portfolio" className="py-24 bg-brand-dark text-white overflow-hidden">
+    <section id="portfolio" className="py-24 bg-brand-dark text-white overflow-hidden" aria-labelledby="portfolio-heading">
       <div className="container mx-auto px-4 md:px-6">
         {/* Header Section */}
         <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-16">
           <div className="max-w-2xl mb-8 md:mb-0">
             <div className="flex items-center gap-3 mb-4">
               <div className="w-12 h-[2px] bg-brand-red"></div>
-              <h4 className="text-brand-red font-bold uppercase tracking-[0.2em] text-sm">Portfolio</h4>
+              <p className="text-brand-red font-bold uppercase tracking-[0.2em] text-sm">Portfolio</p>
             </div>
-            <h2 className="text-4xl md:text-6xl font-black leading-tight">
+            <h2 id="portfolio-heading" className="text-4xl md:text-6xl font-black leading-tight">
               PRODUCING <br />
               <span className="text-brand-red">EXCELLENCE</span>
             </h2>
@@ -102,6 +102,8 @@ const Portfolio: React.FC = () => {
                 src={project.image}
                 alt={project.title}
                 className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110 group-active:scale-110"
+                loading="lazy"
+                decoding="async"
               />
 
               {/* Glassmorphism Overlay */}

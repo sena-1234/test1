@@ -22,6 +22,8 @@ const Hero: React.FC = () => {
             src="/hero-banner.webp"
             alt="Terara Printing Press Premium Materials"
             className="w-full h-full object-cover opacity-80 lg:opacity-100 pointer-events-none"
+            fetchPriority="high"
+            decoding="async"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-brand-dark/40 via-transparent to-transparent"></div>
         </div>
@@ -33,19 +35,20 @@ const Hero: React.FC = () => {
                 Est. 2017 GC
               </div>
               <h1 className="text-4xl md:text-5xl lg:text-7xl font-black text-white leading-none mb-6">
-                <span className="whitespace-nowrap">Ethiopia&apos;s Best</span> <br />
+                <span className="whitespace-nowrap">Ethiopia's Best </span> <br />
                 <span className="text-black whitespace-nowrap">Printing Service</span>
               </h1>
               <p className="text-gray-300 text-base md:text-lg mb-6 max-w-xl leading-relaxed">
-                We provide professional printing services in Addis Ababa, Ethiopia, including offset printing,
-                digital printing, packaging, and branding solutions. Terara Printing Press helps businesses create
-                high-quality printed materials that stand out.
+                Terara Printing Press provides professional printing services in Addis Ababa, Ethiopia, including offset printing,
+                digital printing, large format printing, custom packaging, and brand collateral. We help businesses,
+                NGOs, schools, and government offices produce high-quality printed materials with reliable turnaround.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4">
                 <button
                   onClick={() => setIsQuoteOpen(true)}
                   className="bg-brand-red text-white px-5 py-2.5 text-sm rounded-full font-bold uppercase tracking-wide hover:bg-red-700 transition-all flex items-center justify-center gap-2 group shadow-xl"
+                  aria-label="Request a printing quote"
                 >
                   Get a Quote
                   <ArrowRight className="group-hover:translate-x-1 transition-transform" />

@@ -37,7 +37,7 @@ const features: Feature[] = [
 
 const WhyChooseUs: React.FC = () => {
   return (
-    <section className="py-24 bg-brand-dark text-white relative overflow-hidden">
+    <section id="why-choose-us" className="py-24 bg-brand-dark text-white relative overflow-hidden" aria-labelledby="why-choose-us-heading">
       {/* Dynamic Background Elements */}
       <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-brand-red/10 rounded-full blur-[100px] -mr-40 -mt-40 pointer-events-none"></div>
       <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-blue-600/10 rounded-full blur-[100px] -ml-40 -mb-40 pointer-events-none"></div>
@@ -46,11 +46,11 @@ const WhyChooseUs: React.FC = () => {
         {/* Header */}
         <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
           <div className="max-w-xl">
-            <h4 className="text-brand-red font-bold uppercase tracking-[0.2em] mb-3 text-sm flex items-center gap-3">
+            <p className="text-brand-red font-bold uppercase tracking-[0.2em] mb-3 text-sm flex items-center gap-3">
               <span className="w-8 h-[2px] bg-brand-red"></span>
               Why Choose Us
-            </h4>
-            <h2 className="text-4xl md:text-5xl lg:text-6xl font-black leading-tight">
+            </p>
+            <h2 id="why-choose-us-heading" className="text-4xl md:text-5xl lg:text-6xl font-black leading-tight">
               We Go Beyond <br />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-white to-gray-500">Expectations</span>
             </h2>

@@ -1,18 +1,18 @@
 import React from 'react';
-import { MapPin, Phone, Mail, Clock, Facebook, Instagram, Linkedin, Send } from 'lucide-react';
+import { MapPin, Phone, Clock } from 'lucide-react';
 
 const Contact: React.FC = () => {
   return (
-    <section id="contact" className="py-20 bg-gray-900 text-white relative">
+    <section id="contact" className="py-20 bg-gray-900 text-white relative" aria-labelledby="contact-heading">
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex flex-col lg:flex-row gap-12">
 
           {/* Contact Info */}
           <div className="lg:w-1/2">
-            <h4 className="text-brand-red font-bold uppercase tracking-widest mb-2">Get in Touch</h4>
-            <h2 className="text-4xl md:text-5xl font-black mb-8">Contact Us</h2>
+            <p className="text-brand-red font-bold uppercase tracking-widest mb-2">Get in Touch</p>
+            <h2 id="contact-heading" className="text-4xl md:text-5xl font-black mb-8">Contact Us</h2>
             <p className="text-gray-400 mb-10 text-lg">
-              Ready to start your next printing project? Visit us at our locations or give us a call.
+              Looking for a reliable printing press in Addis Ababa? Contact Terara Printing Press for quotes, timelines, and production support.
             </p>
 
             <div className="space-y-8">
@@ -38,6 +38,9 @@ const Contact: React.FC = () => {
                   <p className="text-gray-300 text-lg hover:text-brand-red transition-colors">
                     <a href="tel:0913891960">0913-89 19 60</a>
                   </p>
+                  <p className="text-gray-300 text-lg hover:text-brand-red transition-colors">
+                    <a href="mailto:teraramarketing@gmail.com">teraramarketing@gmail.com</a>
+                  </p>
                 </div>
               </div>
 
@@ -52,10 +55,6 @@ const Contact: React.FC = () => {
                 </div>
               </div>
 
-              <div className="pt-6 border-t border-gray-800">
-                <h3 className="font-bold text-xl mb-4">Visit Us</h3>
-                <p className="text-gray-300">We are located at 4 Killo, Dink Sira Tower, 1st Floor.</p>
-              </div>
             </div>
           </div>
 
