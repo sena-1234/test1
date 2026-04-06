@@ -35,8 +35,8 @@ const Hero: React.FC = () => {
                 Est. 2017 GC
               </div>
               <h1 className="text-4xl md:text-5xl lg:text-7xl font-black text-white leading-none mb-6">
-                <span className="whitespace-nowrap">Ethiopia's Best </span> <br />
-                <span className="text-black whitespace-nowrap">Printing Service</span>
+                <span>Printing Services </span> <br />
+                <span className="text-black">In Addis Ababa</span>
               </h1>
               <p className="text-gray-300 text-base md:text-lg mb-6 max-w-xl leading-relaxed">
                 Terara Printing Press provides professional printing services in Addis Ababa, Ethiopia, including offset printing,
