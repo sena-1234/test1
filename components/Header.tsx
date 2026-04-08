@@ -4,7 +4,7 @@ import QuoteModal from './QuoteModal';
 
 const Header: React.FC = () => {
   const [isScrolled, setIsScrolled] = useState(false);
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
   const [logoError, setLogoError] = useState(false);
   const [isQuoteOpen, setIsQuoteOpen] = useState(false);
 
@@ -19,6 +19,7 @@ const Header: React.FC = () => {
   const navLinks = [
     { name: 'Home', href: '#home' },
     { name: 'About', href: '#about' },
+    { name: 'Values', href: '#values' },
     { name: 'Services', href: '#services' },
     { name: 'Portfolio', href: '#portfolio' },
     { name: 'Clients', href: '#clients' },
@@ -32,7 +33,7 @@ const Header: React.FC = () => {
       {(!logoError) ? (
         <img
           src="/logo-hq.png"
-          alt="Terara Printing Press"
+          alt="Terara Printers"
           className={`h-12 md:h-14 w-auto object-contain transition-all duration-500 group-hover:scale-110 scale-90 ${!isScrolled ? 'brightness-0 invert' : ''}`}
           onError={() => setLogoError(true)}
         />
@@ -60,27 +61,12 @@ const Header: React.FC = () => {
           }`}
       >
         <div className="container mx-auto px-4 md:px-6 flex justify-between items-center">
-          <a href="#home" className="group" aria-label="Terara Printing Press home">
+          <a href="#home" className="group" aria-label="Terara Printers home">
             <Logo />
           </a>
 
           {/* Nav & CTA */}
           <div className="flex items-center gap-4">
-            {/* Desktop Nav */}
-            <nav className="hidden lg:flex items-center gap-8 mr-8" aria-label="Primary">
-              {navLinks.map((link) => (
-                <a
-                  key={link.name}
-                  href={link.href}
-                  className={`text-sm font-bold uppercase tracking-wide transition-all duration-300 relative group ${isScrolled ? 'text-brand-dark' : 'text-white'
-                    }`}
-                >
-                  {link.name}
-                  <span className={`absolute -bottom-1 left-0 w-0 h-0.5 bg-brand-red transition-all duration-300 group-hover:w-full`}></span>
-                </a>
-              ))}
-            </nav>
-
             {/* CTA - Visible on all screens */}
             <button
               onClick={() => setIsQuoteOpen(true)}
@@ -89,36 +75,40 @@ const Header: React.FC = () => {
               <Phone size={14} className="md:w-4 md:h-4" /> <span className="hidden sm:inline">Get a Quote</span><span className="sm:hidden">Quote</span>
             </button>
 
-            {/* Mobile Toggle */}
+            {/* Menu Toggle */}
             <button
-              className={`lg:hidden p-2 rounded-md transition-colors ${isScrolled ? 'text-brand-dark' : 'text-white bg-white/10'}`}
-              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              aria-label={mobileMenuOpen ? 'Close navigation menu' : 'Open navigation menu'}
-              aria-expanded={mobileMenuOpen}
-              aria-controls="mobile-navigation"
+              className={`p-2 rounded-md transition-colors ${isScrolled ? 'text-brand-dark bg-gray-100' : 'text-white bg-white/10'}`}
+              onClick={() => setMenuOpen(!menuOpen)}
+              aria-label={menuOpen ? 'Close navigation menu' : 'Open navigation menu'}
+              aria-expanded={menuOpen}
+              aria-controls="site-navigation"
             >
-              {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
+              {menuOpen ? <X size={24} /> : <Menu size={24} />}
             </button>
           </div>
         </div>
 
-        {/* Mobile Menu */}
-        {mobileMenuOpen && (
-          <div id="mobile-navigation" className="lg:hidden absolute top-full left-0 w-full bg-white shadow-2xl border-t border-gray-100 py-6 px-4 flex flex-col gap-4" aria-label="Mobile navigation">
+        {/* Hamburger Menu */}
+        {menuOpen && (
+          <div
+            id="site-navigation"
+            className="absolute right-4 md:right-6 top-full mt-3 w-[280px] md:w-[320px] rounded-2xl bg-white shadow-2xl border border-gray-100 py-3 px-4 flex flex-col gap-2"
+            aria-label="Primary navigation"
+          >
             {navLinks.map((link) => (
               <a
                 key={link.name}
                 href={link.href}
-                className="text-lg font-bold text-brand-dark border-b border-gray-100 pb-2"
-                onClick={() => setMobileMenuOpen(false)}
+                className="text-base font-bold text-brand-dark border-b border-gray-100 py-2"
+                onClick={() => setMenuOpen(false)}
               >
                 {link.name}
               </a>
             ))}
             <a
               href="#contact"
-              className="bg-brand-red text-white text-center py-4 rounded-md font-bold uppercase mt-2"
-              onClick={() => setMobileMenuOpen(false)}
+              className="bg-brand-red text-white text-center py-3 rounded-md font-bold uppercase mt-1 text-sm"
+              onClick={() => setMenuOpen(false)}
             >
               Contact Us Now
             </a>

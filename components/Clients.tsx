@@ -108,7 +108,7 @@ const Clients: React.FC = () => {
           <p className="text-brand-red font-bold uppercase tracking-[0.3em] mb-4 text-sm">Our Network</p>
           <h2 id="clients-heading" className="text-4xl md:text-6xl font-black text-brand-dark mb-6 tracking-tighter">Trusted Partnerships</h2>
           <p className="text-gray-500 max-w-3xl mx-auto text-lg md:text-xl font-light leading-relaxed">
-            Leading international NGOs, government ministries, and academic institutions rely on <span className="text-brand-red font-bold">Terara Printing Press</span> for precision and quality.
+            Leading international NGOs, government ministries, and academic institutions rely on <span className="text-brand-red font-bold">Terara Printers</span> for precision and quality.
           </p>
           <div className="w-24 h-1.5 bg-brand-red mx-auto mt-10 rounded-full"></div>
         </div>

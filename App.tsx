@@ -2,6 +2,7 @@ import React from 'react';
 import Header from './components/Header';
 import Hero from './components/Hero';
 import About from './components/About';
+import Values from './components/Values';
 import WhyChooseUs from './components/WhyChooseUs';
 import Services from './components/Services';
 import Portfolio from './components/Portfolio';
@@ -39,6 +40,7 @@ function App() {
           </div>
         </div>
         <About />
+        <Values />
         <Services />
         <WhyChooseUs />
         <Portfolio />

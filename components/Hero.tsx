@@ -20,7 +20,7 @@ const Hero: React.FC = () => {
         <div className="absolute inset-0 z-0 flex items-center justify-end">
           <img
             src="/hero-banner.webp"
-            alt="Terara Printing Press Premium Materials"
+            alt="Terara Printers Premium Materials"
             className="w-full h-full object-cover opacity-80 lg:opacity-100 pointer-events-none"
             fetchPriority="high"
             decoding="async"
@@ -36,10 +36,10 @@ const Hero: React.FC = () => {
               </div>
               <h1 className="text-4xl md:text-5xl lg:text-7xl font-black text-white leading-none mb-6">
                 <span className="whitespace-nowrap">Ethiopia's Best </span> <br />
-                <span className="text-black whitespace-nowrap">Printing Service</span>
+                <span className="text-black whitespace-nowrap">Offset Printing</span>
               </h1>
               <p className="text-gray-300 text-base md:text-lg mb-6 max-w-xl leading-relaxed">
-                Terara Printing Press provides professional printing services in Addis Ababa, Ethiopia, including offset printing,
+                Terara Printers provides professional printing services in Addis Ababa, Ethiopia, including offset printing,
                 digital printing, large format printing, custom packaging, and brand collateral. We help businesses,
                 NGOs, schools, and government offices produce high-quality printed materials with reliable turnaround.
               </p>

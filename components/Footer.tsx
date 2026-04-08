@@ -17,7 +17,7 @@ const Footer: React.FC = () => {
               {!logoError ? (
                 <img
                   src="/logo-hq.png"
-                  alt="Terara Printing Press"
+                  alt="Terara Printers"
                   className="h-20 md:h-28 w-auto object-contain brightness-0 invert"
                   onError={() => setLogoError(true)}
                 />
@@ -28,7 +28,7 @@ const Footer: React.FC = () => {
                     <rect x="45" y="10" width="10" height="60" rx="2" />
                   </svg>
                   <div className="flex flex-col">
-                    <span className="text-sm md:text-base font-bold tracking-widest leading-none text-brand-red">Terara Printing Press</span>
+                    <span className="text-sm md:text-base font-bold tracking-widest leading-none text-brand-red">Terara Printers</span>
                     <span className="text-3xl md:text-5xl font-black tracking-tighter leading-none mt-1 text-white">TERARA</span>
                   </div>
                 </div>
@@ -42,7 +42,7 @@ const Footer: React.FC = () => {
                 href="https://www.facebook.com/teraraprinters"
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label="Visit Terara Printing Press on Facebook"
+                aria-label="Visit Terara Printers on Facebook"
                 className="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-brand-red transition-colors"
               >
                 <Facebook size={20} />
@@ -51,7 +51,7 @@ const Footer: React.FC = () => {
                 href="https://www.instagram.com/teraraprinters"
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label="Visit Terara Printing Press on Instagram"
+                aria-label="Visit Terara Printers on Instagram"
                 className="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-brand-red transition-colors"
               >
                 <Instagram size={20} />
@@ -60,7 +60,7 @@ const Footer: React.FC = () => {
                 href="https://www.tiktok.com/@teraraprinters"
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label="Visit Terara Printing Press on TikTok"
+                aria-label="Visit Terara Printers on TikTok"
                 className="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-brand-red transition-colors"
               >
                 <svg viewBox="0 0 24 24" fill="currentColor" className="w-5 h-5">
@@ -71,7 +71,7 @@ const Footer: React.FC = () => {
                 href="https://www.linkedin.com/in/teraraprinting/"
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label="Visit Terara Printing Press on LinkedIn"
+                aria-label="Visit Terara Printers on LinkedIn"
                 className="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-brand-red transition-colors"
               >
                 <Linkedin size={20} />
@@ -80,7 +80,7 @@ const Footer: React.FC = () => {
                 href="https://t.me/teraraprints"
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label="Message Terara Printing Press on Telegram"
+                aria-label="Message Terara Printers on Telegram"
                 className="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-brand-red transition-colors"
               >
                 <Send size={20} />
@@ -93,6 +93,7 @@ const Footer: React.FC = () => {
             <ul className="space-y-3 text-gray-400 text-sm">
               <li><a href="#home" className="hover:text-brand-red transition-colors">Home</a></li>
               <li><a href="#about" className="hover:text-brand-red transition-colors">About Us</a></li>
+              <li><a href="#values" className="hover:text-brand-red transition-colors">Our Values</a></li>
               <li><a href="#services" className="hover:text-brand-red transition-colors">Printing Services</a></li>
               <li><a href="#portfolio" className="hover:text-brand-red transition-colors">Our Portfolio</a></li>
               <li><a href="#faq" className="hover:text-brand-red transition-colors">FAQs</a></li>
@@ -113,7 +114,7 @@ const Footer: React.FC = () => {
         </div>
 
         <div className="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
-          <p className="text-gray-500 text-sm">&copy; {new Date().getFullYear()} Terara Printing Press. Beyond Your Expectations.</p>
+          <p className="text-gray-500 text-sm">&copy; {new Date().getFullYear()} Terara Printers. Beyond Your Expectations.</p>
 
           <button
             onClick={scrollToTop}

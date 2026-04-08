@@ -10,23 +10,20 @@ const About: React.FC = () => {
           {/* Text Content */}
           <div className="lg:w-1/2">
             <div className="mb-4">
-              <p className="text-brand-red font-bold uppercase tracking-widest mb-1">About Terara Printing Press</p>
+              <p className="text-brand-red font-bold uppercase tracking-widest mb-1">About Terara Printers</p>
               <span className="text-gray-400 font-medium text-lg">Addis Ababa</span>
             </div>
             <h2 id="about-heading" className="text-4xl md:text-5xl font-black text-brand-dark mb-8 leading-tight">High-Quality Printing<br /><span className="text-brand-red">Made Easy</span>
             </h2>
             <p className="text-gray-600 mb-6 text-lg leading-relaxed">
-              Terara Printing Press is a trusted printing company in Addis Ababa, Ethiopia, delivering dependable print solutions since 2017 G.C. We specialize in offset printing, digital printing, and business document production for companies, institutions, and development organizations.
-            </p>
-            <p className="text-gray-600 mb-6 text-lg leading-relaxed">
-              From our 4 Killo location in Addis Ababa, we serve clients across Ethiopia with consistent quality, clear communication, and fast turnaround times. Our team combines modern printing technology with skilled craftsmanship to deliver accurate, professional results at scale.
+              Terara Printers is a trusted printing company in Addis Ababa, Ethiopia, specializing in high-quality offset printing, digital printing, business documents, branding materials, and custom packaging for businesses and organizations across Ethiopia.
             </p>
             <p className="text-gray-600 mb-8 text-lg leading-relaxed">
-              Our name "Terara" (Mountain) reflects our commitment to high standards in quality and service. We blend practical production experience with modern technology to ensure every project is delivered beyond expectations.
+              From our 4 Killo location, we deliver reliable service, fast turnaround, and professional results, making Terara a dependable choice for offset printing in Addis Ababa and throughout Ethiopia.
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
-              {['Full Digital & Offset', 'Trusted Industry Name', 'Large Format Specialist', 'Fast Delivery'].map((item) => (
+              {['Offset & Digital Printing', 'Trusted Printing Company', 'Large Format Solutions', 'Fast Turnaround Times'].map((item) => (
                 <div key={item} className="flex items-center gap-3">
                   <div className="bg-brand-red/10 p-1 rounded-full">
                     <CheckCircle2 className="text-brand-red" size={18} />
@@ -38,7 +35,7 @@ const About: React.FC = () => {
 
             <div className="p-8 bg-gray-50 border-l-8 border-brand-red rounded-r-lg">
               <p className="italic text-gray-700 font-medium text-lg">
-                "We don't just print paper; we print possibilities. Our vision is to be the leading partner for every business's visual journey."
+                "Reliable offset printing, fast delivery, and professional print quality for businesses in Addis Ababa and across Ethiopia."
               </p>
             </div>
           </div>
