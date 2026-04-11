@@ -1,6 +1,6 @@
 import React from 'react';
 import { ArrowRight, Image, Layers, Package, PenTool, Printer, Shirt } from 'lucide-react';
-import QuoteModal from './QuoteModal';
+const QuoteModal = React.lazy(() => import("./QuoteModal"));
 
 const featuredServices = [
   { title: 'Offset Print', icon: Printer, color: 'from-blue-500 to-indigo-600' },
@@ -95,7 +95,9 @@ const Hero: React.FC = () => {
 
         <div className="absolute bottom-0 left-0 w-full h-2 bg-gradient-to-r from-brand-red via-orange-500 to-yellow-500 opacity-50"></div>
       </section>
-      <QuoteModal isOpen={isQuoteOpen} onClose={() => setIsQuoteOpen(false)} />
+      <React.Suspense fallback={null}>
+        <QuoteModal isOpen={isQuoteOpen} onClose={() => setIsQuoteOpen(false)} />
+      </React.Suspense>
     </>
   );
 };

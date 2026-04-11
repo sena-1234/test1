@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Menu, X, Phone } from "lucide-react";
-import QuoteModal from "./QuoteModal";
+const QuoteModal = React.lazy(() => import("./QuoteModal"));
 
 const Header: React.FC = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -140,7 +140,9 @@ const Header: React.FC = () => {
           </div>
         </div>
       </header>
-      <QuoteModal isOpen={isQuoteOpen} onClose={() => setIsQuoteOpen(false)} />
+      <React.Suspense fallback={null}>
+        <QuoteModal isOpen={isQuoteOpen} onClose={() => setIsQuoteOpen(false)} />
+      </React.Suspense>
     </>
   );
 };
