@@ -19,7 +19,9 @@ const Hero: React.FC = () => {
       <section id="home" className="relative min-h-screen lg:h-screen flex items-center overflow-hidden bg-brand-dark">
         <div className="absolute inset-0 z-0 flex items-center justify-end">
           <img
-            src="/hero-banner.webp"
+            src="/hero-banner-1280.webp"
+            srcSet="/hero-banner-640.webp 640w, /hero-banner-960.webp 960w, /hero-banner-1280.webp 1280w, /hero-banner.webp 1600w"
+            sizes="100vw"
             alt="Terara Printers Premium Materials"
             className="w-full h-full object-cover opacity-80 lg:opacity-100 pointer-events-none"
             width={1920}

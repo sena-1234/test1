@@ -68,7 +68,9 @@ const About: React.FC = () => {
           <div className="lg:w-1/2 relative">
             <div className="grid grid-cols-2 gap-4">
               <img
-                src="/photo_2026-04-11_18-21-32.webp"
+                src="/photo_2026-04-11_18-21-32-800.webp"
+                srcSet="/photo_2026-04-11_18-21-32-480.webp 480w, /photo_2026-04-11_18-21-32-800.webp 800w, /photo_2026-04-11_18-21-32-1200.webp 1200w, /photo_2026-04-11_18-21-32.webp 1600w"
+                sizes="(max-width: 768px) 100vw, 50vw"
                 alt="Terara Printers workspace"
                 className="w-full h-80 object-cover rounded-2xl shadow-xl translate-y-12"
                 loading="lazy"
@@ -78,7 +80,9 @@ const About: React.FC = () => {
               />
               <div className="space-y-4">
                 <img
-                  src="/photo_2026-04-11_18-21-33.webp"
+                  src="/photo_2026-04-11_18-21-33-800.webp"
+                  srcSet="/photo_2026-04-11_18-21-33-480.webp 480w, /photo_2026-04-11_18-21-33-800.webp 800w, /photo_2026-04-11_18-21-33-1200.webp 1200w, /photo_2026-04-11_18-21-33.webp 1600w"
+                  sizes="(max-width: 768px) 100vw, 50vw"
                   alt="Terara Printers print samples"
                   className="w-full h-48 object-cover rounded-2xl shadow-lg"
                   loading="lazy"
@@ -87,7 +91,9 @@ const About: React.FC = () => {
                   height={384}
                 />
                 <img
-                  src="/photo_2026-04-11_18-21-37.webp"
+                  src="/photo_2026-04-11_18-21-37-800.webp"
+                  srcSet="/photo_2026-04-11_18-21-37-480.webp 480w, /photo_2026-04-11_18-21-37-800.webp 800w, /photo_2026-04-11_18-21-37-1200.webp 1200w, /photo_2026-04-11_18-21-37.webp 1600w"
+                  sizes="(max-width: 768px) 100vw, 50vw"
                   alt="Terara Printers production detail"
                   className="w-full h-48 object-cover rounded-2xl shadow-lg"
                   loading="lazy"

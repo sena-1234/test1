@@ -121,7 +121,9 @@ const Portfolio: React.FC = () => {
             >
               {/* Image with Parallax-like scale effect */}
               <img
-                src={project.image}
+                src={project.image.replace(".webp", "-800.webp")}
+                srcSet={`${project.image.replace(".webp", "-480.webp")} 480w, ${project.image.replace(".webp", "-800.webp")} 800w, ${project.image.replace(".webp", "-1200.webp")} 1200w, ${project.image} 1600w`}
+                sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 25vw"
                 alt={project.title}
                 className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110 group-active:scale-110"
                 loading="lazy"

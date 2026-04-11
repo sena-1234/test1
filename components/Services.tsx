@@ -126,18 +126,32 @@ const Services: React.FC = () => {
               key={index}
               className="bg-white rounded-xl shadow-sm hover:shadow-2xl transition-all duration-300 group overflow-hidden flex flex-col h-full relative"
             >
-              <div className="h-48 overflow-hidden relative">
-                <img
-                  src={service.image}
-                  alt={`${service.category} Services - Terara Printers Ethiopia`}
-                  className="w-full h-full object-cover transform group-hover:scale-110 group-active:scale-110 transition-transform duration-700"
-                  loading="lazy"
-                  decoding="async"
-                  width={640}
-                  height={480}
-                />
-                <div className="absolute inset-0 bg-brand-dark/20 group-hover:bg-brand-red/20 group-active:bg-brand-red/20 transition-colors"></div>
-              </div>
+              {(() => {
+                const baseImage = service.image;
+                const fallbackImage = "/hero-banner-960.webp";
+                const src = baseImage
+                  ? baseImage.replace(".webp", "-800.webp")
+                  : fallbackImage;
+                const srcSet = baseImage
+                  ? `${baseImage.replace(".webp", "-480.webp")} 480w, ${baseImage.replace(".webp", "-800.webp")} 800w, ${baseImage.replace(".webp", "-1200.webp")} 1200w, ${baseImage} 1600w`
+                  : undefined;
+                return (
+                  <div className="h-48 overflow-hidden relative">
+                    <img
+                      src={src}
+                      srcSet={srcSet}
+                      sizes="(max-width: 768px) 100vw, (max-width: 1280px) 50vw, 25vw"
+                      alt={`${service.category} Services - Terara Printers Ethiopia`}
+                      className="w-full h-full object-cover transform group-hover:scale-110 group-active:scale-110 transition-transform duration-700"
+                      loading="lazy"
+                      decoding="async"
+                      width={640}
+                      height={480}
+                    />
+                    <div className="absolute inset-0 bg-brand-dark/20 group-hover:bg-brand-red/20 group-active:bg-brand-red/20 transition-colors"></div>
+                  </div>
+                );
+              })()}
 
               <div className="absolute top-48 right-6 -translate-y-1/2 bg-brand-red p-4 rounded-full shadow-xl z-30 border-4 border-white transform transition-transform duration-500 group-hover:scale-110 group-hover:rotate-12 group-active:scale-110 group-active:rotate-12">
                 <service.icon className="text-white" size={28} />
