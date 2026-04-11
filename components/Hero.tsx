@@ -1,14 +1,30 @@
-import React from 'react';
-import { ArrowRight, Image, Layers, Package, PenTool, Printer, Shirt } from 'lucide-react';
+import React from "react";
+import {
+  ArrowRight,
+  Image,
+  Layers,
+  Package,
+  PenTool,
+  Printer,
+  Shirt,
+} from "lucide-react";
 const QuoteModal = React.lazy(() => import("./QuoteModal"));
 
 const featuredServices = [
-  { title: 'Offset Print', icon: Printer, color: 'from-blue-500 to-indigo-600' },
-  { title: 'Digital Print', icon: Layers, color: 'from-brand-red to-orange-500' },
-  { title: 'Large Format', icon: Image, color: 'from-emerald-500 to-teal-600' },
-  { title: 'Packaging', icon: Package, color: 'from-amber-500 to-orange-600' },
-  { title: 'Branding', icon: PenTool, color: 'from-purple-500 to-pink-600' },
-  { title: 'Apparel', icon: Shirt, color: 'from-rose-500 to-red-600' },
+  {
+    title: "Offset Print",
+    icon: Printer,
+    color: "from-blue-500 to-indigo-600",
+  },
+  {
+    title: "Digital Print",
+    icon: Layers,
+    color: "from-brand-red to-orange-500",
+  },
+  { title: "Large Format", icon: Image, color: "from-emerald-500 to-teal-600" },
+  { title: "Packaging", icon: Package, color: "from-amber-500 to-orange-600" },
+  { title: "Branding", icon: PenTool, color: "from-purple-500 to-pink-600" },
+  { title: "Apparel", icon: Shirt, color: "from-rose-500 to-red-600" },
 ];
 
 const Hero: React.FC = () => {
@@ -16,10 +32,13 @@ const Hero: React.FC = () => {
 
   return (
     <>
-      <section id="home" className="relative min-h-screen lg:h-screen flex items-center overflow-hidden bg-brand-dark">
+      <section
+        id="home"
+        className="relative min-h-screen lg:h-screen flex items-center overflow-hidden bg-brand-dark"
+      >
         <div className="absolute inset-0 z-0 flex items-center justify-end">
           <img
-            src="/hero-banner-1280.webp"
+            src="/hero-banner-640.webp"
             srcSet="/hero-banner-640.webp 640w, /hero-banner-960.webp 960w, /hero-banner-1280.webp 1280w, /hero-banner.webp 1600w"
             sizes="100vw"
             alt="Terara Printers Premium Materials"
@@ -40,14 +59,20 @@ const Hero: React.FC = () => {
                 Est. 2017 GC
               </div>
               <h1 className="text-4xl md:text-5xl lg:text-7xl font-black text-white leading-none mb-6">
-                <span className="whitespace-nowrap">Ethiopia's Best </span> <br />
-                <span className="text-black whitespace-nowrap">Offset Printing</span>
+                <span className="whitespace-nowrap">Ethiopia's Best </span>{" "}
+                <br />
+                <span className="text-black whitespace-nowrap">
+                  Offset Printing
+                </span>
               </h1>
               <p className="text-gray-300 text-base md:text-lg mb-6 max-w-xl leading-relaxed">
-                Terara Printers provides professional printing services in Addis Ababa, Ethiopia, including offset printing,
-                digital printing, large format printing, custom packaging, and brand collateral. We help businesses,
-                NGOs, schools, and government offices produce high-quality printed materials with reliable turnaround,
-                including premium books printing in Ethiopia and Addis Ababa that looks sharp and professional.
+                Terara Printers provides professional printing services in Addis
+                Ababa, Ethiopia, including offset printing, digital printing,
+                large format printing, custom packaging, and brand collateral.
+                We help businesses, NGOs, schools, and government offices
+                produce high-quality printed materials with reliable turnaround,
+                including premium books printing in Ethiopia and Addis Ababa
+                that looks sharp and professional.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4">
@@ -81,7 +106,10 @@ const Hero: React.FC = () => {
                     <div
                       className={`w-12 h-12 rounded-2xl bg-gradient-to-br ${service.color} p-2.5 mb-4 shadow-lg transform group-hover:rotate-12 group-active:rotate-12 transition-transform duration-500`}
                     >
-                      <service.icon className="w-full h-full text-white" strokeWidth={2} />
+                      <service.icon
+                        className="w-full h-full text-white"
+                        strokeWidth={2}
+                      />
                     </div>
                     <h4 className="text-white font-black text-sm uppercase tracking-wider leading-tight">
                       {service.title}
@@ -97,7 +125,10 @@ const Hero: React.FC = () => {
         <div className="absolute bottom-0 left-0 w-full h-2 bg-gradient-to-r from-brand-red via-orange-500 to-yellow-500 opacity-50"></div>
       </section>
       <React.Suspense fallback={null}>
-        <QuoteModal isOpen={isQuoteOpen} onClose={() => setIsQuoteOpen(false)} />
+        <QuoteModal
+          isOpen={isQuoteOpen}
+          onClose={() => setIsQuoteOpen(false)}
+        />
       </React.Suspense>
     </>
   );
