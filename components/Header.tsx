@@ -75,6 +75,7 @@ const Header: React.FC = () => {
               <Phone size={14} className="md:w-4 md:h-4" /> <span className="hidden sm:inline">Get a Quote</span><span className="sm:hidden">Quote</span>
             </button>
 
+<<<<<<< HEAD
             {/* Menu Toggle */}
             <button
               className={`p-2 rounded-md transition-colors ${isScrolled ? 'text-brand-dark bg-gray-100' : 'text-white bg-white/10'}`}
@@ -114,6 +115,52 @@ const Header: React.FC = () => {
             </a>
           </div>
         )}
+=======
+            {/* Menu Toggle + Hover Menu */}
+            <div
+              className="relative"
+              onMouseEnter={() => setMenuOpen(true)}
+              onMouseLeave={() => setMenuOpen(false)}
+            >
+              <button
+                className={`p-2 rounded-md transition-colors ${isScrolled ? 'text-brand-dark bg-gray-100' : 'text-white bg-white/10'}`}
+                onClick={() => setMenuOpen(!menuOpen)}
+                aria-label={menuOpen ? 'Close navigation menu' : 'Open navigation menu'}
+                aria-expanded={menuOpen}
+                aria-controls="site-navigation"
+              >
+                {menuOpen ? <X size={24} /> : <Menu size={24} />}
+              </button>
+
+              {/* Hamburger Menu */}
+              <div
+                id="site-navigation"
+                className={`absolute right-0 top-full mt-3 w-[280px] md:w-[320px] rounded-2xl bg-white shadow-2xl border border-gray-100 py-3 px-4 flex flex-col gap-2 transform transition-all duration-200 ease-out ${menuOpen ? 'opacity-100 translate-y-0 pointer-events-auto' : 'opacity-0 -translate-y-2 pointer-events-none'}`}
+                aria-label="Primary navigation"
+                aria-hidden={!menuOpen}
+              >
+                {navLinks.map((link) => (
+                  <a
+                    key={link.name}
+                    href={link.href}
+                    className="text-base font-bold text-brand-dark border-b border-gray-100 py-2"
+                    onClick={() => setMenuOpen(false)}
+                  >
+                    {link.name}
+                  </a>
+                ))}
+                <a
+                  href="#contact"
+                  className="bg-brand-red text-white text-center py-3 rounded-md font-bold uppercase mt-1 text-sm"
+                  onClick={() => setMenuOpen(false)}
+                >
+                  Contact Us Now
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+>>>>>>> 1fd0148 (Initial commit)
       </header>
       <QuoteModal isOpen={isQuoteOpen} onClose={() => setIsQuoteOpen(false)} />
     </>

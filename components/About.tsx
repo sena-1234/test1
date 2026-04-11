@@ -44,21 +44,36 @@ const About: React.FC = () => {
           <div className="lg:w-1/2 relative">
             <div className="grid grid-cols-2 gap-4">
               <img
+<<<<<<< HEAD
                 src="https://i.ibb.co/RTQT2jW9/555.png"
                 alt="Terara Printing Machinery - Offset Specialists in Ethiopia"
+=======
+                src="/photo_2026-04-11_18-21-32.webp"
+                alt="Terara Printers workspace"
+>>>>>>> 1fd0148 (Initial commit)
                 className="w-full h-80 object-cover rounded-2xl shadow-xl translate-y-12"
                 loading="lazy"
               />
               <div className="space-y-4">
                 <img
+<<<<<<< HEAD
                   src="https://i.ibb.co/zhZ1dWrx/AD-P-Satin-AQ-01-1024x1007.png"
                   alt="Premium Printing Samples Addis Ababa"
+=======
+                  src="/photo_2026-04-11_18-21-33.webp"
+                  alt="Terara Printers print samples"
+>>>>>>> 1fd0148 (Initial commit)
                   className="w-full h-48 object-cover rounded-2xl shadow-lg"
                   loading="lazy"
                 />
                 <img
+<<<<<<< HEAD
                   src="https://i.ibb.co/gMWf2QWn/11.png"
                   alt="Professional Paper Converting and Branding"
+=======
+                  src="/photo_2026-04-11_18-21-37.webp"
+                  alt="Terara Printers production detail"
+>>>>>>> 1fd0148 (Initial commit)
                   className="w-full h-48 object-cover rounded-2xl shadow-lg"
                   loading="lazy"
                 />
