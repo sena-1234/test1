@@ -72,6 +72,9 @@ const About: React.FC = () => {
                 alt="Terara Printers workspace"
                 className="w-full h-80 object-cover rounded-2xl shadow-xl translate-y-12"
                 loading="lazy"
+                decoding="async"
+                width={640}
+                height={800}
               />
               <div className="space-y-4">
                 <img
@@ -79,12 +82,18 @@ const About: React.FC = () => {
                   alt="Terara Printers print samples"
                   className="w-full h-48 object-cover rounded-2xl shadow-lg"
                   loading="lazy"
+                  decoding="async"
+                  width={640}
+                  height={384}
                 />
                 <img
                   src="/photo_2026-04-11_18-21-37.webp"
                   alt="Terara Printers production detail"
                   className="w-full h-48 object-cover rounded-2xl shadow-lg"
                   loading="lazy"
+                  decoding="async"
+                  width={640}
+                  height={384}
                 />
               </div>
             </div>

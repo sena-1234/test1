@@ -25,7 +25,7 @@ const Hero: React.FC = () => {
             width={1920}
             height={1080}
             fetchPriority="high"
-            loading="lazy"
+            loading="eager"
             decoding="async"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-brand-dark/40 via-transparent to-transparent"></div>

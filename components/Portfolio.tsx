@@ -126,6 +126,8 @@ const Portfolio: React.FC = () => {
                 className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110 group-active:scale-110"
                 loading="lazy"
                 decoding="async"
+                width={800}
+                height={600}
               />
 
               {/* Glassmorphism Overlay */}
