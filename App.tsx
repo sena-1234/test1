@@ -39,16 +39,16 @@ function App() {
             <span className="text-white font-black text-xl mx-8 uppercase tracking-widest">Branding</span>
           </div>
         </div>
-        <About />
-        <Values />
-        <Services />
-        <WhyChooseUs />
-        <Portfolio />
-        <Clients />
-        <FAQ />
-        <Contact />
+        <div className="content-auto"><About /></div>
+        <div className="content-auto"><Values /></div>
+        <div className="content-auto"><Services /></div>
+        <div className="content-auto"><WhyChooseUs /></div>
+        <div className="content-auto"><Portfolio /></div>
+        <div className="content-auto"><Clients /></div>
+        <div className="content-auto"><FAQ /></div>
+        <div className="content-auto"><Contact /></div>
       </main>
-      <Footer />
+      <div className="content-auto"><Footer /></div>
     </div>
   );
 }

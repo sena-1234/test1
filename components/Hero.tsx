@@ -22,7 +22,10 @@ const Hero: React.FC = () => {
             src="/hero-banner.webp"
             alt="Terara Printers Premium Materials"
             className="w-full h-full object-cover opacity-80 lg:opacity-100 pointer-events-none"
+            width={1920}
+            height={1080}
             fetchPriority="high"
+            loading="eager"
             decoding="async"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-brand-dark/40 via-transparent to-transparent"></div>
