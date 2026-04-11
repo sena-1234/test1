@@ -147,7 +147,7 @@ const ClientLogo: React.FC<{ client: Client }> = ({ client }) => {
       <div className="absolute inset-0 flex items-center justify-center p-6 transition-all duration-500 group-hover:opacity-0 group-hover:scale-50">
         <img
           src={error || !client.logo ? fallbackUrl : client.logo}
-          alt={`${client.name} Logo`}
+          alt={`${client.name} logo`}
           className="max-w-full max-h-full object-contain filter drop-shadow-sm"
           onError={() => setError(true)}
           loading="lazy"
@@ -252,7 +252,7 @@ const Clients: React.FC = () => {
                 >
                   <img
                     src={org.logo}
-                    alt={org.name}
+                    alt={`${org.name} logo`}
                     className="w-full h-full object-contain p-1"
                     loading="lazy"
                     decoding="async"
