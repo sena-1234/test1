@@ -229,10 +229,19 @@ const Clients: React.FC = () => {
           <div className="inline-flex flex-col md:flex-row items-center gap-4 px-8 py-4 bg-gray-50 rounded-2xl border border-gray-100">
             <div className="flex -space-x-3">
               {[
-                { name: "British Council", logo: "/images/BritishCouncil.webp" },
-                { name: "World Vision", logo: "/images/world vision logo.webp" },
+                {
+                  name: "British Council",
+                  logo: "/images/BritishCouncil.webp",
+                },
+                {
+                  name: "World Vision",
+                  logo: "/images/world vision logo.webp",
+                },
                 { name: "Awash Bank", logo: "/images/awash-bank-logo.webp" },
-                { name: "Addis Ababa University", logo: "/images/addis ababa university logo.webp" },
+                {
+                  name: "Addis Ababa University",
+                  logo: "/images/addis ababa university logo.webp",
+                },
               ].map((org) => (
                 <div
                   key={org.name}
@@ -250,7 +259,7 @@ const Clients: React.FC = () => {
               ))}
             </div>
             <p className="text-gray-600 font-medium text-sm md:text-base">
-              Join <span className="text-brand-red font-bold">50+</span>{" "}
+              Join <span className="text-brand-red font-bold">30+</span>{" "}
               industry leaders who choose excellence every time.
             </p>
           </div>
