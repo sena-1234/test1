@@ -37,7 +37,8 @@ const About: React.FC = () => {
             <p className="text-gray-600 mb-8 text-lg leading-relaxed">
               From our 4 Killo location, we deliver reliable service, fast
               turnaround, and professional results, making Terara a dependable
-              choice for offset printing in Addis Ababa and throughout Ethiopia.
+              choice for offset printing in Addis Ababa and throughout Ethiopia,
+              with magazine printing in Ethiopia and Addis Ababa that elevates your brand.
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">

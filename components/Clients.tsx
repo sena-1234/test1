@@ -193,7 +193,7 @@ const Clients: React.FC = () => {
             Leading international NGOs, government ministries, and academic
             institutions rely on{" "}
             <span className="text-brand-red font-bold">Terara Printers</span>{" "}
-            for precision and quality.
+            for precision and quality, including books printing in Ethiopia and Addis Ababa that feels premium.
           </p>
           <div className="w-24 h-1.5 bg-brand-red mx-auto mt-10 rounded-full"></div>
         </div>

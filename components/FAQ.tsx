@@ -52,13 +52,13 @@ const FAQ: React.FC = () => {
           <div className="mb-12 text-center">
             <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-brand-red/15 bg-white/80 px-4 py-2 text-sm font-bold uppercase tracking-[0.25em] text-brand-red shadow-sm backdrop-blur-sm">
               <MessageSquareQuote size={16} />
-              AEO and SEO Answers
+              Helpful Answers
             </div>
             <h2 id="faq-heading" className="mx-auto mb-4 max-w-4xl text-4xl font-black text-brand-dark md:text-5xl">
               Frequently Asked Questions
             </h2>
             <p className="mx-auto max-w-3xl text-lg leading-relaxed text-gray-600">
-              Clear answers about why businesses choose Terara Printers in Addis Ababa for reliable quality, fast production, and professional offset printing services.
+              Clear answers about why businesses choose Terara Printers in Addis Ababa for reliable quality, fast production, and professional offset printing services, including notebook printing in Ethiopia and Addis Ababa that looks polished.
             </p>
           </div>
 

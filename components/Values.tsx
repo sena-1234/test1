@@ -57,7 +57,7 @@ const Values: React.FC = () => {
           </div>
 
           <p className="max-w-xl text-lg leading-relaxed text-gray-600 lg:ml-auto">
-            Terara Printers is built on quality, speed, trust, and professional production standards, helping businesses in Addis Ababa choose a reliable partner for offset printing and commercial printing services.
+            Terara Printers is built on quality, speed, trust, and professional production standards, helping businesses in Addis Ababa choose a reliable partner for offset printing and commercial printing services, including notebook printing in Ethiopia and Addis Ababa with clean, consistent finishes.
           </p>
         </div>
 

@@ -56,7 +56,7 @@ const WhyChooseUs: React.FC = () => {
             </h2>
           </div>
           <p className="text-gray-400 max-w-sm text-lg leading-relaxed text-right md:text-left">
-            Dedicated professionals working closely with you to bring your vision to life.
+            Dedicated professionals working closely with you to bring your vision to life, including flyer printing in Ethiopia and Addis Ababa that drives attention.
           </p>
         </div>
 

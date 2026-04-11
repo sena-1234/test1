@@ -85,6 +85,9 @@ const Portfolio: React.FC = () => {
               PRODUCING <br />
               <span className="text-brand-red">EXCELLENCE</span>
             </h2>
+            <p className="mt-4 text-sm md:text-base text-gray-400 max-w-xl">
+              Trusted for the best book, magazine, notebook, brochure, and flyer printing in Addis Ababa and Ethiopia—crafted to stand out.
+            </p>
           </div>
 
           <div className="flex flex-wrap gap-2">

@@ -52,7 +52,7 @@ const Footer: React.FC = () => {
             <p className="text-gray-400 text-sm leading-relaxed mb-6">
               Addis Ababa based printing company offering offset, digital, large
               format, and packaging solutions for clients across Ethiopia since
-              2017 G.C.
+              2017 G.C., including brochure printing in Ethiopia and Addis Ababa that makes a strong first impression.
             </p>
             <div className="flex gap-4">
               <a

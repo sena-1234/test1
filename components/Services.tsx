@@ -110,12 +110,12 @@ const Services: React.FC = () => {
             id="services-heading"
             className="text-4xl md:text-5xl font-black text-brand-dark mb-4"
           >
-            Offset, Digital, Large Format, and Packaging
+            Premium Printing & Packaging Solutions
           </h2>
           <p className="text-gray-600 text-lg max-w-3xl mx-auto mb-4">
             Full-service offset printing, digital printing, large format
             printing, and packaging services for businesses in Addis Ababa and
-            across Ethiopia.
+            across Ethiopia, including brochure printing in Ethiopia and Addis Ababa designed to impress.
           </p>
           <div className="w-24 h-1 bg-brand-red mx-auto"></div>
         </div>

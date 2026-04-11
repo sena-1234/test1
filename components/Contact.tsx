@@ -12,7 +12,7 @@ const Contact: React.FC = () => {
             <p className="text-brand-red font-bold uppercase tracking-widest mb-2">Get in Touch</p>
             <h2 id="contact-heading" className="text-4xl md:text-5xl font-black mb-8">Contact Us</h2>
             <p className="text-gray-400 mb-10 text-lg">
-              Looking for a reliable printing press in Addis Ababa? Contact Terara Printers for quotes, timelines, and production support.
+              Looking for a reliable printing press in Addis Ababa? Contact Terara Printers for quotes, timelines, and production support, including magazine printing in Ethiopia and Addis Ababa that elevates your publication.
             </p>
 
             <div className="space-y-8">

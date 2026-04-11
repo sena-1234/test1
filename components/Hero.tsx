@@ -46,7 +46,8 @@ const Hero: React.FC = () => {
               <p className="text-gray-300 text-base md:text-lg mb-6 max-w-xl leading-relaxed">
                 Terara Printers provides professional printing services in Addis Ababa, Ethiopia, including offset printing,
                 digital printing, large format printing, custom packaging, and brand collateral. We help businesses,
-                NGOs, schools, and government offices produce high-quality printed materials with reliable turnaround.
+                NGOs, schools, and government offices produce high-quality printed materials with reliable turnaround,
+                including premium books printing in Ethiopia and Addis Ababa that looks sharp and professional.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4">
