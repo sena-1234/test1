@@ -57,7 +57,7 @@ const clients: Client[] = [
   // Education & Other Partners
   {
     name: "Admas University",
-    logo: "/images/admas-university-logo.webp",
+    logo: "/images/admas_university_logo.webp",
   },
   {
     name: "GAGE University College",
@@ -69,7 +69,7 @@ const clients: Client[] = [
   },
   {
     name: "Akaam Livelhoods",
-    logo: "/images/akham-livelihoods.webp",
+    logo: "/images/akaam_livelhood_logo.webp",
   },
   {
     name: "Tamesol Communication",
