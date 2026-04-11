@@ -355,6 +355,15 @@
       >Terara Printers provides offset, digital, branding, and packaging
       printing services in Addis Ababa, Ethiopia.</noscript
     >
+    <script>
+      (function () {
+        var path = window.location.pathname;
+        var allowed = ["/", "/index.html", "/404.html"];
+        if (!allowed.includes(path)) {
+          window.location.replace("/404.html");
+        }
+      })();
+    </script>
     <div id="root"></div>
     <script type="module" src="/index.tsx"></script>
   </body>
