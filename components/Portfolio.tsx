@@ -46,7 +46,7 @@ const Portfolio: React.FC = () => {
     {
       title: "Ethio Post Backdrop",
       category: "Large Format",
-      image: "/6.webp",
+      image: "/5.webp",
       size: "standard",
     },
     {

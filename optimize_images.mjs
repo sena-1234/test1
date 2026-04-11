@@ -25,19 +25,26 @@ directories.forEach(directoryPath => {
 
         files.forEach((file) => {
             const ext = path.extname(file).toLowerCase();
-            if (ext === '.png' || ext === '.jpg' || ext === '.jpeg') {
+            if (ext === '.png' || ext === '.jpg' || ext === '.jpeg' || ext === '.webp') {
                 const inputFile = path.join(directoryPath, file);
-                const outputFile = path.join(directoryPath, path.basename(file, ext) + '.webp');
+                const outputExt = '.webp';
+                const outputFile = path.join(directoryPath, path.basename(file, ext) + outputExt);
+                const isRootPublic = path.dirname(inputFile).endsWith('public');
+                const writeInPlace = inputFile === outputFile;
+                const tempFile = writeInPlace ? path.join(directoryPath, `${path.basename(file, ext)}.tmp${outputExt}`) : outputFile;
 
                 console.log(`Processing: ${file}`);
 
                 sharp(inputFile)
-                    .resize(path.dirname(inputFile).endsWith('public') ? 1920 : 400, null, { // Larger resize for hero images (root public), smaller for logos
+                    .resize(isRootPublic ? 1600 : 400, null, {
                         withoutEnlargement: true
                     })
-                    .webp({ quality: 80 })
-                    .toFile(outputFile)
+                    .webp({ quality: 75, effort: 5 })
+                    .toFile(tempFile)
                     .then(info => {
+                        if (writeInPlace) {
+                            fs.renameSync(tempFile, outputFile);
+                        }
                         console.log(`Optimized: ${file} -> ${path.basename(file, ext)}.webp (${info.size} bytes)`);
                     })
                     .catch(err => {
