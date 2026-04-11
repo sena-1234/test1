@@ -1,38 +1,10 @@
-<<<<<<< HEAD
-import React, { useState } from 'react';
-import { Client } from '../types';
-=======
 import React, { useState } from "react";
 import { Client } from "../types";
->>>>>>> 1fd0148 (Initial commit)
 
 const clients: Client[] = [
   // Top Tier / International (Important companies on top)
   {
     name: "British Council",
-<<<<<<< HEAD
-    logo: "/images/british_council_logo.webp"
-  },
-  {
-    name: "World Vision",
-    logo: "/images/world_vision_logo.webp"
-  },
-  {
-    name: "Plan International",
-    logo: "/images/plan_international_logo.webp"
-  },
-  {
-    name: "GOAL",
-    logo: "/images/goal_logo.webp"
-  },
-  {
-    name: "Addis Ababa University",
-    logo: "/images/aau_logo.webp"
-  },
-  {
-    name: "Awash Bank",
-    logo: "/images/awash_bank_logo.webp"
-=======
     logo: "/images/BritishCouncil.webp",
   },
   {
@@ -54,22 +26,10 @@ const clients: Client[] = [
   {
     name: "Awash Bank",
     logo: "/images/awash-bank-logo.webp",
->>>>>>> 1fd0148 (Initial commit)
   },
   // Government & Health
   {
     name: "Ministry of Labor and Skills",
-<<<<<<< HEAD
-    logo: "/images/mols_logo.webp"  // Switched to optimized local file
-  },
-  {
-    name: "Ministry of Mine",
-    logo: "https://i.ibb.co/xKDH9PsD/Ministry-of-Mine.png"
-  },
-  {
-    name: "Washington Medical Centre",
-    logo: "/images/washington_medical_logo.webp"
-=======
     displayName: "Ministry of\nLabor and Skills",
     logo: "/images/ministry-of-labor-and-skills-logo.webp",
   },
@@ -93,34 +53,10 @@ const clients: Client[] = [
   {
     name: "National Intelligence & Security Service",
     logo: "/images/NISI.webp",
->>>>>>> 1fd0148 (Initial commit)
   },
   // Education & Other Partners
   {
     name: "Admas University",
-<<<<<<< HEAD
-    logo: "/images/admas_university_logo.webp"
-  },
-  {
-    name: "GAGE University College",
-    logo: "/images/gage_college_logo.webp"
-  },
-  {
-    name: "Great College",
-    logo: "/images/great_college_logo.webp"
-  },
-  {
-    name: "Akaam Livelhoods",
-    logo: "/images/akaam_livelhood_logo.webp"
-  },
-  {
-    name: "Tamesol Communication",
-    logo: "/images/tamesol_logo.webp"
-  },
-  {
-    name: "Hope For Life",
-    logo: "/images/hope_for_life_logo.webp"
-=======
     logo: "/images/admas-university-logo.webp",
   },
   {
@@ -198,7 +134,6 @@ const clients: Client[] = [
   {
     name: "Abay Industrial Development",
     logo: "/images/Abay Industries.webp",
->>>>>>> 1fd0148 (Initial commit)
   },
 ];
 
@@ -208,10 +143,6 @@ const ClientLogo: React.FC<{ client: Client }> = ({ client }) => {
 
   return (
     <div className="group relative flex items-center justify-center h-24 md:h-40 bg-white rounded-2xl shadow-sm hover:shadow-xl transition-all duration-500 overflow-hidden cursor-default border border-gray-100 hover:border-brand-red/30 transform hover:-translate-y-1">
-<<<<<<< HEAD
-
-=======
->>>>>>> 1fd0148 (Initial commit)
       {/* Default State: Organization Logo shown clearly */}
       <div className="absolute inset-0 flex items-center justify-center p-6 transition-all duration-500 group-hover:opacity-0 group-hover:scale-50">
         <img
@@ -226,13 +157,8 @@ const ClientLogo: React.FC<{ client: Client }> = ({ client }) => {
 
       {/* Hover State: The Organization Name revealed for context */}
       <div className="absolute inset-0 flex items-center justify-center p-4 opacity-0 scale-110 group-hover:opacity-100 group-hover:scale-100 transition-all duration-500">
-<<<<<<< HEAD
-        <p className="text-gray-600 font-bold text-sm md:text-base text-center uppercase tracking-wider leading-snug px-2">
-          {client.name}
-=======
         <p className="text-gray-600 font-bold text-sm md:text-base text-center uppercase tracking-wider leading-snug px-2 whitespace-pre-line">
           {client.displayName ?? client.name}
->>>>>>> 1fd0148 (Initial commit)
         </p>
       </div>
 
@@ -245,15 +171,6 @@ const ClientLogo: React.FC<{ client: Client }> = ({ client }) => {
 
 const Clients: React.FC = () => {
   return (
-<<<<<<< HEAD
-    <section id="clients" className="py-24 bg-white border-t border-gray-50" aria-labelledby="clients-heading">
-      <div className="container mx-auto px-4 md:px-6">
-        <div className="text-center mb-20">
-          <p className="text-brand-red font-bold uppercase tracking-[0.3em] mb-4 text-sm">Our Network</p>
-          <h2 id="clients-heading" className="text-4xl md:text-6xl font-black text-brand-dark mb-6 tracking-tighter">Trusted Partnerships</h2>
-          <p className="text-gray-500 max-w-3xl mx-auto text-lg md:text-xl font-light leading-relaxed">
-            Leading international NGOs, government ministries, and academic institutions rely on <span className="text-brand-red font-bold">Terara Printers</span> for precision and quality.
-=======
     <section
       id="clients"
       className="py-24 bg-white border-t border-gray-50"
@@ -275,7 +192,6 @@ const Clients: React.FC = () => {
             institutions rely on{" "}
             <span className="text-brand-red font-bold">Terara Printers</span>{" "}
             for precision and quality.
->>>>>>> 1fd0148 (Initial commit)
           </p>
           <div className="w-24 h-1.5 bg-brand-red mx-auto mt-10 rounded-full"></div>
         </div>
@@ -283,12 +199,6 @@ const Clients: React.FC = () => {
         {/* Organized grid structure for exactly 15 clients */}
         {/* Infinite Scrolling Marquee */}
         <div className="relative w-full overflow-hidden group">
-<<<<<<< HEAD
-          <div className="flex animate-marquee whitespace-nowrap gap-8 py-4">
-            {/* First Copy */}
-            {clients.map((client, index) => (
-              <div key={`client-${index}`} className="min-w-[200px] md:min-w-[250px]">
-=======
           <div className="inline-flex w-max animate-marquee whitespace-nowrap gap-8 py-4">
             {/* First Copy */}
             {clients.map((client, index) => (
@@ -296,20 +206,15 @@ const Clients: React.FC = () => {
                 key={`client-${index}`}
                 className="min-w-[200px] md:min-w-[250px]"
               >
->>>>>>> 1fd0148 (Initial commit)
                 <ClientLogo client={client} />
               </div>
             ))}
             {/* Second Copy for seamless look */}
             {clients.map((client, index) => (
-<<<<<<< HEAD
-              <div key={`client-duplicate-${index}`} className="min-w-[200px] md:min-w-[250px]">
-=======
               <div
                 key={`client-duplicate-${index}`}
                 className="min-w-[200px] md:min-w-[250px]"
               >
->>>>>>> 1fd0148 (Initial commit)
                 <ClientLogo client={client} />
               </div>
             ))}
@@ -323,27 +228,30 @@ const Clients: React.FC = () => {
         <div className="mt-20 text-center">
           <div className="inline-flex flex-col md:flex-row items-center gap-4 px-8 py-4 bg-gray-50 rounded-2xl border border-gray-100">
             <div className="flex -space-x-3">
-<<<<<<< HEAD
-              {[1, 2, 3, 4].map(i => (
-                <div key={i} className="w-10 h-10 rounded-full border-2 border-white bg-brand-red flex items-center justify-center text-[10px] font-bold text-white shadow-sm">
-=======
-              {[1, 2, 3, 4].map((i) => (
+              {[
+                { name: "British Council", logo: "/images/BritishCouncil.webp" },
+                { name: "World Vision", logo: "/images/world vision logo.webp" },
+                { name: "Awash Bank", logo: "/images/awash-bank-logo.webp" },
+                { name: "Addis Ababa University", logo: "/images/addis ababa university logo.webp" },
+              ].map((org) => (
                 <div
-                  key={i}
-                  className="w-10 h-10 rounded-full border-2 border-white bg-brand-red flex items-center justify-center text-[10px] font-bold text-white shadow-sm"
+                  key={org.name}
+                  className="w-10 h-10 rounded-full border-2 border-white bg-white flex items-center justify-center shadow-sm overflow-hidden"
+                  title={org.name}
                 >
->>>>>>> 1fd0148 (Initial commit)
-                  {i}
+                  <img
+                    src={org.logo}
+                    alt={org.name}
+                    className="w-full h-full object-contain p-1"
+                    loading="lazy"
+                    decoding="async"
+                  />
                 </div>
               ))}
             </div>
             <p className="text-gray-600 font-medium text-sm md:text-base">
-<<<<<<< HEAD
-              Join <span className="text-brand-red font-bold">50+</span> industry leaders who choose excellence every time.
-=======
               Join <span className="text-brand-red font-bold">50+</span>{" "}
               industry leaders who choose excellence every time.
->>>>>>> 1fd0148 (Initial commit)
             </p>
           </div>
         </div>

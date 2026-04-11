@@ -10,43 +10,43 @@ const Portfolio: React.FC = () => {
     {
       title: "GOAL BOOKLET",
       category: "Booklet",
-      image: "https://i.ibb.co/k6gZ2GkV/1.jpg",
+      image: "/1.webp",
       size: "standard"
     },
     {
       title: "HOUSE OF PEOPLES REPRESENTATIVES OF FDRE MAGAZINE",
       category: "Editorial",
-      image: "https://i.ibb.co/4wPHn9cc/2.jpg",
+      image: "/2.webp",
       size: "large"
     },
     {
       title: "Ministry of Health Ethiopia Booklet",
       category: "Booklet",
-      image: "https://i.ibb.co/k2S63tbV/6.jpg",
+      image: "/3.webp",
       size: "portrait"
     },
     {
       title: "GOAL ANNUAL BOOKLET",
       category: "Booklet",
-      image: "https://i.ibb.co/k2x5p2bt/5.jpg",
+      image: "/4.webp",
       size: "wide"
     },
     {
       title: "SPIRTUAL BOOK",
       category: "Editorial",
-      image: "https://i.ibb.co/gbnvfX1w/4.jpg",
+      image: "/5.webp",
       size: "standard"
     },
     {
       title: "Ethio Post Backdrop",
       category: "Large Format",
-      image: "https://i.ibb.co/TBDB0Nr3/banner-2.png",
+      image: "/6.webp",
       size: "standard"
     },
     {
       title: "Good Samaritan Ethiopia Magazine",
       category: "Editorial",
-      image: "https://i.ibb.co/zV436xyR/Books.png",
+      image: "/7.webp",
       size: "wide"
     }
   ];
