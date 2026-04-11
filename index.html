@@ -266,6 +266,16 @@
       contain-intrinsic-size: 1px 800px;
     }
 
+    /* Mobile performance trims */
+    @media (max-width: 768px) {
+      .backdrop-blur-xl,
+      .backdrop-blur-md,
+      .backdrop-blur-sm,
+      .backdrop-blur-\[2px\] {
+        backdrop-filter: none !important;
+      }
+    }
+
   </style>
   <script type="importmap">
 {
