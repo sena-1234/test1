@@ -152,6 +152,8 @@ const ClientLogo: React.FC<{ client: Client }> = ({ client }) => {
           onError={() => setError(true)}
           loading="lazy"
           decoding="async"
+          width={400}
+          height={150}
         />
       </div>
 
@@ -254,6 +256,8 @@ const Clients: React.FC = () => {
                     className="w-full h-full object-contain p-1"
                     loading="lazy"
                     decoding="async"
+                    width={40}
+                    height={40}
                   />
                 </div>
               ))}

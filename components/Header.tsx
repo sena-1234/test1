@@ -36,6 +36,10 @@ const Header: React.FC = () => {
           alt="Terara Printers"
           className={`h-12 md:h-14 w-auto object-contain transition-all duration-500 group-hover:scale-110 scale-90 ${!isScrolled ? "brightness-0 invert" : ""}`}
           onError={() => setLogoError(true)}
+          loading="lazy"
+          width={160}
+          height={56}
+          decoding="async"
         />
       ) : (
         <div className="flex items-center gap-2 transition-all duration-500 scale-90">
