@@ -257,10 +257,9 @@
     <script type="importmap">
       {
         "imports": {
-          "react/": "https://esm.sh/react@^19.2.3/",
-          "react": "https://esm.sh/react@^19.2.3",
-          "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
-          "lucide-react": "https://esm.sh/lucide-react@^0.563.0"
+          "react": "/node_modules/react/index.js",
+          "react-dom": "/node_modules/react-dom/index.js",
+          "lucide-react": "/node_modules/lucide-react/dist/esm/lucide-react.js"
         }
       }
     </script>
@@ -968,7 +967,6 @@
         </section>
       </main>
     </div>
-    <link rel="preload" as="script" href="/index.tsx" />
     <script src="/registerSW.js" type="module" defer></script>
     <script type="module" src="/index.tsx" defer></script>
     <script type="application/ld+json">
