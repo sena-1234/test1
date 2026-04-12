@@ -250,7 +250,76 @@
         ]
       }
     </script>
-    <style>::-webkit-scrollbar{width:10px}::-webkit-scrollbar-track{background:#f1f1f1}::-webkit-scrollbar-thumb{background:#ed1c24}::-webkit-scrollbar-thumb:hover{background:#c1161d}@keyframes marquee{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}.animate-marquee{animation:marquee 70s linear infinite}@media (hover:hover){.animate-marquee:hover{animation-play-state:paused}}@keyframes fade-in{from{opacity:0}to{opacity:1}}@keyframes scale-up{from{transform:scale(0.95);opacity:0}to{transform:scale(1);opacity:1}}.animate-fade-in{animation:fade-in 0.3s ease-out forwards}.animate-scale-up{animation:scale-up 0.3s cubic-bezier(0.34,1.56,0.64,1) forwards}.content-auto{content-visibility:auto;contain-intrinsic-size:1px 800px}@media (max-width:768px){.animate-marquee{animation:none !important;transform:translateX(0) !important}.backdrop-blur-xl,.backdrop-blur-md,.backdrop-blur-sm,.backdrop-blur-\[2px\]{backdrop-filter:none !important}}</style>
+    <style>
+      ::-webkit-scrollbar {
+        width: 10px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #f1f1f1;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #ed1c24;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #c1161d;
+      }
+      @keyframes marquee {
+        0% {
+          transform: translateX(0);
+        }
+        100% {
+          transform: translateX(-50%);
+        }
+      }
+      .animate-marquee {
+        animation: marquee 70s linear infinite;
+      }
+      @media (hover: hover) {
+        .animate-marquee:hover {
+          animation-play-state: paused;
+        }
+      }
+      @keyframes fade-in {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+      @keyframes scale-up {
+        from {
+          transform: scale(0.95);
+          opacity: 0;
+        }
+        to {
+          transform: scale(1);
+          opacity: 1;
+        }
+      }
+      .animate-fade-in {
+        animation: fade-in 0.3s ease-out forwards;
+      }
+      .animate-scale-up {
+        animation: scale-up 0.3s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+      }
+      .content-auto {
+        content-visibility: auto;
+        contain-intrinsic-size: 1px 800px;
+      }
+      @media (max-width: 768px) {
+        .animate-marquee {
+          animation: none !important;
+          transform: translateX(0) !important;
+        }
+        .backdrop-blur-xl,
+        .backdrop-blur-md,
+        .backdrop-blur-sm,
+        .backdrop-blur-\[2px\] {
+          backdrop-filter: none !important;
+        }
+      }
+    </style>
     <script type="importmap">
       {
         "imports": {
@@ -278,32 +347,38 @@
       })();
     </script>
     <div id="root">
-            <main>
+      <main>
         <section aria-labelledby="home-title">
           <h1 id="home-title">Terara Printers</h1>
           <p>
-            We are a printing studio in Addis Ababa that helps organizations share clear, professional
-            messages. Our team supports brochures, catalogs, labels, signage, packaging, and branded
-            stationery. We keep projects simple: you share size, quantity, and deadline, and we
+            We are a printing studio in Addis Ababa that helps organizations
+            share clear, professional messages. Our team supports brochures,
+            catalogs, labels, signage, packaging, and branded stationery. We
+            keep projects simple: you share size, quantity, and deadline, and we
             confirm the best materials and finishing options.
           </p>
           <p>
-            Clients work with us for steady timelines, clean finishing, and reliable follow‑through.
-            We can review artwork, adjust files for press, and recommend paper that fits your budget.
-            If you need samples, we can show options and explain the differences in plain language.
+            Clients work with us for steady timelines, clean finishing, and
+            reliable follow‑through. We can review artwork, adjust files for
+            press, and recommend paper that fits your budget. If you need
+            samples, we can show options and explain the differences in plain
+            language.
           </p>
         </section>
 
         <section aria-labelledby="how-title">
           <h2 id="how-title">How We Work</h2>
           <p>
-            We start with a short brief, then prepare a clear quote. After you approve the final
-            details, we begin production and keep you updated until delivery. If a job is urgent,
-            we will tell you what is possible and what needs extra time.
+            We start with a short brief, then prepare a clear quote. After you
+            approve the final details, we begin production and keep you updated
+            until delivery. If a job is urgent, we will tell you what is
+            possible and what needs extra time.
           </p>
           <ul>
             <li>File checks and layout guidance before production</li>
-            <li>Material and finishing recommendations that match your use case</li>
+            <li>
+              Material and finishing recommendations that match your use case
+            </li>
             <li>Consistent color targets and quality checks</li>
             <li>Local delivery support inside Addis Ababa when needed</li>
           </ul>
@@ -312,8 +387,9 @@
         <section aria-labelledby="services-title">
           <h2 id="services-title">Core Services</h2>
           <p>
-            We handle both short‑run and large projects, and we plan each job based on the final
-            use. That means we focus on clarity, durability, and budget instead of sales jargon.
+            We handle both short‑run and large projects, and we plan each job
+            based on the final use. That means we focus on clarity, durability,
+            and budget instead of sales jargon.
           </p>
           <ul>
             <li>Business stationery and office materials</li>
@@ -340,13 +416,30 @@
           </ul>
           <p>External References:</p>
           <ul>
-            <li><a href="https://www.iso.org">ISO standards for print and color management</a></li>
-            <li><a href="https://www.fogra.org">Fogra research on print process control</a></li>
+            <li>
+              <a href="https://www.iso.org"
+                >ISO standards for print and color management</a
+              >
+            </li>
+            <li>
+              <a href="https://www.fogra.org"
+                >Fogra research on print process control</a
+              >
+            </li>
           </ul>
         </section>
       </main>
     </div>
     <script src="/registerSW.js" type="module" defer></script>
     <script type="module" src="/index.tsx"></script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Terara Printers",
+        "url": "https://test1-eight-livid.vercel.app",
+        "logo": "https://test1-eight-livid.vercel.app/logo-hq.webp"
+      }
+    </script>
   </body>
 </html>
