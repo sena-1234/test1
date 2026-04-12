@@ -5,28 +5,28 @@ const values = [
   {
     title: 'Quality First',
     description:
-      'We focus on clean finishing, accurate color, and reliable print quality for offset printing, digital printing, and packaging projects in Addis Ababa.',
+      'We focus on clean finishing, accurate color, and reliable print quality for offset and digital work, plus packaging projects in Addis Ababa.',
     icon: Gem,
     accent: 'from-red-500 to-orange-500',
   },
   {
     title: 'Fast Turnaround',
     description:
-      'Our production team works with clear timelines and efficient processes to deliver printing services on time for businesses and organizations.',
+      'Our production team works with clear timelines and efficient processes to deliver print services on time for businesses and organizations.',
     icon: Clock3,
     accent: 'from-amber-400 to-yellow-500',
   },
   {
     title: 'Trusted Service',
     description:
-      'We build long-term client relationships through responsive communication, dependable support, and consistent printing results across Ethiopia.',
+      'We build long-term client relationships through responsive communication, dependable support, and consistent results across Ethiopia.',
     icon: ShieldCheck,
     accent: 'from-emerald-500 to-teal-500',
   },
   {
     title: 'Modern Production',
     description:
-      'From offset printing to large format printing and branded materials, we use practical production experience with modern technology.',
+      'From offset work to large-format production and branded materials, we use practical production experience with modern technology.',
     icon: Layers3,
     accent: 'from-sky-500 to-indigo-500',
   },
@@ -52,12 +52,12 @@ const Values: React.FC = () => {
               Our Values
             </div>
             <h2 id="values-heading" className="max-w-3xl text-4xl font-black leading-tight text-brand-dark md:text-5xl">
-              Values That Guide Our Printing Services in Addis Ababa
+              Values That Guide Our Print Services in Addis Ababa
             </h2>
           </div>
 
           <p className="max-w-xl text-lg leading-relaxed text-gray-600 lg:ml-auto">
-            Terara Printers is built on quality, speed, trust, and professional production standards, helping businesses in Addis Ababa choose a reliable partner for offset printing and commercial printing services, including notebook printing in Ethiopia and Addis Ababa with clean, consistent finishes.
+            Terara Printers is built on quality, speed, trust, and professional production standards, helping businesses in Addis Ababa choose a reliable partner for offset and commercial print services, including notebook production with clean, consistent finishes.
           </p>
         </div>
 
@@ -90,7 +90,7 @@ const Values: React.FC = () => {
               <p className="mb-3 text-sm font-bold uppercase tracking-[0.25em] text-brand-red">Our Promise</p>
               <h3 className="mb-4 text-3xl font-black">We print with care, speed, and consistency</h3>
               <p className="max-w-3xl leading-relaxed text-gray-300">
-                Every project we handle is guided by attention to detail, clear communication, and a commitment to professional results. From offset printing to packaging and branded materials, we work to deliver print solutions that help businesses present themselves with confidence.
+                Every project we handle is guided by attention to detail, clear communication, and a commitment to professional results. From offset work to packaging and branded materials, we deliver print solutions that help businesses present themselves with confidence.
               </p>
             </div>
 

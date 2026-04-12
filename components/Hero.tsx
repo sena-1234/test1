@@ -62,24 +62,23 @@ const Hero: React.FC = () => {
                 <span className="whitespace-nowrap">Ethiopia's Best </span>{" "}
                 <br />
                 <span className="text-black whitespace-nowrap">
-                  Offset Printing
+                  Offset Print
                 </span>
               </h1>
               <p className="text-gray-300 text-base md:text-lg mb-6 max-w-xl leading-relaxed">
-                Terara Printers provides professional printing services in Addis
-                Ababa, Ethiopia, including offset printing, digital printing,
-                large format printing, custom packaging, and brand collateral.
-                We help businesses, NGOs, schools, and government offices
-                produce high-quality printed materials with reliable turnaround,
-                including premium books printing in Ethiopia and Addis Ababa
-                that looks sharp and professional.
+                Terara Printers provides professional print services in Addis
+                Ababa, Ethiopia, including offset, digital, and large-format
+                production, custom packaging, and brand collateral. We help
+                businesses, NGOs, schools, and government offices produce
+                high-quality materials with reliable turnaround, including
+                premium book production that looks sharp and professional.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4">
                 <button
                   onClick={() => setIsQuoteOpen(true)}
                   className="bg-brand-red text-white px-5 py-2.5 text-sm rounded-full font-bold uppercase tracking-wide hover:bg-red-700 transition-all flex items-center justify-center gap-2 group shadow-xl"
-                  aria-label="Request a printing quote"
+                  aria-label="Request a quote"
                 >
                   Get a Quote
                   <ArrowRight className="group-hover:translate-x-1 transition-transform" />

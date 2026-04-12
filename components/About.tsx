@@ -24,27 +24,27 @@ const About: React.FC = () => {
               id="about-heading"
               className="text-4xl md:text-5xl font-black text-brand-dark mb-8 leading-tight"
             >
-              High-Quality Printing
+              High-Quality Print
               <br />
               <span className="text-brand-red">Made Easy</span>
             </h2>
             <p className="text-gray-600 mb-6 text-lg leading-relaxed">
-              Terara Printers is a trusted printing company in Addis Ababa,
-              Ethiopia, specializing in high-quality offset printing, digital
-              printing, business documents, branding materials, and custom
-              packaging for businesses and organizations across Ethiopia.
+              Terara Printers is a trusted print company in Addis Ababa,
+              Ethiopia, specializing in high-quality offset and digital work,
+              business documents, branding materials, and custom packaging for
+              businesses and organizations across Ethiopia.
             </p>
             <p className="text-gray-600 mb-8 text-lg leading-relaxed">
               From our 4 Killo location, we deliver reliable service, fast
               turnaround, and professional results, making Terara a dependable
-              choice for offset printing in Addis Ababa and throughout Ethiopia,
-              with magazine printing in Ethiopia and Addis Ababa that elevates your brand.
+              choice for offset work in Addis Ababa and throughout Ethiopia,
+              with magazine production that elevates your brand.
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
               {[
-                "Offset & Digital Printing",
-                "Trusted Printing Company",
+                "Offset & Digital Print",
+                "Trusted Print Partner",
                 "Large Format Solutions",
                 "Fast Turnaround Times",
               ].map((item) => (
@@ -59,8 +59,8 @@ const About: React.FC = () => {
 
             <div className="p-8 bg-gray-50 border-l-8 border-brand-red rounded-r-lg">
               <p className="italic text-gray-700 font-medium text-lg">
-                "Reliable offset printing, fast delivery, and professional print
-                quality for businesses in Addis Ababa and across Ethiopia."
+                "Reliable offset work, fast delivery, and professional results
+                for businesses in Addis Ababa and across Ethiopia."
               </p>
             </div>
           </div>

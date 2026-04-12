@@ -50,9 +50,9 @@ const Footer: React.FC = () => {
               )}
             </div>
             <p className="text-gray-400 text-sm leading-relaxed mb-6">
-              Addis Ababa based printing company offering offset, digital, large
+              Addis Ababa based print company offering offset, digital, large
               format, and packaging solutions for clients across Ethiopia since
-              2017 G.C., including brochure printing in Ethiopia and Addis Ababa that makes a strong first impression.
+              2017 G.C., including brochure production that makes a strong first impression.
             </p>
             <div className="flex gap-4">
               <a
@@ -143,7 +143,7 @@ const Footer: React.FC = () => {
                   href="#services"
                   className="hover:text-brand-red transition-colors"
                 >
-                  Printing Services
+                  Print Services
                 </a>
               </li>
               <li>
@@ -183,7 +183,7 @@ const Footer: React.FC = () => {
                   href="#services"
                   className="hover:text-brand-red transition-colors"
                 >
-                  Offset Printing
+                  Offset Print
                 </a>
               </li>
               <li>
@@ -191,7 +191,7 @@ const Footer: React.FC = () => {
                   href="#services"
                   className="hover:text-brand-red transition-colors"
                 >
-                  Digital Printing
+                  Digital Print
                 </a>
               </li>
               <li>
