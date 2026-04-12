@@ -14,7 +14,7 @@ const Footer: React.FC = () => {
       aria-label="Site footer"
     >
       <div className="container mx-auto px-4 md:px-6">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-12 md:gap-16 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-5 gap-12 md:gap-16 mb-12">
           <div className="md:col-span-1">
             <div className="mb-8">
               {!logoError ? (
@@ -260,6 +260,31 @@ const Footer: React.FC = () => {
               <li>
                 <a href="/editorial-policy.html" className="hover:text-brand-red transition-colors">
                   Editorial Policy
+                </a>
+              </li>
+            </ul>
+            <h3 className="mt-6 font-bold text-sm uppercase tracking-widest text-white">
+              External References
+            </h3>
+            <ul className="mt-3 space-y-2 text-gray-400 text-sm">
+              <li>
+                <a
+                  href="https://www.iso.org"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-brand-red transition-colors"
+                >
+                  ISO standards for print and color management
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.fogra.org"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-brand-red transition-colors"
+                >
+                  Fogra research on print process control
                 </a>
               </li>
             </ul>

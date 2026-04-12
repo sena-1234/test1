@@ -79,6 +79,16 @@ function App() {
         <div className="content-auto">
           <About />
         </div>
+        {!loadBelowTheFold && (
+          <div className="sr-only" aria-hidden="true">
+            <div id="values"></div>
+            <div id="services"></div>
+            <div id="portfolio"></div>
+            <div id="clients"></div>
+            <div id="faq"></div>
+            <div id="contact"></div>
+          </div>
+        )}
         {loadBelowTheFold && (
           <Suspense
             fallback={

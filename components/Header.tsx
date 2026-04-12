@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { Menu, X, Phone } from "lucide-react";
 const QuoteModal = React.lazy(() => import("./QuoteModal"));
 
@@ -7,6 +7,7 @@ const Header: React.FC = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [logoError, setLogoError] = useState(false);
   const [isQuoteOpen, setIsQuoteOpen] = useState(false);
+  const closeTimerRef = useRef<number | null>(null);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -69,6 +70,24 @@ const Header: React.FC = () => {
     </div>
   );
 
+  const openMenu = () => {
+    if (closeTimerRef.current) {
+      window.clearTimeout(closeTimerRef.current);
+      closeTimerRef.current = null;
+    }
+    setMenuOpen(true);
+  };
+
+  const scheduleCloseMenu = () => {
+    if (closeTimerRef.current) {
+      window.clearTimeout(closeTimerRef.current);
+    }
+    closeTimerRef.current = window.setTimeout(() => {
+      setMenuOpen(false);
+      closeTimerRef.current = null;
+    }, 140);
+  };
+
   return (
     <>
       <header
@@ -81,6 +100,7 @@ const Header: React.FC = () => {
         <div className="container mx-auto px-4 md:px-6 flex justify-between items-center">
           <a href="#home" className="group" aria-label="Terara Printers home">
             <Logo />
+            <span className="sr-only">Terara Printers home</span>
           </a>
 
           {/* Nav & CTA */}
@@ -96,14 +116,10 @@ const Header: React.FC = () => {
             </button>
 
             {/* Menu Toggle + Hover Menu */}
-            <div
-              className="relative"
-              onMouseEnter={() => setMenuOpen(true)}
-              onMouseLeave={() => setMenuOpen(false)}
-            >
+            <div className="relative" onMouseEnter={openMenu} onMouseLeave={scheduleCloseMenu}>
               <button
                 className={`p-2 rounded-md transition-colors ${isScrolled ? "text-brand-dark bg-gray-100" : "text-white bg-white/10"}`}
-                onClick={() => setMenuOpen(!menuOpen)}
+                onClick={() => setMenuOpen((prev) => !prev)}
                 aria-label={
                   menuOpen ? "Close navigation menu" : "Open navigation menu"
                 }
@@ -118,6 +134,8 @@ const Header: React.FC = () => {
                 className={`absolute right-0 top-full mt-3 w-[280px] md:w-[320px] rounded-2xl bg-white shadow-2xl border border-gray-100 py-3 px-4 flex flex-col gap-2 transform transition-all duration-200 ease-out ${menuOpen ? "opacity-100 translate-y-0 pointer-events-auto" : "opacity-0 -translate-y-2 pointer-events-none"}`}
                 aria-label="Primary navigation"
                 aria-hidden={!menuOpen}
+                onMouseEnter={openMenu}
+                onMouseLeave={scheduleCloseMenu}
               >
                 {navLinks.map((link) => (
                   <a
