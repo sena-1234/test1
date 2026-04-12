@@ -2,6 +2,11 @@
 <html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; base-uri 'self'; img-src 'self' data: https: blob:; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://esm.sh; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' data: https://fonts.gstatic.com; connect-src 'self' https://www.googletagmanager.com https://www.google-analytics.com; frame-src https://www.google.com; object-src 'none'"
+    />
+    <meta http-equiv="X-Frame-Options" content="DENY" />
     <link
       rel="icon"
       href="/Gemini_Generated_Image_uky98guky98guky9%20(1).webp"
@@ -197,7 +202,8 @@
             "url": "https://teraraprinting.com/",
             "name": "Terara Printers",
             "publisher": {
-              "@id": "https://teraraprinting.com/#organization"
+              "@id": "https://teraraprinting.com/#organization",
+              "@type": "Organization"
             }
           },
           {

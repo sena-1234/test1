@@ -4,6 +4,23 @@
     "framework": "vite",
     "headers": [
         {
+            "source": "/(.*)",
+            "headers": [
+                {
+                    "key": "X-Content-Type-Options",
+                    "value": "nosniff"
+                },
+                {
+                    "key": "Permissions-Policy",
+                    "value": "accelerometer=(), autoplay=(), camera=(), clipboard-read=(), clipboard-write=(), geolocation=(), gyroscope=(), magnetometer=(), microphone=(), payment=(), usb=()"
+                },
+                {
+                    "key": "Referrer-Policy",
+                    "value": "strict-origin-when-cross-origin"
+                }
+            ]
+        },
+        {
             "source": "/(.*)\\.(js|css|png|jpg|jpeg|webp|avif|svg|woff2?)",
             "headers": [
                 {
