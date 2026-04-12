@@ -28,6 +28,18 @@ const About: React.FC = () => {
               <br />
               <span className="text-brand-red">Made Easy</span>
             </h2>
+            <div className="mb-8 rounded-2xl border border-gray-200 bg-white p-5 text-sm text-gray-700">
+              <p className="font-semibold text-brand-dark">
+                Author: Terara Studio Team.
+              </p>
+              <p>
+                Expertise: prepress checks, color targets, finishing guidance,
+                and production planning.
+              </p>
+              <p>Published: April 12, 2026. Updated: April 12, 2026.</p>
+              <p>Address: 4 Killo, Dink Sira Tower, 1st Floor, Addis Ababa.</p>
+              <p>Trust: 30+ partner organizations, 7+ years of service.</p>
+            </div>
             <p className="text-gray-600 mb-6 text-lg leading-relaxed">
               We are a local studio that supports brochures, catalogs, labels,
               signage, and packaging for teams across the city.
@@ -58,7 +70,7 @@ const About: React.FC = () => {
                 across every item you order.
               </p>
               <p>
-                For long‑term partners, we can keep your brand colors and
+                For long-term partners, we can keep your brand colors and
                 templates organized for future runs. This makes reorders faster
                 and keeps everything looking the same from project to project.
               </p>
@@ -231,3 +243,4 @@ const About: React.FC = () => {
 };
 
 export default About;
+

@@ -74,6 +74,7 @@ const Footer: React.FC = () => {
                 className="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-brand-red transition-colors"
               >
                 <Facebook size={20} />
+                <span className="sr-only">Terara Printers on Facebook</span>
               </a>
               <a
                 href="https://www.instagram.com/teraraprinters"
@@ -83,6 +84,7 @@ const Footer: React.FC = () => {
                 className="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-brand-red transition-colors"
               >
                 <Instagram size={20} />
+                <span className="sr-only">Terara Printers on Instagram</span>
               </a>
               <a
                 href="https://www.tiktok.com/@teraraprinters"
@@ -98,6 +100,7 @@ const Footer: React.FC = () => {
                 >
                   <path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.9-.32-1.89-.23-2.74.24-.81.47-1.38 1.31-1.63 2.21-.16.61-.17 1.25-.09 1.88.27 1.25 1.13 2.35 2.22 2.94.67.35 1.41.54 2.15.54 1.56 0 3.01-.93 3.58-2.38.22-.55.3-1.14.32-1.74.01-3.1-.01-6.2.01-9.3z" />
                 </svg>
+                <span className="sr-only">Terara Printers on TikTok</span>
               </a>
               <a
                 href="https://www.linkedin.com/in/teraraprinting/"
@@ -107,6 +110,7 @@ const Footer: React.FC = () => {
                 className="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-brand-red transition-colors"
               >
                 <Linkedin size={20} />
+                <span className="sr-only">Terara Printers on LinkedIn</span>
               </a>
               <a
                 href="https://t.me/teraraprints"
@@ -116,6 +120,7 @@ const Footer: React.FC = () => {
                 className="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-brand-red transition-colors"
               >
                 <Send size={20} />
+                <span className="sr-only">Terara Printers on Telegram</span>
               </a>
             </div>
           </div>
