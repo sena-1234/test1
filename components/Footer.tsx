@@ -14,7 +14,7 @@ const Footer: React.FC = () => {
       aria-label="Site footer"
     >
       <div className="container mx-auto px-4 md:px-6">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-16 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-12 md:gap-16 mb-12">
           <div className="md:col-span-1">
             <div className="mb-8">
               {!logoError ? (
@@ -51,11 +51,20 @@ const Footer: React.FC = () => {
               )}
             </div>
             <p className="text-gray-400 text-sm leading-relaxed mb-6">
-              Addis Ababa based studio offering offset, digital, large format,
-              and packaging solutions for clients across the country since 2017
-              G.C., including brochure work that makes a strong first
-              impression.
+              Addis Ababa based studio offering offset, short-run, large format,
+              and packaging work for clients since 2017 G.C., including brochure
+              work that makes a strong first impression.
             </p>
+            <div className="rounded-2xl border border-white/10 bg-white/5 p-4 text-xs text-gray-300 mb-6">
+              <p className="font-bold uppercase tracking-widest text-white mb-2">
+                Byline
+              </p>
+              <p>Authored by the Studio Team.</p>
+              <p className="mt-2">
+                Expertise: prepress checks, color targets, finishing guidance,
+                delivery planning.
+              </p>
+            </div>
             <div className="flex gap-4">
               <a
                 href="https://www.facebook.com/teraraprinters"
@@ -222,13 +231,50 @@ const Footer: React.FC = () => {
               </li>
             </ul>
           </div>
+
+          <div>
+            <h2 className="font-bold text-lg mb-6 border-b border-brand-red pb-2 inline-block">
+              Company
+            </h2>
+            <ul className="space-y-3 text-gray-400 text-sm">
+              <li>
+                <a href="/about.html" className="hover:text-brand-red transition-colors">
+                  About Page
+                </a>
+              </li>
+              <li>
+                <a href="/contact.html" className="hover:text-brand-red transition-colors">
+                  Contact Page
+                </a>
+              </li>
+              <li>
+                <a href="/privacy.html" className="hover:text-brand-red transition-colors">
+                  Privacy Policy
+                </a>
+              </li>
+              <li>
+                <a href="/terms.html" className="hover:text-brand-red transition-colors">
+                  Terms of Service
+                </a>
+              </li>
+              <li>
+                <a href="/editorial-policy.html" className="hover:text-brand-red transition-colors">
+                  Editorial Policy
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
 
         <div className="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
-          <p className="text-gray-500 text-sm">
-            &copy; {new Date().getFullYear()} Terara. Beyond Your
-            Expectations.
-          </p>
+          <div className="text-gray-500 text-sm space-y-1 text-center md:text-left">
+            <p>
+              &copy; {new Date().getFullYear()} Terara. Beyond Your Expectations.
+            </p>
+            <p>Published: April 12, 2026 • Updated: April 12, 2026</p>
+            <p>Address: 4 Killo, Dink Sira Tower, 1st Floor, Addis Ababa</p>
+            <p>Trust: 30+ partner organizations • 7+ years of service</p>
+          </div>
 
           <button
             onClick={scrollToTop}

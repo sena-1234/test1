@@ -13,8 +13,8 @@ const Contact: React.FC = () => {
             <h2 id="contact-heading" className="text-4xl md:text-5xl font-black mb-8">Contact Us</h2>
             <p className="text-gray-400 mb-10 text-lg">
               Looking for a reliable press? Contact Terara Printers for quotes,
-              timelines, and project support, including magazine work with
-              clean finishing that elevates your publication.
+              timelines, and project support. We keep the process clear and the
+              results consistent.
             </p>
 
             <div className="space-y-8">

@@ -29,14 +29,12 @@ const About: React.FC = () => {
               <span className="text-brand-red">Made Easy</span>
             </h2>
             <p className="text-gray-600 mb-6 text-lg leading-relaxed">
-              We are a trusted local studio specializing in high-quality litho
-              and short-run work, business documents, branding materials, and
-              custom packaging for organizations across the country.
+              We are a local studio focused on litho, short-run work, business
+              documents, branding materials, and custom packaging.
             </p>
             <p className="text-gray-600 mb-8 text-lg leading-relaxed">
-              From our 4 Killo location, we deliver reliable service, fast
-              turnaround, and consistent results, making us a dependable choice
-              for magazines and brand-ready materials.
+              From our 4 Killo location, we deliver clear timelines, careful
+              checks, and consistent results for brand-ready materials.
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
@@ -57,8 +55,7 @@ const About: React.FC = () => {
 
             <div className="p-8 bg-gray-50 border-l-8 border-brand-red rounded-r-lg">
               <p className="italic text-gray-700 font-medium text-lg">
-                "Reliable delivery, fast turnaround, and consistent results
-                for businesses in Addis Ababa."
+                "Reliable delivery, fast turnaround, and consistent results."
               </p>
             </div>
           </div>
@@ -72,7 +69,8 @@ const About: React.FC = () => {
                 sizes="(max-width: 768px) 100vw, 50vw"
                 alt="Terara Printers workspace"
                 className="w-full h-80 object-cover rounded-2xl shadow-xl translate-y-12"
-                loading="lazy"
+                loading="eager"
+                fetchPriority="high"
                 decoding="async"
                 width={640}
                 height={800}

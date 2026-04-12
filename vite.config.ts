@@ -22,6 +22,7 @@ export default defineConfig(({ mode }) => {
         ext: ".br",
       }),
       VitePWA({
+        injectRegister: null,
         registerType: "autoUpdate",
         workbox: {
           globPatterns: ["**/*.{js,css,html,ico,png,svg,webp}"],

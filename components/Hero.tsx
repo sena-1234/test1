@@ -66,12 +66,10 @@ const Hero: React.FC = () => {
                 </span>
               </h1>
               <p className="text-gray-300 text-base md:text-lg mb-6 max-w-xl leading-relaxed">
-                Terara Printers provides services in Addis Ababa, Ethiopia,
-                including litho, digital, and large-format work, custom
-                packaging, and brand collateral. We help businesses, NGOs,
-                schools, and government offices deliver high-quality materials
-                with reliable turnaround, including premium book work that
-                looks sharp and polished.
+                Terara Printers provides services in Addis Ababa. We handle
+                litho, short-run, large-format work, custom packaging, and brand
+                collateral. We support businesses, schools, NGOs, and offices
+                with clear timelines, clean finishing, and steady delivery.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4">
@@ -110,9 +108,9 @@ const Hero: React.FC = () => {
                         strokeWidth={2}
                       />
                     </div>
-                    <h4 className="text-white font-black text-sm uppercase tracking-wider leading-tight">
+                    <h2 className="text-white font-black text-sm uppercase tracking-wider leading-tight">
                       {service.title}
-                    </h4>
+                    </h2>
                     <div className="w-0 group-hover:w-8 group-active:w-8 h-1 bg-brand-red mt-2 transition-all duration-500"></div>
                   </div>
                 </div>

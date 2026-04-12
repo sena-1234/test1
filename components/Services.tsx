@@ -20,7 +20,7 @@ const services: ServiceItem[] = [
       "Catalogs",
     ],
     icon: Layers,
-    description: "Professional marketing prints for strong brand visibility.",
+    description: "Marketing pieces that boost brand visibility.",
     image: "/photo_2026-04-11_18-21-32.webp",
   },
   {
@@ -32,7 +32,7 @@ const services: ServiceItem[] = [
       "Name Badges",
     ],
     icon: Calendar,
-    description: "Custom event print for organized, polished presentations.",
+    description: "Event materials for organized, polished presentations.",
     image: "/photo_2026-04-11_18-21-33.webp",
   },
   {
@@ -43,7 +43,7 @@ const services: ServiceItem[] = [
       "Variable Data Printing",
     ],
     icon: Printer,
-    description: "Fast short-run output for urgent jobs.",
+    description: "Fast short-run output for urgent needs.",
     image: "photo_2026-04-11_18-21-35.webp",
   },
   {
@@ -55,14 +55,14 @@ const services: ServiceItem[] = [
       "Wall Graphics",
     ],
     icon: Image,
-    description: "Large format production for bold indoor and outdoor branding.",
+    description: "Large-format work for bold indoor and outdoor branding.",
     image: "photo_2026-04-11_18-21-37.webp",
   },
   {
     category: "Business Stationery",
     items: ["Business Cards", "Letterheads", "Envelopes", "Notepads"],
     icon: PenTool,
-    description: "Essential business materials for a consistent professional image.",
+    description: "Essential business materials for a consistent brand image.",
     image: "photo_2026-04-11_19-11-37.webp",
   },
   {
@@ -74,7 +74,7 @@ const services: ServiceItem[] = [
       "Gift Wrap",
     ],
     icon: Package,
-    description: "Custom packaging and label work that elevates your products.",
+    description: "Custom packaging and label work that elevates products.",
     image: "photo_2026-04-11_18-21-38.webp",
   },
   {
@@ -112,7 +112,7 @@ const Services: React.FC = () => {
           </h2>
           <p className="text-gray-600 text-lg max-w-3xl mx-auto mb-4">
             Full-service offset, short-run, and large-format work, plus
-            packaging services for businesses in Addis Ababa and across the
+            packaging support for businesses in Addis Ababa and across the
             country, including brochure work designed to impress.
           </p>
           <div className="w-24 h-1 bg-brand-red mx-auto"></div>
@@ -186,7 +186,7 @@ const Services: React.FC = () => {
             </h3>
             <p className="text-gray-400 text-sm mb-8 z-10">
               We handle custom requests, special finishes, and
-              packaging jobs tailored to your business needs.
+              packaging jobs tailored to your needs.
             </p>
             <a
               href="#contact"

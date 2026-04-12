@@ -5,28 +5,28 @@ const values = [
   {
     title: 'Quality First',
     description:
-      'We focus on clean finishing, accurate color, and reliable quality for litho and short-run work, plus packaging projects locally.',
+      'We focus on clean finishing, accurate color, and reliable quality for litho and short-run work, plus packaging projects.',
     icon: Gem,
     accent: 'from-red-500 to-orange-500',
   },
   {
     title: 'Fast Turnaround',
     description:
-      'Our team works with clear timelines and efficient processes to deliver services on time for businesses and organizations.',
+      'Our team works with clear timelines and efficient steps to deliver on time.',
     icon: Clock3,
     accent: 'from-amber-400 to-yellow-500',
   },
   {
     title: 'Trusted Service',
     description:
-      'We build long-term client relationships through responsive communication, dependable support, and consistent results across Ethiopia.',
+      'We build long-term relationships through responsive communication and dependable support.',
     icon: ShieldCheck,
     accent: 'from-emerald-500 to-teal-500',
   },
   {
     title: 'Modern Production',
     description:
-      'From litho work to large-format delivery and branded materials, we use practical experience with modern technology.',
+      'From litho work to large-format delivery and branded materials, we use practical experience and modern technology.',
     icon: Layers3,
     accent: 'from-sky-500 to-indigo-500',
   },

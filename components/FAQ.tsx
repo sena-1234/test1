@@ -5,7 +5,7 @@ const faqs = [
   {
     question: 'Why do clients trust your team?',
     answer:
-      'Organizations choose us for consistent quality, modern equipment, and dependable turnaround times. We focus on accurate color, clean finishing, and clear communication from quotation to delivery.',
+      'Clients choose us for consistent quality, modern equipment, and clear timelines. We focus on accurate color, clean finishing, and simple communication from quote to delivery.',
   },
   {
     question: 'What services do you cover in one place?',
@@ -15,17 +15,17 @@ const faqs = [
   {
     question: 'How do you handle large runs?',
     answer:
-      'For high-volume jobs we deliver sharp output, stable color, and efficient workflows for brochures, books, packaging, and office materials.',
+      'For high-volume jobs we deliver sharp output, stable color, and steady workflows for brochures, books, packaging, and office materials.',
   },
   {
     question: 'How fast are typical orders?',
     answer:
-      'Turnaround depends on quantity, finishing, and technical requirements, but most standard jobs are completed quickly. Rush requests are reviewed and prioritized based on capacity so clients can meet important deadlines with confidence.',
+      'Turnaround depends on quantity, finishing, and technical needs. Most standard jobs are completed quickly. Rush requests are reviewed and prioritized based on capacity.',
   },
   {
     question: 'Do you handle branded materials and custom packaging?',
     answer:
-      'Yes. We produce branded stationery, promotional materials, labels, product boxes, and campaign assets tailored to your requirements.',
+      'Yes. We produce branded stationery, promotional materials, labels, product boxes, and campaign assets tailored to your needs.',
   },
   {
     question: 'Where are you located?',
