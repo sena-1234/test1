@@ -37,6 +37,7 @@
       type="image/webp"
     />
     <link rel="preload" href="/logo-hq.webp" as="image" type="image/webp" />
+    <link rel="preconnect" href="https://www.googletagmanager.com" />
     <!-- Keyword meta is unnecessary for modern SEO and can look spammy -->
     <meta
       name="keywords"
@@ -247,114 +248,7 @@
         ]
       }
     </script>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      rel="preload"
-      as="style"
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap"
-      media="print"
-      onload="this.media = 'all'"
-    />
-    <noscript>
-      <link
-        rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap"
-      />
-    </noscript>
-    <style>
-      /* Custom scrollbar */
-      ::-webkit-scrollbar {
-        width: 10px;
-      }
-
-      ::-webkit-scrollbar-track {
-        background: #f1f1f1;
-      }
-
-      ::-webkit-scrollbar-thumb {
-        background: #ed1c24;
-      }
-
-      ::-webkit-scrollbar-thumb:hover {
-        background: #c1161d;
-      }
-
-      @keyframes marquee {
-        0% {
-          transform: translateX(0);
-        }
-
-        100% {
-          transform: translateX(-50%);
-        }
-      }
-
-      .animate-marquee {
-        animation: marquee 70s linear infinite;
-      }
-
-      /* Only pause on hover if the device supports hover (desktop) */
-      @media (hover: hover) {
-        .animate-marquee:hover {
-          animation-play-state: paused;
-        }
-      }
-
-      @keyframes fade-in {
-        from {
-          opacity: 0;
-        }
-
-        to {
-          opacity: 1;
-        }
-      }
-
-      @keyframes scale-up {
-        from {
-          transform: scale(0.95);
-          opacity: 0;
-        }
-
-        to {
-          transform: scale(1);
-          opacity: 1;
-        }
-      }
-
-      .animate-fade-in {
-        animation: fade-in 0.3s ease-out forwards;
-      }
-
-      .animate-scale-up {
-        animation: scale-up 0.3s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
-      }
-
-      .content-auto {
-        content-visibility: auto;
-        contain-intrinsic-size: 1px 800px;
-      }
-
-      /* Mobile performance trims */
-      @media (max-width: 768px) {
-        .animate-marquee {
-          animation: none !important;
-          transform: translateX(0) !important;
-        }
-
-        .backdrop-blur-xl,
-        .backdrop-blur-md,
-        .backdrop-blur-sm,
-        .backdrop-blur-\[2px\] {
-          backdrop-filter: none !important;
-        }
-      }
-    </style>
+    <style>::-webkit-scrollbar{width:10px}::-webkit-scrollbar-track{background:#f1f1f1}::-webkit-scrollbar-thumb{background:#ed1c24}::-webkit-scrollbar-thumb:hover{background:#c1161d}@keyframes marquee{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}.animate-marquee{animation:marquee 70s linear infinite}@media (hover:hover){.animate-marquee:hover{animation-play-state:paused}}@keyframes fade-in{from{opacity:0}to{opacity:1}}@keyframes scale-up{from{transform:scale(0.95);opacity:0}to{transform:scale(1);opacity:1}}.animate-fade-in{animation:fade-in 0.3s ease-out forwards}.animate-scale-up{animation:scale-up 0.3s cubic-bezier(0.34,1.56,0.64,1) forwards}.content-auto{content-visibility:auto;contain-intrinsic-size:1px 800px}@media (max-width:768px){.animate-marquee{animation:none !important;transform:translateX(0) !important}.backdrop-blur-xl,.backdrop-blur-md,.backdrop-blur-sm,.backdrop-blur-\[2px\]{backdrop-filter:none !important}}</style>
     <script type="importmap">
       {
         "imports": {

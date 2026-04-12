@@ -36,7 +36,8 @@ const Header: React.FC = () => {
           alt="Terara Printers"
           className={`h-12 md:h-14 w-auto object-contain transition-all duration-500 group-hover:scale-110 scale-90 ${!isScrolled ? "brightness-0 invert" : ""}`}
           onError={() => setLogoError(true)}
-          loading="lazy"
+          loading="eager"
+          fetchPriority="high"
           width={160}
           height={56}
           decoding="async"

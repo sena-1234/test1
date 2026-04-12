@@ -23,7 +23,8 @@ const Footer: React.FC = () => {
                   alt="Terara Printers"
                   className="h-20 md:h-28 w-auto object-contain brightness-0 invert"
                   onError={() => setLogoError(true)}
-                  loading="lazy"
+                  loading="eager"
+                  fetchPriority="high"
                   width={220}
                   height={112}
                   decoding="async"
