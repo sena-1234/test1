@@ -29,12 +29,12 @@ const About: React.FC = () => {
               <span className="text-brand-red">Made Easy</span>
             </h2>
             <p className="text-gray-600 mb-6 text-lg leading-relaxed">
-              We are a local studio focused on litho, short-run work, business
-              documents, branding materials, and custom packaging.
+              We are a local studio that supports brochures, catalogs, labels,
+              signage, and packaging for teams across the city.
             </p>
             <p className="text-gray-600 mb-8 text-lg leading-relaxed">
-              From our 4 Killo location, we deliver clear timelines, careful
-              checks, and consistent results for brand-ready materials.
+              From our 4 Killo location, we keep projects organized with
+              careful checks and consistent results you can count on.
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">

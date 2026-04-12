@@ -59,17 +59,17 @@ const Hero: React.FC = () => {
                 Est. 2017 GC
               </div>
               <h1 className="text-4xl md:text-5xl lg:text-7xl font-black text-white leading-none mb-6">
-                <span className="whitespace-nowrap">Ethiopia's Best </span>{" "}
+                Printing made simple
                 <br />
                 <span className="text-black whitespace-nowrap">
-                  Offset Print
+                  in Addis Ababa
                 </span>
               </h1>
               <p className="text-gray-300 text-base md:text-lg mb-6 max-w-xl leading-relaxed">
-                Terara Printers provides services in Addis Ababa. We handle
-                litho, short-run, large-format work, custom packaging, and brand
-                collateral. We support businesses, schools, NGOs, and offices
-                with clear timelines, clean finishing, and steady delivery.
+                We help teams produce brochures, signage, packaging, and office
+                materials without the stress. Share your size, quantity, and
+                deadline, and we will guide the right materials and finishing
+                for the job.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4">
