@@ -41,19 +41,20 @@ const Footer: React.FC = () => {
                   </svg>
                   <div className="flex flex-col">
                     <span className="text-sm md:text-base font-bold tracking-widest leading-none text-brand-red">
-                      Terara Printers
+                      Terara
                     </span>
                     <span className="text-3xl md:text-5xl font-black tracking-tighter leading-none mt-1 text-white">
-                      TERARA
+                      STUDIO
                     </span>
                   </div>
                 </div>
               )}
             </div>
             <p className="text-gray-400 text-sm leading-relaxed mb-6">
-              Addis Ababa based print company offering offset, digital, large
-              format, and packaging solutions for clients across Ethiopia since
-              2017 G.C., including brochure production that makes a strong first impression.
+              Addis Ababa based studio offering offset, digital, large format,
+              and packaging solutions for clients across the country since 2017
+              G.C., including brochure work that makes a strong first
+              impression.
             </p>
             <div className="flex gap-4">
               <a
@@ -144,7 +145,7 @@ const Footer: React.FC = () => {
                   href="#services"
                   className="hover:text-brand-red transition-colors"
                 >
-                  Print Services
+                  Services
                 </a>
               </li>
               <li>
@@ -184,7 +185,7 @@ const Footer: React.FC = () => {
                   href="#services"
                   className="hover:text-brand-red transition-colors"
                 >
-                  Offset Print
+                  Offset
                 </a>
               </li>
               <li>
@@ -192,7 +193,7 @@ const Footer: React.FC = () => {
                   href="#services"
                   className="hover:text-brand-red transition-colors"
                 >
-                  Digital Print
+                  Digital
                 </a>
               </li>
               <li>
@@ -225,7 +226,7 @@ const Footer: React.FC = () => {
 
         <div className="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-gray-500 text-sm">
-            &copy; {new Date().getFullYear()} Terara Printers. Beyond Your
+            &copy; {new Date().getFullYear()} Terara. Beyond Your
             Expectations.
           </p>
 

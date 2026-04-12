@@ -20,7 +20,7 @@ const clients: Client[] = [
     logo: "/images/The global goal.webp",
   },
   {
-    name: "Addis Ababa University",
+    name: "AA University",
     logo: "/images/addis ababa university logo.webp",
   },
   {
@@ -88,7 +88,7 @@ const clients: Client[] = [
     logo: "/images/TRAC.webp",
   },
   {
-    name: "Addis Ababa Traffic Management Authority",
+    name: "City Traffic Management Authority",
     logo: "/images/T M jbj.webp",
   },
   {
@@ -193,7 +193,7 @@ const Clients: React.FC = () => {
             Leading international NGOs, government ministries, and academic
             institutions rely on{" "}
             <span className="text-brand-red font-bold">Terara Printers</span>{" "}
-            for precision and quality, including books printing in Ethiopia and Addis Ababa that feels premium.
+            for precision and quality, including books that feel premium.
           </p>
           <div className="w-24 h-1.5 bg-brand-red mx-auto mt-10 rounded-full"></div>
         </div>
@@ -241,7 +241,7 @@ const Clients: React.FC = () => {
                 },
                 { name: "Awash Bank", logo: "/images/awash-bank-logo.webp" },
                 {
-                  name: "Addis Ababa University",
+                  name: "AA University",
                   logo: "/images/addis ababa university logo.webp",
                 },
               ].map((org) => (

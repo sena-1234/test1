@@ -36,14 +36,14 @@ const services: ServiceItem[] = [
     image: "/photo_2026-04-11_18-21-33.webp",
   },
   {
-    category: "Digital Print",
+    category: "Short-Run",
     items: [
       "Booklets and Manuals",
       "Short-run Printing",
       "Variable Data Printing",
     ],
     icon: Printer,
-    description: "Fast digital output for short runs and urgent jobs.",
+    description: "Fast short-run output for urgent jobs.",
     image: "photo_2026-04-11_18-21-35.webp",
   },
   {
@@ -62,7 +62,7 @@ const services: ServiceItem[] = [
     category: "Business Stationery",
     items: ["Business Cards", "Letterheads", "Envelopes", "Notepads"],
     icon: PenTool,
-    description: "Essential business print for a consistent professional image.",
+    description: "Essential business materials for a consistent professional image.",
     image: "photo_2026-04-11_19-11-37.webp",
   },
   {
@@ -74,7 +74,7 @@ const services: ServiceItem[] = [
       "Gift Wrap",
     ],
     icon: Package,
-    description: "Custom packaging and label production that elevates your products.",
+    description: "Custom packaging and label work that elevates your products.",
     image: "photo_2026-04-11_18-21-38.webp",
   },
   {
@@ -102,18 +102,18 @@ const Services: React.FC = () => {
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center mb-16">
           <p className="text-brand-red font-bold uppercase tracking-widest mb-2">
-            Print Services In Addis Ababa
+            Service Menu In Addis Ababa
           </p>
           <h2
             id="services-heading"
             className="text-4xl md:text-5xl font-black text-brand-dark mb-4"
           >
-            Premium Print & Packaging Solutions
+            Premium Packaging & Media Solutions
           </h2>
           <p className="text-gray-600 text-lg max-w-3xl mx-auto mb-4">
-            Full-service offset, digital, and large-format production, plus
-            packaging services for businesses in Addis Ababa and across
-            Ethiopia, including brochure production designed to impress.
+            Full-service offset, short-run, and large-format work, plus
+            packaging services for businesses in Addis Ababa and across the
+            country, including brochure work designed to impress.
           </p>
           <div className="w-24 h-1 bg-brand-red mx-auto"></div>
         </div>
@@ -185,7 +185,7 @@ const Services: React.FC = () => {
               Need Something Custom?
             </h3>
             <p className="text-gray-400 text-sm mb-8 z-10">
-              We handle custom print requests, special finishes, and
+              We handle custom requests, special finishes, and
               packaging jobs tailored to your business needs.
             </p>
             <a

@@ -26,7 +26,7 @@ const Portfolio: React.FC = () => {
       size: "large",
     },
     {
-      title: "Ministry of Health Ethiopia Booklet",
+      title: "Ministry of Health Booklet",
       category: "Booklet",
       image: "/3.webp",
       size: "portrait",
@@ -50,7 +50,7 @@ const Portfolio: React.FC = () => {
       size: "standard",
     },
     {
-      title: "Good Samaritan Ethiopia Magazine",
+      title: "Good Samaritan Magazine",
       category: "Editorial",
       image: "/7.webp",
       size: "wide",
@@ -86,7 +86,8 @@ const Portfolio: React.FC = () => {
               <span className="text-brand-red">EXCELLENCE</span>
             </h2>
             <p className="mt-4 text-sm md:text-base text-gray-400 max-w-xl">
-              Trusted for the best book, magazine, notebook, brochure, and flyer printing in Addis Ababa and Ethiopia—crafted to stand out.
+              Trusted for standout books, magazines, notebooks, brochures, and
+              flyers in Addis Ababa—crafted to stand out.
             </p>
           </div>
 

@@ -29,22 +29,20 @@ const About: React.FC = () => {
               <span className="text-brand-red">Made Easy</span>
             </h2>
             <p className="text-gray-600 mb-6 text-lg leading-relaxed">
-              Terara Printers is a trusted print company in Addis Ababa,
-              Ethiopia, specializing in high-quality offset and digital work,
-              business documents, branding materials, and custom packaging for
-              businesses and organizations across Ethiopia.
+              We are a trusted local studio specializing in high-quality litho
+              and short-run work, business documents, branding materials, and
+              custom packaging for organizations across the country.
             </p>
             <p className="text-gray-600 mb-8 text-lg leading-relaxed">
               From our 4 Killo location, we deliver reliable service, fast
-              turnaround, and professional results, making Terara a dependable
-              choice for offset work in Addis Ababa and throughout Ethiopia,
-              with magazine production that elevates your brand.
+              turnaround, and consistent results, making us a dependable choice
+              for magazines and brand-ready materials.
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
               {[
-                "Offset & Digital Print",
-                "Trusted Print Partner",
+                "Litho & Short-Run",
+                "Trusted Local Partner",
                 "Large Format Solutions",
                 "Fast Turnaround Times",
               ].map((item) => (
@@ -59,8 +57,8 @@ const About: React.FC = () => {
 
             <div className="p-8 bg-gray-50 border-l-8 border-brand-red rounded-r-lg">
               <p className="italic text-gray-700 font-medium text-lg">
-                "Reliable offset work, fast delivery, and professional results
-                for businesses in Addis Ababa and across Ethiopia."
+                "Reliable delivery, fast turnaround, and consistent results
+                for businesses in Addis Ababa."
               </p>
             </div>
           </div>

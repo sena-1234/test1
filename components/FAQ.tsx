@@ -3,34 +3,34 @@ import { ChevronDown, Clock3, MapPin, MessageSquareQuote, PhoneCall } from 'luci
 
 const faqs = [
   {
-    question: 'Why is Terara Printers considered one of the best printing services in Addis Ababa?',
+    question: 'Why do clients trust your team?',
     answer:
-      'Terara Printers is trusted by businesses, institutions, and organizations in Addis Ababa because we combine consistent print quality, modern equipment, skilled production, and dependable turnaround times. Our team focuses on accurate color, clean finishing, and professional service from quotation to delivery.',
+      'Organizations choose us for consistent quality, modern equipment, and dependable turnaround times. We focus on accurate color, clean finishing, and clear communication from quotation to delivery.',
   },
   {
-    question: 'What makes Terara Printers different from other printing companies in Addis Ababa?',
+    question: 'What services do you cover in one place?',
     answer:
-      'What sets us apart is our ability to manage offset printing, digital printing, large format printing, business stationery, branding materials, and custom packaging in one place. This gives clients better quality control, clearer communication, and a more efficient production process.',
+      'We handle litho, short-run, large-format, stationery, branding materials, and custom packaging in one place. This gives clients better quality control and simpler coordination.',
   },
   {
-    question: 'Why do businesses choose Terara for offset printing in Addis Ababa?',
+    question: 'How do you handle large runs?',
     answer:
-      'Businesses choose Terara for offset printing because we deliver sharp output, dependable color consistency, and efficient production for brochures, books, packaging, office materials, and other high-volume jobs. Our workflow is built to support professional results at scale.',
+      'For high-volume jobs we deliver sharp output, stable color, and efficient workflows for brochures, books, packaging, and office materials.',
   },
   {
-    question: 'How fast can Terara Printers complete printing orders in Addis Ababa?',
+    question: 'How fast are typical orders?',
     answer:
-      'Production time depends on quantity, finishing, and technical requirements, but most standard jobs are completed quickly. Urgent printing orders are reviewed and prioritized based on production capacity so clients can meet important deadlines with confidence.',
+      'Turnaround depends on quantity, finishing, and technical requirements, but most standard jobs are completed quickly. Rush requests are reviewed and prioritized based on capacity so clients can meet important deadlines with confidence.',
   },
   {
-    question: 'Can Terara Printers handle branded materials and custom packaging for businesses?',
+    question: 'Do you handle branded materials and custom packaging?',
     answer:
-      'Yes. We produce branded office stationery, promotional materials, labels, product boxes, corporate print assets, and custom packaging tailored to your business requirements. This makes Terara a strong production partner for companies that need both quality and consistency.',
+      'Yes. We produce branded stationery, promotional materials, labels, product boxes, and campaign assets tailored to your requirements.',
   },
   {
-    question: 'Where is Terara Printers located in Addis Ababa?',
+    question: 'Where are you located?',
     answer:
-      'Terara Printers is located at 4 Killo, Dink Sira Tower, 1st Floor, Addis Ababa, Ethiopia, serving clients across the city and throughout Ethiopia.',
+      '4 Killo, Dink Sira Tower, 1st Floor.',
   },
 ];
 
@@ -58,7 +58,9 @@ const FAQ: React.FC = () => {
               Frequently Asked Questions
             </h2>
             <p className="mx-auto max-w-3xl text-lg leading-relaxed text-gray-600">
-              Clear answers about why businesses choose Terara Printers in Addis Ababa for reliable quality, fast production, and professional offset printing services, including notebook printing in Ethiopia and Addis Ababa that looks polished.
+              Clear answers about why businesses choose our team for reliable
+              quality, fast turnaround, and litho services, including notebook
+              work that looks polished.
             </p>
           </div>
 
@@ -118,7 +120,8 @@ const FAQ: React.FC = () => {
                 <p className="mb-3 text-sm font-bold uppercase tracking-[0.25em] text-brand-red">Quick Contact</p>
                 <h3 className="mb-4 text-2xl font-black">Need a fast answer or quote?</h3>
                 <p className="mb-6 leading-relaxed text-gray-300">
-                  Share your print size, quantity, finishing, and deadline to get a faster and more accurate response from our team.
+                  Share your job size, quantity, finishing, and deadline to get
+                  a faster and more accurate response from our team.
                 </p>
                 <div className="space-y-3 text-sm">
                   <div className="flex items-start gap-3 rounded-2xl border border-white/10 bg-white/5 p-4">
@@ -145,7 +148,7 @@ const FAQ: React.FC = () => {
                 <p className="mb-2 text-sm font-bold uppercase tracking-[0.25em] text-brand-red">Visit Us</p>
                 <h3 className="mb-3 text-2xl font-black text-brand-dark">Addis Ababa Location</h3>
                 <p className="leading-relaxed text-gray-700">
-                  4 Killo, Dink Sira Tower, 1st Floor, Addis Ababa, Ethiopia.
+                  4 Killo, Dink Sira Tower, 1st Floor, Addis Ababa.
                 </p>
               </div>
             </aside>

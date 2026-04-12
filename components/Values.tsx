@@ -5,14 +5,14 @@ const values = [
   {
     title: 'Quality First',
     description:
-      'We focus on clean finishing, accurate color, and reliable print quality for offset and digital work, plus packaging projects in Addis Ababa.',
+      'We focus on clean finishing, accurate color, and reliable quality for litho and short-run work, plus packaging projects locally.',
     icon: Gem,
     accent: 'from-red-500 to-orange-500',
   },
   {
     title: 'Fast Turnaround',
     description:
-      'Our production team works with clear timelines and efficient processes to deliver print services on time for businesses and organizations.',
+      'Our team works with clear timelines and efficient processes to deliver services on time for businesses and organizations.',
     icon: Clock3,
     accent: 'from-amber-400 to-yellow-500',
   },
@@ -26,7 +26,7 @@ const values = [
   {
     title: 'Modern Production',
     description:
-      'From offset work to large-format production and branded materials, we use practical production experience with modern technology.',
+      'From litho work to large-format delivery and branded materials, we use practical experience with modern technology.',
     icon: Layers3,
     accent: 'from-sky-500 to-indigo-500',
   },
@@ -52,12 +52,15 @@ const Values: React.FC = () => {
               Our Values
             </div>
             <h2 id="values-heading" className="max-w-3xl text-4xl font-black leading-tight text-brand-dark md:text-5xl">
-              Values That Guide Our Print Services in Addis Ababa
+              Values That Guide Our Services in Addis Ababa
             </h2>
           </div>
 
           <p className="max-w-xl text-lg leading-relaxed text-gray-600 lg:ml-auto">
-            Terara Printers is built on quality, speed, trust, and professional production standards, helping businesses in Addis Ababa choose a reliable partner for offset and commercial print services, including notebook production with clean, consistent finishes.
+            Terara Printers is built on quality, speed, trust, and strong
+            standards, helping businesses in Addis Ababa choose a reliable
+            partner for litho and commercial services, including notebook work
+            with clean, consistent finishes.
           </p>
         </div>
 
@@ -90,14 +93,17 @@ const Values: React.FC = () => {
               <p className="mb-3 text-sm font-bold uppercase tracking-[0.25em] text-brand-red">Our Promise</p>
               <h3 className="mb-4 text-3xl font-black">We print with care, speed, and consistency</h3>
               <p className="max-w-3xl leading-relaxed text-gray-300">
-                Every project we handle is guided by attention to detail, clear communication, and a commitment to professional results. From offset work to packaging and branded materials, we deliver print solutions that help businesses present themselves with confidence.
+                Every project we handle is guided by attention to detail, clear
+                communication, and a commitment to strong results. From litho
+                work to packaging and branded materials, we deliver solutions
+                that help businesses present themselves with confidence.
               </p>
             </div>
 
             <div className="rounded-3xl border border-white/10 bg-white/5 p-6 backdrop-blur-sm">
               <p className="mb-3 text-sm font-bold uppercase tracking-[0.2em] text-brand-red">What Clients Expect</p>
               <ul className="space-y-3 text-sm text-gray-200">
-                <li>Consistent print quality for every order</li>
+                <li>Consistent quality for every order</li>
                 <li>Fast turnaround with dependable service</li>
                 <li>Professional support from start to finish</li>
               </ul>
