@@ -202,17 +202,17 @@ const About: React.FC = () => {
                 height={800}
               />
               <div className="space-y-4">
-                <img
-                  src="/photo_2026-04-11_18-21-33-800.webp"
-                  srcSet="/photo_2026-04-11_18-21-33-480.webp 480w, /photo_2026-04-11_18-21-33-800.webp 800w, /photo_2026-04-11_18-21-33-1200.webp 1200w, /photo_2026-04-11_18-21-33.webp 1600w"
-                  sizes="(max-width: 768px) 100vw, 50vw"
-                  alt="Terara Printers print samples"
-                  className="w-full h-48 object-cover rounded-2xl shadow-lg"
-                  loading="eager"
-                  decoding="async"
-                  width={640}
-                  height={384}
-                />
+              <img
+                src="/photo_2026-04-11_18-21-33-800.webp"
+                srcSet="/photo_2026-04-11_18-21-33-480.webp 480w, /photo_2026-04-11_18-21-33-800.webp 800w, /photo_2026-04-11_18-21-33-1200.webp 1200w, /photo_2026-04-11_18-21-33.webp 1600w"
+                sizes="(max-width: 768px) 100vw, 50vw"
+                alt="Terara Printers print samples"
+                className="w-full h-48 object-cover rounded-2xl shadow-lg"
+                loading="lazy"
+                decoding="async"
+                width={640}
+                height={384}
+              />
                 <img
                   src="/photo_2026-04-11_18-21-37-800.webp"
                   srcSet="/photo_2026-04-11_18-21-37-480.webp 480w, /photo_2026-04-11_18-21-37-800.webp 800w, /photo_2026-04-11_18-21-37-1200.webp 1200w, /photo_2026-04-11_18-21-37.webp 1600w"

@@ -58,6 +58,28 @@ const Hero: React.FC = () => {
               <div className="inline-block bg-brand-red text-white px-3 py-1 text-xs font-bold uppercase tracking-widest mb-4 rounded-sm">
                 Est. 2017 GC
               </div>
+              <div className="mb-5 rounded-2xl border border-white/10 bg-white/5 p-4 text-xs text-gray-200">
+                <p className="font-bold uppercase tracking-widest text-white mb-1">
+                  Author Byline
+                </p>
+                <p>Terara Studio Team</p>
+                <p className="mt-2 font-bold uppercase tracking-widest text-white mb-1">
+                  Author Expertise
+                </p>
+                <p>Prepress checks, color targets, finishing guidance, production planning.</p>
+                <p className="mt-2 font-bold uppercase tracking-widest text-white mb-1">
+                  Content Dates
+                </p>
+                <p>Published April 12, 2026. Updated April 12, 2026.</p>
+                <p className="mt-2 font-bold uppercase tracking-widest text-white mb-1">
+                  Physical Address
+                </p>
+                <p>4 Killo, Dink Sira Tower, 1st Floor, Addis Ababa.</p>
+                <p className="mt-2 font-bold uppercase tracking-widest text-white mb-1">
+                  Trust Signals
+                </p>
+                <p>30+ partner organizations, 7+ years of service, ISO-aligned practices.</p>
+              </div>
               <h1 className="text-4xl md:text-5xl lg:text-7xl font-black text-white leading-none mb-6">
                 Printing made simple
                 <br />
@@ -70,6 +92,10 @@ const Hero: React.FC = () => {
                 materials without the stress. Share your size, quantity, and
                 deadline, and we will guide the right materials and finishing
                 for the job.
+              </p>
+              <p className="text-gray-300 text-sm md:text-base mb-6 max-w-xl leading-relaxed">
+                We keep quotes clear, proofs simple, and delivery timelines
+                realistic so your team can plan with confidence.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4">
