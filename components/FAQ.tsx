@@ -32,6 +32,36 @@ const faqs = [
     answer:
       '4 Killo, Dink Sira Tower, 1st Floor.',
   },
+  {
+    question: 'What details help you price a job faster?',
+    answer:
+      'Share size, quantity, paper type, finish, and deadline. If you have a sample or reference, send a photo.',
+  },
+  {
+    question: 'Do you send proofs before printing?',
+    answer:
+      'Yes. We share a proof so you can confirm text, size, and color before production.',
+  },
+  {
+    question: 'What file types do you accept?',
+    answer:
+      'PDF is best. We also accept AI files and high-resolution images.',
+  },
+  {
+    question: 'Can you match previous jobs or brand colors?',
+    answer:
+      'Yes. We can follow your earlier specs and match color targets for consistent reprints.',
+  },
+  {
+    question: 'Do you help with design or layout?',
+    answer:
+      'Yes. We can support simple layouts, file cleanup, and print-ready preparation.',
+  },
+  {
+    question: 'How do you handle delivery and pickup?',
+    answer:
+      'We offer local delivery in Addis Ababa and clear pickup options. We can also label packages by event or location.',
+  },
 ];
 
 const FAQ: React.FC = () => {
