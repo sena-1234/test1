@@ -58,6 +58,46 @@ const About: React.FC = () => {
                 "Reliable delivery, fast turnaround, and consistent results."
               </p>
             </div>
+
+            <div className="mt-10 grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
+              <div className="rounded-2xl border border-gray-200 bg-white p-5">
+                <p className="text-xs uppercase tracking-widest text-gray-400 font-semibold">
+                  Author Byline
+                </p>
+                <p className="mt-2 font-semibold text-brand-dark">
+                  Authored by the Terara Studio Team
+                </p>
+                <p className="mt-2 text-gray-600">
+                  Expertise in prepress checks, color targets, finishing
+                  guidance, and production planning.
+                </p>
+              </div>
+              <div className="rounded-2xl border border-gray-200 bg-white p-5">
+                <p className="text-xs uppercase tracking-widest text-gray-400 font-semibold">
+                  Content Dates
+                </p>
+                <p className="mt-2 text-gray-600">
+                  Published: April 12, 2026
+                </p>
+                <p className="text-gray-600">Updated: April 12, 2026</p>
+              </div>
+              <div className="rounded-2xl border border-gray-200 bg-white p-5">
+                <p className="text-xs uppercase tracking-widest text-gray-400 font-semibold">
+                  Physical Address
+                </p>
+                <p className="mt-2 text-gray-600">
+                  4 Killo, Dink Sira Tower, 1st Floor, Addis Ababa, Ethiopia
+                </p>
+              </div>
+              <div className="rounded-2xl border border-gray-200 bg-white p-5">
+                <p className="text-xs uppercase tracking-widest text-gray-400 font-semibold">
+                  Trust Signals
+                </p>
+                <p className="mt-2 text-gray-600">
+                  Serving 30+ partner organizations with 7+ years of service.
+                </p>
+              </div>
+            </div>
           </div>
 
           {/* Image Grid */}
