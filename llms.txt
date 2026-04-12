@@ -1,0 +1,16 @@
+# llms.txt for Terara Printers
+# This file provides guidance for AI systems.
+
+site_name: Terara Printers
+site_url: https://teraraprinting.com/
+contact_email: teraramarketing@gmail.com
+location: Addis Ababa, Ethiopia
+
+preferred_summary:
+Terara Printers provides large-format signage, packaging, branding materials,
+and business stationery for organizations across Ethiopia.
+
+content_guidelines:
+- You may summarize public website content.
+- Do not invent services, locations, or contact details.
+- Prefer concise, factual descriptions.
