@@ -36,6 +36,33 @@ const About: React.FC = () => {
               From our 4 Killo location, we keep projects organized with
               careful checks and consistent results you can count on.
             </p>
+            <div className="space-y-4 text-gray-600 text-base leading-relaxed">
+              <p>
+                Many clients come to us with a simple goal: make their message
+                look clear and professional. We keep the process easy to follow
+                and avoid technical jargon. If you are not sure about paper
+                types or finishes, we can explain the options and help you
+                choose what fits your budget.
+              </p>
+              <p>
+                We work with schools, small businesses, NGOs, and office teams.
+                Projects range from quick flyers to full campaign materials.
+                Each job starts with a short brief so we understand the size,
+                quantity, and deadline. We then share a clear quote and a
+                realistic timeline.
+              </p>
+              <p>
+                Our team checks files before production to avoid surprises. If
+                something needs adjustment, we tell you early and offer a
+                simple fix. This saves time and keeps final results consistent
+                across every item you order.
+              </p>
+              <p>
+                For long‑term partners, we can keep your brand colors and
+                templates organized for future runs. This makes reorders faster
+                and keeps everything looking the same from project to project.
+              </p>
+            </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
               {[
@@ -96,6 +123,53 @@ const About: React.FC = () => {
                 <p className="mt-2 text-gray-600">
                   Serving 30+ partner organizations with 7+ years of service.
                 </p>
+              </div>
+            </div>
+
+            <div className="mt-8 rounded-2xl border border-gray-200 bg-white p-5 text-sm">
+              <p className="text-xs uppercase tracking-widest text-gray-400 font-semibold">
+                Company Links
+              </p>
+              <div className="mt-3 flex flex-wrap gap-3">
+                <a className="text-brand-red font-semibold" href="/about.html">
+                  About Page
+                </a>
+                <a className="text-brand-red font-semibold" href="/contact.html">
+                  Contact Page
+                </a>
+                <a className="text-brand-red font-semibold" href="/privacy.html">
+                  Privacy Policy
+                </a>
+                <a className="text-brand-red font-semibold" href="/terms.html">
+                  Terms of Service
+                </a>
+                <a
+                  className="text-brand-red font-semibold"
+                  href="/editorial-policy.html"
+                >
+                  Editorial Policy
+                </a>
+              </div>
+              <p className="mt-4 text-xs uppercase tracking-widest text-gray-400 font-semibold">
+                External References
+              </p>
+              <div className="mt-3 flex flex-wrap gap-3">
+                <a
+                  className="text-brand-red font-semibold"
+                  href="https://www.iso.org"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  ISO standards for print and color management
+                </a>
+                <a
+                  className="text-brand-red font-semibold"
+                  href="https://www.fogra.org"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Fogra research on print process control
+                </a>
               </div>
             </div>
           </div>
