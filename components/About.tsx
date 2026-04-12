@@ -28,25 +28,13 @@ const About: React.FC = () => {
               <br />
               <span className="text-brand-red">Made Easy</span>
             </h2>
-            <div className="mb-8 rounded-2xl border border-gray-200 bg-white p-5 text-sm text-gray-700">
-              <p className="font-semibold text-brand-dark">
-                Author: Terara Studio Team.
-              </p>
-              <p>
-                Expertise: prepress checks, color targets, finishing guidance,
-                and production planning.
-              </p>
-              <p>Published: April 12, 2026. Updated: April 12, 2026.</p>
-              <p>Address: 4 Killo, Dink Sira Tower, 1st Floor, Addis Ababa.</p>
-              <p>Trust: 30+ partner organizations, 7+ years of service.</p>
-            </div>
             <p className="text-gray-600 mb-6 text-lg leading-relaxed">
               We are a local studio that supports brochures, catalogs, labels,
               signage, and packaging for teams across the city.
             </p>
             <p className="text-gray-600 mb-8 text-lg leading-relaxed">
-              From our 4 Killo location, we keep projects organized with
-              careful checks and consistent results you can count on.
+              From our 4 Killo location, we keep projects organized with careful
+              checks and consistent results you can count on.
             </p>
             <div className="space-y-4 text-gray-600 text-base leading-relaxed">
               <p>
@@ -65,9 +53,9 @@ const About: React.FC = () => {
               </p>
               <p>
                 Our team checks files before production to avoid surprises. If
-                something needs adjustment, we tell you early and offer a
-                simple fix. This saves time and keeps final results consistent
-                across every item you order.
+                something needs adjustment, we tell you early and offer a simple
+                fix. This saves time and keeps final results consistent across
+                every item you order.
               </p>
               <p>
                 For long-term partners, we can keep your brand colors and
@@ -97,93 +85,6 @@ const About: React.FC = () => {
                 "Reliable delivery, fast turnaround, and consistent results."
               </p>
             </div>
-
-            <div className="mt-10 grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
-              <div className="rounded-2xl border border-gray-200 bg-white p-5">
-                <p className="text-xs uppercase tracking-widest text-gray-400 font-semibold">
-                  Author Byline
-                </p>
-                <p className="mt-2 font-semibold text-brand-dark">
-                  Authored by the Terara Studio Team
-                </p>
-                <p className="mt-2 text-gray-600">
-                  Expertise in prepress checks, color targets, finishing
-                  guidance, and production planning.
-                </p>
-              </div>
-              <div className="rounded-2xl border border-gray-200 bg-white p-5">
-                <p className="text-xs uppercase tracking-widest text-gray-400 font-semibold">
-                  Content Dates
-                </p>
-                <p className="mt-2 text-gray-600">
-                  Published: April 12, 2026
-                </p>
-                <p className="text-gray-600">Updated: April 12, 2026</p>
-              </div>
-              <div className="rounded-2xl border border-gray-200 bg-white p-5">
-                <p className="text-xs uppercase tracking-widest text-gray-400 font-semibold">
-                  Physical Address
-                </p>
-                <p className="mt-2 text-gray-600">
-                  4 Killo, Dink Sira Tower, 1st Floor, Addis Ababa, Ethiopia
-                </p>
-              </div>
-              <div className="rounded-2xl border border-gray-200 bg-white p-5">
-                <p className="text-xs uppercase tracking-widest text-gray-400 font-semibold">
-                  Trust Signals
-                </p>
-                <p className="mt-2 text-gray-600">
-                  Serving 30+ partner organizations with 7+ years of service.
-                </p>
-              </div>
-            </div>
-
-            <div className="mt-8 rounded-2xl border border-gray-200 bg-white p-5 text-sm">
-              <p className="text-xs uppercase tracking-widest text-gray-400 font-semibold">
-                Company Links
-              </p>
-              <div className="mt-3 flex flex-wrap gap-3">
-                <a className="text-brand-red font-semibold" href="/about.html">
-                  About Page
-                </a>
-                <a className="text-brand-red font-semibold" href="/contact.html">
-                  Contact Page
-                </a>
-                <a className="text-brand-red font-semibold" href="/privacy.html">
-                  Privacy Policy
-                </a>
-                <a className="text-brand-red font-semibold" href="/terms.html">
-                  Terms of Service
-                </a>
-                <a
-                  className="text-brand-red font-semibold"
-                  href="/editorial-policy.html"
-                >
-                  Editorial Policy
-                </a>
-              </div>
-              <p className="mt-4 text-xs uppercase tracking-widest text-gray-400 font-semibold">
-                External References
-              </p>
-              <div className="mt-3 flex flex-wrap gap-3">
-                <a
-                  className="text-brand-red font-semibold"
-                  href="https://www.iso.org"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  ISO standards for print and color management
-                </a>
-                <a
-                  className="text-brand-red font-semibold"
-                  href="https://www.fogra.org"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Fogra research on print process control
-                </a>
-              </div>
-            </div>
           </div>
 
           {/* Image Grid */}
@@ -202,17 +103,17 @@ const About: React.FC = () => {
                 height={800}
               />
               <div className="space-y-4">
-              <img
-                src="/photo_2026-04-11_18-21-33-800.webp"
-                srcSet="/photo_2026-04-11_18-21-33-480.webp 480w, /photo_2026-04-11_18-21-33-800.webp 800w, /photo_2026-04-11_18-21-33-1200.webp 1200w, /photo_2026-04-11_18-21-33.webp 1600w"
-                sizes="(max-width: 768px) 100vw, 50vw"
-                alt="Terara Printers print samples"
-                className="w-full h-48 object-cover rounded-2xl shadow-lg"
-                loading="eager"
-                decoding="async"
-                width={640}
-                height={384}
-              />
+                <img
+                  src="/photo_2026-04-11_18-21-33-800.webp"
+                  srcSet="/photo_2026-04-11_18-21-33-480.webp 480w, /photo_2026-04-11_18-21-33-800.webp 800w, /photo_2026-04-11_18-21-33-1200.webp 1200w, /photo_2026-04-11_18-21-33.webp 1600w"
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  alt="Terara Printers print samples"
+                  className="w-full h-48 object-cover rounded-2xl shadow-lg"
+                  loading="eager"
+                  decoding="async"
+                  width={640}
+                  height={384}
+                />
                 <img
                   src="/photo_2026-04-11_18-21-37-800.webp"
                   srcSet="/photo_2026-04-11_18-21-37-480.webp 480w, /photo_2026-04-11_18-21-37-800.webp 800w, /photo_2026-04-11_18-21-37-1200.webp 1200w, /photo_2026-04-11_18-21-37.webp 1600w"
@@ -243,4 +144,3 @@ const About: React.FC = () => {
 };
 
 export default About;
-
