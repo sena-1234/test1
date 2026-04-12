@@ -82,7 +82,7 @@ const About: React.FC = () => {
                   sizes="(max-width: 768px) 100vw, 50vw"
                   alt="Terara Printers print samples"
                   className="w-full h-48 object-cover rounded-2xl shadow-lg"
-                  loading="lazy"
+                  loading="eager"
                   decoding="async"
                   width={640}
                   height={384}
