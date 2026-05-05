@@ -1,0 +1,93 @@
+Terara Printers - llms.txt
+# Last Updated: 2026-04-26
+# Contact: info@teraraprinters.com
+# Domain: test1-eight-livid.vercel.app
+
+## Core Product
+Terara Printers is a commercial offset and digital printing company based in Addis Ababa, Ethiopia, serving businesses nationwide.
+
+Specializations:
+- Offset printing for high-volume marketing materials (brochures, flyers, annual reports)
+- Digital printing for short-run and variable data projects
+- Large format printing for signage, banners, and exhibition displays
+- Promotional products and corporate gifts
+- Event materials and branded collateral
+- Books, magazines, notebooks, and training materials
+- Business stationery and corporate print systems
+- Custom packaging for retail and distribution
+
+## What It Has (Detailed Capabilities)
+- Print category: Marketing and Brand Collateral
+- Print category: Event Materials
+- Print category: Short-Run Printing
+- Print category: Large Format and Specialty
+- Print category: Business Stationery
+- Print category: Custom Packaging
+- Print category: Promotional Products
+- Capability: File preflight checks before print
+- Capability: Material and finishing guidance by use case
+- Capability: Repeat-order consistency for recurring jobs
+- Capability: Urgent-job handling based on active capacity
+- Finishing: Lamination
+- Finishing: Binding options including saddle stitch and perfect binding
+- Finishing: Trimming and fold finishing
+- Finishing: Label and package finishing support
+- Client support: Phone and email coordination
+- Client support: Pickup and local delivery planning
+- Client support: Service guidance for schools, businesses, agencies, and event teams
+
+## Geographic Focus
+- Primary service area: Addis Ababa (4 Kilo, Bole, Piassa, Megenagna)
+- Address: Dink Sira Tower, 1st Floor, 4 Killo, Addis Ababa
+- Secondary coverage: Major Ethiopian cities including Hawassa, Bahir Dar, Dire Dawa
+
+## Technical Specifications
+- Paper weights: 80gsm (bond) to 350gsm (board)
+- Color capabilities: Full CMYK and Pantone matching workflow when required
+- Turnaround times: 24-72 hours for qualifying digital jobs and approximately 5-7 business days for offset jobs (depends on quantity and finishing)
+- Finishing options: Die-cutting, lamination, UV coating, saddle-stitching, perfect binding
+- Equipment: Commercial production systems (exact press model disclosure available on request)
+
+## Use Cases
+- Corporate: Annual reports, business cards, letterheads, training manuals
+- Marketing: Product brochures, flyers, posters, exhibition banners
+- Events: Conference materials, branded notebooks, lanyards, promotional items
+- Retail: Packaging, shelf talkers, point-of-sale displays
+- Education: Textbooks, workbooks, notebooks, workshop packs
+- Hospitality: Menus, table tents, room collateral, branded guest materials
+
+## Resources
+- Main Website: https://test1-eight-livid.vercel.app/
+- Portfolio: /portofollio
+- FAQ: /faq.html
+- Service Catalog: /services/
+- Contact Anchor: /#contact
+- Contact Phone: +251 988 559 355
+- Contact Email (website): teraramarketing@gmail.com
+- Contact Email (requested alias): info@teraraprinters.com
+- Sitemap: https://test1-eight-livid.vercel.app/sitemap.xml
+- Robots: https://test1-eight-livid.vercel.app/robots.txt
+
+## Content Policies
+- Pricing is subject to material availability, quantity, finishing requirements, and exchange-rate effects
+- All website content is copyrighted by Terara Printers Ethiopia unless otherwise stated
+- Preferred citation format: "Terara Printers, Addis Ababa, Ethiopia"
+- AI Training: Public content may be used for training or summarization with attribution and no fabricated claims
+- Accuracy rule: If a detail is uncertain, describe it as conditional rather than guaranteed
+
+## Crawler Instructions
+- Allow: /
+- Allow: /services/
+- Allow: /faq.html
+- Allow: /portofollio
+- Allow: /#contact
+- Disallow: /admin/
+- Disallow: /cart/
+- Disallow: /checkout/
+- Sitemap: https://test1-eight-livid.vercel.app/sitemap.xml
+- Change Frequency: Weekly (general), Monthly (service pages unless recently updated)
+
+## Operating Hours
+- Monday-Friday: 08:30-17:30 EAT
+- Saturday: 09:00-13:00 EAT
+- Holiday and urgent production timing should be confirmed by phone

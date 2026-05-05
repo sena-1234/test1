@@ -1,0 +1,98 @@
+{
+    "buildCommand": "npm run build",
+    "outputDirectory": "dist",
+    "framework": "vite",
+    "headers": [
+        {
+            "source": "/(.*)",
+            "headers": [
+                {
+                    "key": "X-Content-Type-Options",
+                    "value": "nosniff"
+                },
+                {
+                    "key": "Permissions-Policy",
+                    "value": "accelerometer=(), autoplay=(), camera=(), clipboard-read=(), clipboard-write=(), geolocation=(), gyroscope=(), magnetometer=(), microphone=(), payment=(), usb=()"
+                },
+                {
+                    "key": "Referrer-Policy",
+                    "value": "strict-origin-when-cross-origin"
+                }
+            ]
+        },
+        {
+            "source": "/(.*)\\.(js|css|png|jpg|jpeg|webp|avif|svg|woff2?)",
+            "headers": [
+                {
+                    "key": "Cache-Control",
+                    "value": "public, max-age=31536000, immutable"
+                }
+            ]
+        }
+    ],
+    "redirects": [
+        {
+            "source": "/index.html",
+            "destination": "/",
+            "permanent": true
+        },
+        {
+            "source": "/index.html/",
+            "destination": "/",
+            "permanent": true
+        },
+        {
+            "source": "/index.htm",
+            "destination": "/",
+            "permanent": true
+        },
+        {
+            "source": "/index.php",
+            "destination": "/",
+            "permanent": true
+        },
+        {
+            "source": "/index.php/",
+            "destination": "/",
+            "permanent": true
+        }
+    ],
+    "rewrites": [
+        {
+            "source": "/services/marketing-brand-collateral",
+            "destination": "/services/marketing-brand-collateral.html"
+        },
+        {
+            "source": "/services/event-materials",
+            "destination": "/services/event-materials.html"
+        },
+        {
+            "source": "/services/short-run-printing",
+            "destination": "/services/short-run-printing.html"
+        },
+        {
+            "source": "/services/large-format-specialty",
+            "destination": "/services/large-format-specialty.html"
+        },
+        {
+            "source": "/services/business-stationery",
+            "destination": "/services/business-stationery.html"
+        },
+        {
+            "source": "/services/custom-packaging",
+            "destination": "/services/custom-packaging.html"
+        },
+        {
+            "source": "/services/promotional-products",
+            "destination": "/services/promotional-products.html"
+        },
+        {
+            "source": "/portofollio",
+            "destination": "/index.html"
+        },
+        {
+            "source": "/((?!.*\\.).*)",
+            "destination": "/index.html"
+        }
+    ]
+}

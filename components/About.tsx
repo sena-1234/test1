@@ -1,0 +1,146 @@
+import React from "react";
+import { CheckCircle2 } from "lucide-react";
+
+const About: React.FC = () => {
+  return (
+    <section
+      id="about"
+      className="py-20 md:py-32 bg-white"
+      aria-labelledby="about-heading"
+    >
+      <div className="container mx-auto px-4 md:px-6">
+        <div className="flex flex-col lg:flex-row gap-16 items-center">
+          {/* Text Content */}
+          <div className="lg:w-[45%]">
+            <div className="mb-4">
+              <p className="text-brand-red font-bold uppercase tracking-widest mb-1">
+                About Terara Printers
+              </p>
+              <span className="text-gray-400 font-medium text-lg">
+                Addis Ababa
+              </span>
+            </div>
+            <h2
+              id="about-heading"
+              className="text-4xl md:text-5xl font-black text-brand-dark mb-8 leading-tight"
+            >
+              High-Quality Print
+              <br />
+              <span className="text-brand-red">Made Easy</span>
+            </h2>
+            <p className="text-gray-600 mb-6 text-lg leading-relaxed">
+              We are a local studio that supports brochures, catalogs, labels,
+              signage, and packaging for teams across the city.
+            </p>
+            <p className="text-gray-600 mb-8 text-lg leading-relaxed">
+              From our 4 Killo location, we keep projects organized with careful
+              checks and consistent results you can count on.
+            </p>
+            <div className="space-y-4 text-gray-600 text-base leading-relaxed">
+              <p>
+                Many clients come to us with a simple goal: make their message
+                look clear and professional. We keep the process easy to follow
+                and avoid technical jargon. If you are not sure about paper
+                types or finishes, we can explain the options and help you
+                choose what fits your budget.
+              </p>
+              <p>
+                We work with schools, small businesses, NGOs, and office teams.
+                Projects range from quick flyers to full campaign materials.
+                Each job starts with a short brief so we understand the size,
+                quantity, and deadline. We then share a clear quote and a
+                realistic timeline.
+              </p>
+              <p>
+                Our team checks files before production to avoid surprises. If
+                something needs adjustment, we tell you early and offer a simple
+                fix. This saves time and keeps final results consistent across
+                every item you order.
+              </p>
+              <p>
+                For long-term partners, we can keep your brand colors and
+                templates organized for future runs. This makes reorders faster
+                and keeps everything looking the same from project to project.
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
+              {[
+                "Full Digital & Offset",
+                "Trusted Industry Name",
+                "Large Format Specialist",
+                "Fast Delivery",
+              ].map((item) => (
+                <div key={item} className="flex items-center gap-3">
+                  <div className="bg-brand-red/10 p-1 rounded-full">
+                    <CheckCircle2 className="text-brand-red" size={18} />
+                  </div>
+                  <span className="font-semibold text-brand-dark">{item}</span>
+                </div>
+              ))}
+            </div>
+
+            <div className="p-8 bg-gray-50 border-l-8 border-brand-red rounded-r-lg">
+              <p className="italic text-gray-700 font-medium text-lg">
+                "Reliable delivery, fast turnaround, and consistent results."
+              </p>
+            </div>
+          </div>
+
+          {/* Image Grid */}
+          <div className="lg:w-[55%] relative">
+            <div className="grid grid-cols-2 gap-4">
+              <img
+                src="/Left Sided.webp"
+                srcSet="/Left Sided.webp 480w, /Left Sided.webp 800w, /Left Sided.webp 1200w, /Left Sided.webp 1600w"
+                sizes="(max-width: 768px) 100vw, 50vw"
+                alt="Terara Printers workspace"
+                className="w-full h-80 object-cover rounded-2xl shadow-xl translate-y-12 border-4 border-brand-red"
+                loading="eager"
+                fetchPriority="high"
+                decoding="async"
+                width={640}
+                height={800}
+              />
+              <div className="space-y-4">
+                <img
+                  src="/1 (2).webp"
+                  srcSet="/1 (2).webp 480w, /1 (2).webp 800w, /1 (2).webp 1200w, /1 (2).webp 1600w"
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  alt="Terara Printers print samples"
+                  className="w-full h-48 object-cover rounded-2xl shadow-lg border-4 border-brand-red"
+                  loading="eager"
+                  decoding="async"
+                  width={640}
+                  height={384}
+                />
+                <img
+                  src="/2 (2).webp"
+                  srcSet="/2 (2).webp 480w, /2 (2).webp 800w, /2 (2).webp 1200w, /2 (2).webp 1600w"
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  alt="Terara Printers production detail"
+                  className="w-full h-48 object-cover rounded-2xl shadow-lg border-4 border-brand-red"
+                  loading="lazy"
+                  decoding="async"
+                  width={640}
+                  height={384}
+                />
+              </div>
+            </div>
+            {/* Experience Badge */}
+            <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-brand-red text-white p-8 rounded-full shadow-2xl border-8 border-white text-center w-40 h-40 flex flex-col justify-center items-center z-10">
+              <span className="text-5xl font-black">7+</span>
+              <span className="text-xs font-bold uppercase leading-tight mt-1">
+                Years of
+                <br />
+                Expertise
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default About;

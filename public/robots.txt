@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://test1-eight-livid.vercel.app/sitemap.xml
