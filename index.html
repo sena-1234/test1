@@ -39,10 +39,10 @@
     <meta name="geo.position" content="9.0337315;38.7610906" />
     <link
       rel="preload"
-      href="/hero-final.webp"
+      href="/hero-banner-960.webp"
       as="image"
       type="image/webp"
-      imagesrcset="/hero-final.webp 640w, /hero-final.webp 960w, /hero-final.webp 1280w, /hero-final.webp 1600w"
+      imagesrcset="/hero-banner-640.webp 640w, /hero-banner-960.webp 960w, /hero-banner-1280.webp 1280w, /hero-final.webp 1600w"
       imagesizes="100vw"
     />
     <link rel="llms.txt" href="/llms.txt" />
@@ -455,17 +455,11 @@
         }
       }
     </style>
-    <script type="importmap">
-      {
-        "imports": {
-          "react": "/node_modules/react/index.js",
-          "react-dom": "/node_modules/react-dom/index.js",
-          "lucide-react": "/node_modules/lucide-react/dist/esm/lucide-react.js"
-        }
-      }
-    </script>
     <style>
-      html.react-ready #seo-shell {
+      html.js #seo-shell {
+        display: none;
+      }
+      html:not(.js) #root {
         display: none;
       }
       #seo-shell {
@@ -644,7 +638,21 @@
         }
       });
     </script>
-    <script src="/registerSW.js" type="module" defer></script>
+    <script>
+      window.addEventListener("load", function () {
+        var loadServiceWorker = function () {
+          var script = document.createElement("script");
+          script.src = "/registerSW.js";
+          script.type = "module";
+          document.body.appendChild(script);
+        };
+        if ("requestIdleCallback" in window) {
+          window.requestIdleCallback(loadServiceWorker, { timeout: 3000 });
+        } else {
+          window.setTimeout(loadServiceWorker, 2000);
+        }
+      });
+    </script>
     <script type="module" src="/index.tsx" defer></script>
   </body>
 </html>
