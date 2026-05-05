@@ -19,6 +19,12 @@ function App() {
     window.location.pathname === "/portofollio";
 
   useEffect(() => {
+    if (typeof document === "undefined") return;
+    document.documentElement.classList.add("react-ready");
+    return () => document.documentElement.classList.remove("react-ready");
+  }, []);
+
+  useEffect(() => {
     if (isPortfolioPage) return;
     if (typeof window === "undefined") return;
     if (window.location.pathname !== "/") return;
@@ -210,13 +216,18 @@ function App() {
           <About />
         </div>
         {!loadBelowTheFold && (
-          <div className="sr-only" aria-hidden="true">
+          <div
+            className="min-h-[3600px] bg-white"
+            aria-hidden="true"
+          >
+            <div className="sr-only">
             <div data-anchor="values"></div>
             <div data-anchor="services"></div>
             <div data-anchor="portfolio"></div>
             <div data-anchor="clients"></div>
             <div data-anchor="faq"></div>
             <div data-anchor="contact"></div>
+            </div>
           </div>
         )}
         {loadBelowTheFold && (

@@ -39,7 +39,7 @@ const Hero: React.FC = () => {
         <div className="absolute inset-0 z-0 flex items-center justify-end">
           <img
             src="/hero-banner-640.webp"
-            srcSet="/hero-final.webp 640w, /hero-final.webp 960w, /hero-final.webp 1280w, /hero-final.webp 1600w"
+            srcSet="/hero-banner-640.webp 640w, /hero-banner-960.webp 960w, /hero-banner-1280.webp 1280w, /hero-banner.webp 1600w"
             sizes="100vw"
             alt="Terara Printers Premium Materials"
             className="w-full h-full object-cover opacity-80 lg:opacity-100 pointer-events-none"
@@ -59,15 +59,15 @@ const Hero: React.FC = () => {
                 Est. 2017 GC
               </div>
               <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-6xl font-black text-white leading-tight mb-5">
-                Printing made simple
+                Professional printing
                 <br />
                 <span className="text-black">in Addis Ababa</span>
               </h1>
               <p className="text-gray-300 text-sm sm:text-base md:text-lg mb-6 max-w-xl leading-relaxed">
-                We help teams produce brochures, signage, packaging, and office
-                materials without the stress. Share your size, quantity, and
-                deadline, and we will guide the right materials and finishing
-                for the job.
+                We help teams produce offset printing, brochure printing,
+                packaging, signage, business cards, and office materials without
+                the stress. Share your size, quantity, and deadline, and we will
+                guide the right materials and finishing for the job.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4">

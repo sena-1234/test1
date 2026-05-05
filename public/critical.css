@@ -58,7 +58,7 @@
 }
 .content-auto {
   content-visibility: auto;
-  contain-intrinsic-size: 1px 800px;
+  contain-intrinsic-size: auto 1200px;
 }
 section[id] {
   scroll-margin-top: 96px;
