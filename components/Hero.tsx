@@ -39,7 +39,7 @@ const Hero: React.FC = () => {
         <div className="absolute inset-0 z-0 flex items-center justify-end">
           <img
             src="/hero-banner-640.webp"
-            srcSet="/hero-banner-640.webp 640w, /hero-banner-960.webp 960w, /hero-banner-1280.webp 1280w, /hero-banner.webp 1600w"
+            srcSet="/hero-final.webp 640w, /hero-final.webp 960w, /hero-final.webp 1280w, /hero-final.webp 1600w"
             sizes="100vw"
             alt="Terara Printers Premium Materials"
             className="w-full h-full object-cover opacity-80 lg:opacity-100 pointer-events-none"
