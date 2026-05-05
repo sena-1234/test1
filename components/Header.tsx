@@ -25,6 +25,8 @@ const Header: React.FC = () => {
   }, [menuOpen]);
 
   const printingLinks = [
+    { name: "Offset Printing", href: "/services/offset-printing.html" },
+    { name: "Digital Printing", href: "/services/digital-printing.html" },
     { name: "Books Printing", href: "/services/books-printing.html" },
     { name: "Magazine Printing", href: "/services/magazine-printing.html" },
     { name: "Notebook Printing", href: "/services/notebook-printing.html" },

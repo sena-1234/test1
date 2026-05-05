@@ -12,6 +12,100 @@ const lng = "38.7610906";
 
 const printingPages = [
   {
+    slug: "offset-printing",
+    label: "Offset Printing",
+    localIntent: "Offset Printing in Addis Ababa",
+    metaTitle: "Offset Printing Addis Ababa | Terara Printers",
+    metaDescription:
+      "Professional offset printing in Addis Ababa for books, magazines, brochures, labels, catalogs, and business materials with consistent color and finishing.",
+    h1: "Offset Printing Services in Addis Ababa",
+    heroLead:
+      "Produce high-volume print materials with sharp detail, stable color, and dependable finishing for business, education, and institutional projects.",
+    localLead:
+      "We support Addis Ababa organizations with offset printing for books, magazines, brochures, catalogs, labels, packaging inserts, and branded business materials.",
+    image: "/hero-banner-1280.webp",
+    includes: [
+      "Books, magazines, catalogs, brochures, flyers, and labels.",
+      "High-volume production with consistent unit quality.",
+      "Paper, coating, and finishing recommendations by project goal.",
+      "Prepress checks for bleed, margins, color, and image quality.",
+      "Repeat production support for recurring brand and campaign materials.",
+    ],
+    process: [
+      "We confirm print format, quantity, paper stock, color requirements, and deadline.",
+      "Artwork is preflight checked for print readiness before plate and production setup.",
+      "Printing runs with registration, color, and paper checks throughout production.",
+      "Final materials are finished, trimmed, packed, and prepared for pickup or delivery.",
+    ],
+    bestFor: [
+      "Bulk brochure and flyer printing",
+      "Books, magazines, and catalogs",
+      "Corporate and institutional reports",
+      "Labels and recurring branded materials",
+    ],
+    faq: [
+      {
+        q: "When should I choose offset printing?",
+        a: "Offset printing is best for medium and high-volume jobs where consistent color, sharp detail, and better unit cost are important.",
+      },
+      {
+        q: "Can you print brochures, books, and labels with offset?",
+        a: "Yes. Offset printing works well for brochures, books, magazines, catalogs, labels, flyers, and many business materials.",
+      },
+      {
+        q: "Do you check files before offset production?",
+        a: "Yes. We review bleed, margins, image quality, color setup, and page order before production starts.",
+      },
+    ],
+  },
+  {
+    slug: "digital-printing",
+    label: "Digital Printing",
+    localIntent: "Digital Printing in Addis Ababa",
+    metaTitle: "Digital Printing Addis Ababa | Terara Printers",
+    metaDescription:
+      "Fast digital printing in Addis Ababa for short-run brochures, booklets, manuals, business documents, event materials, and urgent print jobs.",
+    h1: "Digital Printing Services in Addis Ababa",
+    heroLead:
+      "Print short runs, urgent updates, and personalized materials quickly without sacrificing clear text, sharp graphics, or professional finishing.",
+    localLead:
+      "We help Addis Ababa businesses and organizations produce short-run brochures, booklets, manuals, business documents, event materials, and variable-data jobs.",
+    image: "/Goal Kit (2).webp",
+    includes: [
+      "Short-run brochures, flyers, booklets, and manuals.",
+      "Business documents, presentations, and office materials.",
+      "Variable data printing for names, codes, and personalized content.",
+      "Fast setup for urgent campaigns and low-quantity jobs.",
+      "Flexible reprints when designs or information change often.",
+    ],
+    process: [
+      "We confirm size, page count, paper, quantity, and urgency.",
+      "Files are reviewed for readability, margins, and production safety.",
+      "Digital output is produced quickly with focused quality checks.",
+      "Jobs are trimmed, finished, packed, and handed over for use or delivery.",
+    ],
+    bestFor: [
+      "Urgent short-run printing",
+      "Training manuals and booklets",
+      "Personalized print materials",
+      "Small batch business documents",
+    ],
+    faq: [
+      {
+        q: "Is digital printing good for small quantities?",
+        a: "Yes. Digital printing is ideal for smaller quantities, urgent jobs, and materials that change often.",
+      },
+      {
+        q: "Can digital printing handle personalized content?",
+        a: "Yes. We can support variable data such as names, numbers, codes, and custom details when files are prepared correctly.",
+      },
+      {
+        q: "How fast can digital printing be completed?",
+        a: "Turnaround depends on quantity and finishing, but digital printing is usually the fastest option for short-run work.",
+      },
+    ],
+  },
+  {
     slug: "books-printing",
     label: "Books Printing",
     localIntent: "Books Printing in Addis Ababa",
