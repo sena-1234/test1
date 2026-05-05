@@ -59,6 +59,14 @@
     ],
     "rewrites": [
         {
+            "source": "/services",
+            "destination": "/services/index.html"
+        },
+        {
+            "source": "/services/",
+            "destination": "/services/index.html"
+        },
+        {
             "source": "/services/marketing-brand-collateral",
             "destination": "/services/marketing-brand-collateral.html"
         },
@@ -85,6 +93,34 @@
         {
             "source": "/services/promotional-products",
             "destination": "/services/promotional-products.html"
+        },
+        {
+            "source": "/services/offset-printing",
+            "destination": "/services/offset-printing.html"
+        },
+        {
+            "source": "/services/digital-printing",
+            "destination": "/services/digital-printing.html"
+        },
+        {
+            "source": "/services/books-printing",
+            "destination": "/services/books-printing.html"
+        },
+        {
+            "source": "/services/magazine-printing",
+            "destination": "/services/magazine-printing.html"
+        },
+        {
+            "source": "/services/notebook-printing",
+            "destination": "/services/notebook-printing.html"
+        },
+        {
+            "source": "/services/brochure-printing",
+            "destination": "/services/brochure-printing.html"
+        },
+        {
+            "source": "/services/flyer-printing",
+            "destination": "/services/flyer-printing.html"
         },
         {
             "source": "/portofollio",

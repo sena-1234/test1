@@ -11,6 +11,23 @@
   RewriteCond %{REQUEST_FILENAME} -d
   RewriteRule ^ - [L]
 
+  # Static service pages for crawlers and clean URLs.
+  RewriteRule ^services/?$ public/services/index.html [L]
+  RewriteRule ^services/marketing-brand-collateral/?$ public/services/marketing-brand-collateral.html [L]
+  RewriteRule ^services/event-materials/?$ public/services/event-materials.html [L]
+  RewriteRule ^services/short-run-printing/?$ public/services/short-run-printing.html [L]
+  RewriteRule ^services/large-format-specialty/?$ public/services/large-format-specialty.html [L]
+  RewriteRule ^services/business-stationery/?$ public/services/business-stationery.html [L]
+  RewriteRule ^services/custom-packaging/?$ public/services/custom-packaging.html [L]
+  RewriteRule ^services/promotional-products/?$ public/services/promotional-products.html [L]
+  RewriteRule ^services/offset-printing/?$ public/services/offset-printing.html [L]
+  RewriteRule ^services/digital-printing/?$ public/services/digital-printing.html [L]
+  RewriteRule ^services/books-printing/?$ public/services/books-printing.html [L]
+  RewriteRule ^services/magazine-printing/?$ public/services/magazine-printing.html [L]
+  RewriteRule ^services/notebook-printing/?$ public/services/notebook-printing.html [L]
+  RewriteRule ^services/brochure-printing/?$ public/services/brochure-printing.html [L]
+  RewriteRule ^services/flyer-printing/?$ public/services/flyer-printing.html [L]
+
   # Send all other requests to the SPA entry point.
   RewriteRule ^ index.html [L]
 </IfModule>
