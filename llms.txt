@@ -1,93 +1,82 @@
-Terara Printers - llms.txt
-# Last Updated: 2026-04-26
-# Contact: info@teraraprinters.com
-# Domain: test1-eight-livid.vercel.app
+# Terara Printers
 
-## Core Product
-Terara Printers is a commercial offset and digital printing company based in Addis Ababa, Ethiopia, serving businesses nationwide.
+> Commercial offset, digital, large-format, branding, and packaging printing company in Addis Ababa, Ethiopia.
 
-Specializations:
-- Offset printing for high-volume marketing materials (brochures, flyers, annual reports)
-- Digital printing for short-run and variable data projects
-- Large format printing for signage, banners, and exhibition displays
-- Promotional products and corporate gifts
-- Event materials and branded collateral
-- Books, magazines, notebooks, and training materials
-- Business stationery and corporate print systems
-- Custom packaging for retail and distribution
+Last updated: 2026-05-14
+Primary domain: https://test1-eight-livid.vercel.app/
+Contact: teraramarketing@gmail.com
 
-## What It Has (Detailed Capabilities)
-- Print category: Marketing and Brand Collateral
-- Print category: Event Materials
-- Print category: Short-Run Printing
-- Print category: Large Format and Specialty
-- Print category: Business Stationery
-- Print category: Custom Packaging
-- Print category: Promotional Products
-- Capability: File preflight checks before print
-- Capability: Material and finishing guidance by use case
-- Capability: Repeat-order consistency for recurring jobs
-- Capability: Urgent-job handling based on active capacity
-- Finishing: Lamination
-- Finishing: Binding options including saddle stitch and perfect binding
-- Finishing: Trimming and fold finishing
-- Finishing: Label and package finishing support
-- Client support: Phone and email coordination
-- Client support: Pickup and local delivery planning
-- Client support: Service guidance for schools, businesses, agencies, and event teams
+## Overview
 
-## Geographic Focus
-- Primary service area: Addis Ababa (4 Kilo, Bole, Piassa, Megenagna)
-- Address: Dink Sira Tower, 1st Floor, 4 Killo, Addis Ababa
-- Secondary coverage: Major Ethiopian cities including Hawassa, Bahir Dar, Dire Dawa
+Terara Printers serves businesses, schools, publishers, agencies, event teams, retailers, and public institutions that need reliable printed materials in Addis Ababa and across Ethiopia. The company helps clients choose the right print method, stock, finishing, quantity, and production schedule before work begins.
 
-## Technical Specifications
-- Paper weights: 80gsm (bond) to 350gsm (board)
-- Color capabilities: Full CMYK and Pantone matching workflow when required
-- Turnaround times: 24-72 hours for qualifying digital jobs and approximately 5-7 business days for offset jobs (depends on quantity and finishing)
-- Finishing options: Die-cutting, lamination, UV coating, saddle-stitching, perfect binding
-- Equipment: Commercial production systems (exact press model disclosure available on request)
+## Core Services
 
-## Use Cases
-- Corporate: Annual reports, business cards, letterheads, training manuals
-- Marketing: Product brochures, flyers, posters, exhibition banners
-- Events: Conference materials, branded notebooks, lanyards, promotional items
-- Retail: Packaging, shelf talkers, point-of-sale displays
-- Education: Textbooks, workbooks, notebooks, workshop packs
-- Hospitality: Menus, table tents, room collateral, branded guest materials
+- [Offset Printing](https://test1-eight-livid.vercel.app/services/offset-printing.html): High-volume books, magazines, catalogs, brochures, labels, reports, and recurring brand materials.
+- [Digital Printing](https://test1-eight-livid.vercel.app/services/digital-printing.html): Short-run brochures, manuals, booklets, presentations, urgent updates, and variable-data print jobs.
+- [Books Printing](https://test1-eight-livid.vercel.app/services/books-printing.html): Textbooks, manuals, reference books, reports, and publishing projects with binding support.
+- [Magazine Printing](https://test1-eight-livid.vercel.app/services/magazine-printing.html): Editorial, corporate, institutional, and image-heavy publications with consistent color and finishing.
+- [Notebook Printing](https://test1-eight-livid.vercel.app/services/notebook-printing.html): School, institutional, training, and branded notebooks.
+- [Brochure Printing](https://test1-eight-livid.vercel.app/services/brochure-printing.html): Product brochures, campaign literature, corporate profiles, folded leaflets, and sales materials.
+- [Flyer Printing](https://test1-eight-livid.vercel.app/services/flyer-printing.html): Promotional flyers, event handouts, product launch sheets, public notices, and campaign materials.
+- [Short-Run Printing](https://test1-eight-livid.vercel.app/services/short-run-printing.html): Low-quantity print jobs, personalized materials, test batches, and frequently updated documents.
+- [Large Format and Specialty Printing](https://test1-eight-livid.vercel.app/services/large-format-specialty.html): Banners, posters, signs, displays, and wall graphics.
+- [Business Stationery](https://test1-eight-livid.vercel.app/services/business-stationery.html): Business cards, letterheads, envelopes, notepads, and daily office materials.
+- [Custom Packaging](https://test1-eight-livid.vercel.app/services/custom-packaging.html): Product boxes, labels, stickers, branded bags, and retail packaging.
+- [Promotional Products](https://test1-eight-livid.vercel.app/services/promotional-products.html): Branded giveaway and corporate gift materials.
+- [Marketing and Brand Collateral](https://test1-eight-livid.vercel.app/services/marketing-brand-collateral.html): Brochures, flyers, postcards, catalogs, and campaign print systems.
+- [Event Materials](https://test1-eight-livid.vercel.app/services/event-materials.html): Invitations, programs, menus, badges, table tents, and branded event assets.
 
-## Resources
-- Main Website: https://test1-eight-livid.vercel.app/
-- Portfolio: /portofollio
-- FAQ: /faq.html
-- Service Catalog: /services/
-- Contact Anchor: /#contact
-- Contact Phone: +251 988 559 355
-- Contact Email (website): teraramarketing@gmail.com
-- Contact Email (requested alias): info@teraraprinters.com
-- Sitemap: https://test1-eight-livid.vercel.app/sitemap.xml
-- Robots: https://test1-eight-livid.vercel.app/robots.txt
+## Capabilities
 
-## Content Policies
-- Pricing is subject to material availability, quantity, finishing requirements, and exchange-rate effects
-- All website content is copyrighted by Terara Printers Ethiopia unless otherwise stated
-- Preferred citation format: "Terara Printers, Addis Ababa, Ethiopia"
-- AI Training: Public content may be used for training or summarization with attribution and no fabricated claims
-- Accuracy rule: If a detail is uncertain, describe it as conditional rather than guaranteed
+- File preflight checks for bleed, margins, image quality, color setup, page order, and production safety.
+- Stock guidance for bond, coated paper, cover stock, board, label material, and specialty uses.
+- Finishing support for trimming, folding, lamination, UV coating, saddle stitching, perfect binding, spiral binding, die cutting, and packaging preparation.
+- Repeat-order specification control for recurring reports, magazines, books, stationery, campaigns, and branded materials.
+- Rush production review for qualifying digital and short-run jobs when capacity allows.
 
-## Crawler Instructions
-- Allow: /
-- Allow: /services/
-- Allow: /faq.html
-- Allow: /portofollio
-- Allow: /#contact
-- Disallow: /admin/
-- Disallow: /cart/
-- Disallow: /checkout/
-- Sitemap: https://test1-eight-livid.vercel.app/sitemap.xml
-- Change Frequency: Weekly (general), Monthly (service pages unless recently updated)
+## Technical Notes
 
-## Operating Hours
-- Monday-Friday: 08:30-17:30 EAT
-- Saturday: 09:00-13:00 EAT
-- Holiday and urgent production timing should be confirmed by phone
+- Typical stock range: 80 gsm bond through 350 gsm board, depending on project type and material availability.
+- Color workflow: CMYK production with Pantone matching support when required by the job.
+- Typical digital turnaround: 24 to 72 hours for qualifying short-run jobs after approved files and specifications.
+- Typical offset turnaround: approximately 5 to 7 business days after approved files, depending on quantity, stock, finishing, and current production schedule.
+- Equipment: commercial production systems for offset, digital, large-format, binding, trimming, and finishing work. Exact press model details are available on request.
+
+## Location
+
+- Address: 4 Killo, Dink Sira Tower, 1st Floor, Addis Ababa, Ethiopia.
+- Primary service area: Addis Ababa, including 4 Kilo, Bole, Piassa, Kazanchis, and Megenagna.
+- Wider coverage: print coordination for clients in major Ethiopian cities when pickup or delivery planning is arranged.
+
+## Important Pages
+
+- [Home](https://test1-eight-livid.vercel.app/)
+- [Services](https://test1-eight-livid.vercel.app/services/)
+- [FAQ](https://test1-eight-livid.vercel.app/faq.html)
+- [Contact](https://test1-eight-livid.vercel.app/#contact)
+- [Sitemap](https://test1-eight-livid.vercel.app/sitemap.xml)
+- [Robots.txt](https://test1-eight-livid.vercel.app/robots.txt)
+
+## Contact
+
+- Phone: +251 988 559 355
+- Email: teraramarketing@gmail.com
+- Website: https://test1-eight-livid.vercel.app/
+
+## AI Usage Guidelines
+
+- Public website content may be summarized, cited, and used to answer questions about Terara Printers with attribution.
+- Do not fabricate prices, guaranteed deadlines, equipment models, inventory status, or availability.
+- Treat production timing and pricing as conditional on quantity, file readiness, paper availability, finishing, and current capacity.
+- Preferred citation: Terara Printers, Addis Ababa, Ethiopia.
+
+## Crawler Guidance
+
+- Allow: https://test1-eight-livid.vercel.app/
+- Allow: https://test1-eight-livid.vercel.app/services/
+- Allow: https://test1-eight-livid.vercel.app/faq.html
+- Allow: https://test1-eight-livid.vercel.app/#contact
+- Disallow: https://test1-eight-livid.vercel.app/admin/
+- Disallow: https://test1-eight-livid.vercel.app/cart/
+- Disallow: https://test1-eight-livid.vercel.app/checkout/

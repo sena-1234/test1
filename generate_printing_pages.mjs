@@ -379,12 +379,48 @@ const relatedLinksHtml = (currentSlug) =>
     )
     .join("\n                ");
 
-const pageParagraphs = (page) => [
-  `In Addis Ababa, ${page.label.toLowerCase()} works best when layout, paper, and finishing are aligned with your communication objective and timeline.`,
-  `${brand} helps clients plan quantity, material choice, and production flow so each order is practical, professional, and ready for distribution.`,
-  `Our team supports clear communication from quotation through final handover to keep your print project on schedule and consistent in quality.`,
-  `Before production starts, we review your artwork details, target quantity, and finishing preferences to reduce avoidable delays and improve accuracy.`,
-  `If your team needs recurring updates or repeat jobs, we can keep specifications consistent so your next order matches earlier outputs in look and quality.`,
+const serviceDetailCopy = {
+  "offset-printing": [
+    "Offset printing is the practical choice when a project needs hundreds or thousands of copies with stable color, crisp type, and a lower unit cost at volume. We use it for annual reports, textbooks, magazines, catalogs, brochures, labels, inserts, and recurring institutional materials.",
+    "Before plates and press setup, our team checks trim size, bleed, pagination, image resolution, CMYK or Pantone requirements, and the paper or board weight. That technical review helps avoid costly corrections once production is running.",
+    "Clients choose this service when consistency matters across long runs: matching brand reds, keeping photo-heavy pages balanced, or producing repeat editions that need to look like earlier batches.",
+  ],
+  "digital-printing": [
+    "Digital printing is built for speed, small quantities, and content that changes often. It works well for training manuals, business presentations, event handouts, prototype brochures, personalized certificates, numbered documents, and urgent office materials.",
+    "Because there is no plate setup, we can move quickly from approved files to production while still checking margins, readability, paper choice, page order, and finishing details such as trimming, stapling, spiral binding, or lamination.",
+    "The value is flexibility: teams can print the quantity they need now, update names or codes through variable data, and reprint improved versions without carrying large stock.",
+  ],
+  "books-printing": [
+    "Books printing needs more than clean pages; it needs a durable structure. We produce textbooks, training manuals, reference books, reports, and publication projects with attention to page order, cover stock, spine thickness, and binding method.",
+    "Our file review covers margins, bleed, image quality, page count, section breaks, and cover setup before production. We recommend saddle stitch, perfect binding, or spiral binding based on page count, usage, and budget.",
+    "This service is strongest for schools, publishers, NGOs, companies, and training teams that need books to survive daily handling while keeping text readable and brand presentation consistent.",
+  ],
+  "magazine-printing": [
+    "Magazine printing is suited to image-heavy layouts where color balance, paper feel, and finishing shape how the publication is perceived. We support corporate magazines, newsletters, institutional journals, annual features, and one-time editorial projects.",
+    "Our team reviews pagination, spread alignment, image resolution, cover and inside stock, coating preference, and binding requirements before production. Gloss, matte, and heavier cover options can be matched to the reading experience.",
+    "For recurring issues, we keep specifications organized so future editions maintain a familiar size, finish, and color standard while still allowing updated artwork and content.",
+  ],
+  "notebook-printing": [
+    "Notebook printing is useful for schools, conferences, staff programs, campaigns, and branded giveaways where everyday usability matters. We produce lined, grid, custom inside-page, cover-branded, and institution-specific notebook formats.",
+    "The technical choices include inside paper weight, cover stock, ruling style, page count, binding, trimming, and lamination. We confirm these details early so the notebook feels right in hand and holds up during repeated use.",
+    "This service creates practical brand presence: students, staff, trainees, or event guests use the item repeatedly, so cover durability and consistent logo reproduction are as important as the printed pages inside.",
+  ],
+  "brochure-printing": [
+    "Brochure printing is best for sales conversations, product launches, corporate profiles, service explainers, and campaign materials that need to be read, kept, and shared. We handle bi-fold, tri-fold, gate-fold, booklet-style, and custom brochure formats.",
+    "Our prepress checks focus on folds, panel order, bleed, image sharpness, paper weight, coating, and how the design reads after finishing. Those details matter because a beautiful flat design can fail if fold positions or margins are wrong.",
+    "The strongest brochures combine clear messaging with the right tactile finish, so we guide clients on stock, lamination, quantity, and delivery timing before production starts.",
+  ],
+  "flyer-printing": [
+    "Flyer printing is built for direct, fast-moving communication: store promotions, public announcements, event invitations, launch offers, campus campaigns, and street-level distribution in Addis Ababa.",
+    "We check file size, bleed, color mode, image quality, single-sided or double-sided setup, and paper weight so the flyer prints cleanly and stays economical at the planned quantity.",
+    "The unique value is speed with clarity. Flyers need to be readable at a glance, easy to distribute, and cost-aware, so we help match format and finish to the campaign instead of overbuilding the piece.",
+  ],
+};
+
+const pageParagraphs = (page) => serviceDetailCopy[page.slug] ?? [
+  `${brand} reviews each ${page.label.toLowerCase()} project by use case, quantity, material, finishing, and deadline before production begins.`,
+  "Our team checks file readiness, stock options, color expectations, and handover requirements so the final print is practical and consistent.",
+  "We keep communication clear from quotation through pickup or delivery, especially for recurring jobs that need repeatable specifications.",
 ];
 
 const processParagraphs = (page) => [

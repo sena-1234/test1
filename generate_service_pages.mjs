@@ -409,21 +409,49 @@ const paragraphHtml = (paragraphs) =>
     .map((paragraph) => `<p class=\"body-copy\">${esc(paragraph)}</p>`)
     .join("\n          ");
 
-const serviceParagraphs = (service) => {
-  const sampleItems = service.includes
-    .slice(0, 3)
-    .map((item) => trimFinalPeriod(item).toLowerCase())
-    .join(", ");
-  const serviceName = service.label.toLowerCase();
-  const areaReference = defaultAreas.slice(0, 4).join(", ");
-  const localIntentCore = service.localIntent
-    .replace(/\s+in\s+addis\s+ababa/i, "")
-    .toLowerCase();
+const serviceDetailCopy = {
+  "marketing-brand-collateral": [
+    "Marketing and brand collateral needs to carry the same visual system across brochures, flyers, postcards, catalogs, presentation inserts, and sales sheets. We help teams keep color, paper feel, folds, and finishing consistent across a full campaign set.",
+    "Our prepress review checks logos, image resolution, bleed, fold panels, trim size, and CMYK color setup before production. We also recommend coated, uncoated, matte, gloss, or heavier cover stock depending on whether the piece is handed out, mailed, displayed, or kept.",
+    "This service is strongest for launches, sales visits, tenders, brand activations, and institutions that need several printed pieces to feel like one coordinated brand package.",
+  ],
+  "event-materials": [
+    "Event materials must look organized under deadline pressure. We produce invitations, programs, name badges, table tents, menus, certificates, directional signs, and sponsor materials for conferences, trainings, ceremonies, and hospitality events.",
+    "The technical work includes checking guest names, agenda versions, badge sizes, paper stock, folding, lamination, numbering, and sorting requirements so materials are easy to distribute on event day.",
+    "Our value is coordination: we can align small digital batches for late updates with larger printed sets for programs, signs, and branded handouts.",
+  ],
+  "short-run-printing": [
+    "Short-run printing is for teams that need professional output without committing to bulk inventory. It works well for pilot campaigns, policy drafts, training packs, internal manuals, personalized documents, and materials that change between versions.",
+    "We use quick digital production workflows with checks for page order, margins, readability, paper choice, and finishing such as stapling, binding, trimming, or lamination.",
+    "The advantage is control: print only what is needed, update files when information changes, and keep quality strong even when the quantity is small.",
+  ],
+  "large-format-specialty": [
+    "Large format and specialty printing needs to stay readable from a distance and durable in the place where it will be used. We produce banners, posters, wall graphics, event backdrops, display boards, signs, and campaign visuals.",
+    "We review artwork scale, viewing distance, image resolution, color contrast, material choice, mounting needs, and indoor or outdoor exposure before production.",
+    "This service is useful for shops, exhibitions, conferences, offices, public notices, and temporary promotions where size, legibility, and installation planning matter as much as print quality.",
+  ],
+  "business-stationery": [
+    "Business stationery supports daily communication, so consistency matters more than decoration. We produce business cards, letterheads, envelopes, notepads, folders, and official document materials that keep a brand recognizable across routine use.",
+    "Our team checks logo placement, typography, margins, paper weight, writing compatibility, envelope sizing, and repeat-order specifications before production.",
+    "The result is a practical identity system for proposals, invoices, letters, meetings, and front-desk use, with specifications that can be repeated when stock runs low.",
+  ],
+  "custom-packaging": [
+    "Custom packaging has to protect the product and sell it at the same time. We produce product boxes, labels, stickers, paper bags, sleeves, inserts, and retail packaging for shelf display, delivery, and promotional kits.",
+    "The technical review covers dielines, folds, glue areas, bleed, barcode placement, label material, board weight, lamination, and finishing so the package is printable and usable after assembly.",
+    "This service is strongest for cosmetics, food and beverage, retail products, gifts, and branded delivery experiences where packaging becomes part of the customer impression.",
+  ],
+  "promotional-products": [
+    "Promotional products work best when the item is useful enough to keep and the branding is applied cleanly. We support branded giveaways, corporate gifts, campaign items, notebooks, bags, folders, and event merchandise.",
+    "We confirm imprint area, logo size, color limits, material compatibility, quantity, packaging, and delivery timing before production begins.",
+    "The value is practical visibility: clients can match the product to the audience, event, or campaign instead of ordering generic items that disappear after one use.",
+  ],
+};
 
-  return [
-    `In Addis Ababa, ${localIntentCore} works best when design, materials, and timeline are planned together from the start. Our team aligns each ${serviceName} order to your business objective and delivery date.`,
-    `${brand} supports clients with ${sampleItems}. We also help with paper selection, print-readiness, finishing choices, and quantity planning so the result is both professional and practical.`,
-    `If your office, branch, or event is around ${areaReference}, we provide dependable communication from quotation to final handover and maintain consistent quality at each stage.`,
+const serviceParagraphs = (service) => {
+  return serviceDetailCopy[service.slug] ?? [
+    `${brand} reviews each ${service.label.toLowerCase()} project by use case, quantity, material, finishing, and deadline before production begins.`,
+    "Our team checks file readiness, stock options, color expectations, and handover requirements so the final print is practical and consistent.",
+    "We keep communication clear from quotation through pickup or delivery, especially for recurring jobs that need repeatable specifications.",
   ];
 };
 
